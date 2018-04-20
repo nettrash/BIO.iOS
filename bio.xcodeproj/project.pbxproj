@@ -27,14 +27,84 @@
 		E523FAFB20737F7A0059E20B /* background003.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E523FAE720737F7A0059E20B /* background003.jpg */; };
 		E523FAFC20737F7A0059E20B /* background004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E523FAE820737F7A0059E20B /* background004.jpg */; };
 		E523FAFD20737F7A0059E20B /* background005.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E523FAE920737F7A0059E20B /* background005.jpg */; };
+		E55346DE2088AFD6007C80C5 /* symbol.png in Resources */ = {isa = PBXBuildFile; fileRef = E55346DB2088AFD2007C80C5 /* symbol.png */; };
+		E55346DF2088AFD6007C80C5 /* symbol@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E55346DC2088AFD3007C80C5 /* symbol@3x.png */; };
+		E55346E02088AFD6007C80C5 /* symbol@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E55346DD2088AFD5007C80C5 /* symbol@2x.png */; };
+		E55346E32088B291007C80C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E55346E52088B291007C80C5 /* InfoPlist.strings */; };
+		E55346EF2088DC59007C80C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E55346EE2088DC59007C80C5 /* Images.xcassets */; };
 		E5C23E26207368A400C40AE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C23E25207368A400C40AE0 /* AppDelegate.swift */; };
-		E5C23E28207368A400C40AE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C23E27207368A400C40AE0 /* ViewController.swift */; };
 		E5C23E2B207368A400C40AE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C23E29207368A400C40AE0 /* Main.storyboard */; };
 		E5C23E2E207368A400C40AE0 /* bio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5C23E2C207368A400C40AE0 /* bio.xcdatamodeld */; };
 		E5C23E30207368A600C40AE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5C23E2F207368A600C40AE0 /* Assets.xcassets */; };
 		E5C23E33207368A600C40AE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C23E31207368A600C40AE0 /* LaunchScreen.storyboard */; };
 		E5C23E3E207368A600C40AE0 /* bioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C23E3D207368A600C40AE0 /* bioTests.swift */; };
 		E5C23E49207368A600C40AE0 /* bioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C23E48207368A600C40AE0 /* bioUITests.swift */; };
+		E5F49630208A13880092AA0A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4962F208A13880092AA0A /* RootViewController.swift */; };
+		E5F49632208A13CB0092AA0A /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49631208A13CB0092AA0A /* BalanceViewController.swift */; };
+		E5F49636208A14490092AA0A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49635208A14490092AA0A /* BaseViewController.swift */; };
+		E5F49639208A159B0092AA0A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F49638208A159B0092AA0A /* MessageUI.framework */; };
+		E5F4963B208A15A60092AA0A /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F4963A208A15A60092AA0A /* WatchConnectivity.framework */; };
+		E5F4963D208A15B70092AA0A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F4963C208A15B70092AA0A /* MobileCoreServices.framework */; };
+		E5F4963F208A15C20092AA0A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F4963E208A15C20092AA0A /* Accelerate.framework */; };
+		E5F49641208A15CF0092AA0A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F49640208A15CF0092AA0A /* AVFoundation.framework */; };
+		E5F49643208A15E10092AA0A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F49642208A15E10092AA0A /* Security.framework */; };
+		E5F49645208A15ED0092AA0A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F49644208A15ED0092AA0A /* CoreFoundation.framework */; };
+		E5F49647208A16000092AA0A /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F49646208A15FF0092AA0A /* LocalAuthentication.framework */; };
+		E5F49649208A160C0092AA0A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F49648208A160C0092AA0A /* CoreData.framework */; };
+		E5F4964B208A162D0092AA0A /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F4964A208A162D0092AA0A /* PassKit.framework */; };
+		E5F49655208A16930092AA0A /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4964D208A16930092AA0A /* UIImageExtensions.swift */; };
+		E5F49656208A16930092AA0A /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4964E208A16930092AA0A /* ArrayExtensions.swift */; };
+		E5F49657208A16930092AA0A /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4964F208A16930092AA0A /* DateExtensions.swift */; };
+		E5F49658208A16930092AA0A /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49650208A16930092AA0A /* DoubleExtensions.swift */; };
+		E5F49659208A16930092AA0A /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49651208A16930092AA0A /* DataExtensions.swift */; };
+		E5F4965A208A16930092AA0A /* IntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49652208A16930092AA0A /* IntegerExtensions.swift */; };
+		E5F4965B208A16930092AA0A /* ApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49653208A16930092AA0A /* ApplicationExtension.swift */; };
+		E5F4965C208A16930092AA0A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49654208A16930092AA0A /* StringExtensions.swift */; };
+		E5F4966F208A1AAA0092AA0A /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F49666208A1AA90092AA0A /* CommonCrypto.framework */; };
+		E5F49676208A1AAA0092AA0A /* CommonCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49675208A1AAA0092AA0A /* CommonCryptoTests.swift */; };
+		E5F49678208A1AAA0092AA0A /* CommonCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = E5F49668208A1AAA0092AA0A /* CommonCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5F4968A208A1AFB0092AA0A /* CommonCrypto.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E5F49688208A1AFB0092AA0A /* CommonCrypto.xcconfig */; };
+		E5F4968B208A1B490092AA0A /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F49666208A1AA90092AA0A /* CommonCrypto.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E5F4968F208A1D320092AA0A /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4968E208A1D320092AA0A /* PersistentContainer.swift */; };
+		E5F49693208A21E70092AA0A /* BigInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49692208A21E70092AA0A /* BigInteger.swift */; };
+		E5F49696208A22310092AA0A /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49695208A22310092AA0A /* Convert.swift */; };
+		E5F4969F208A22960092AA0A /* PointFP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49698208A22960092AA0A /* PointFP.swift */; };
+		E5F496A0208A22960092AA0A /* FieldElementFP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49699208A22960092AA0A /* FieldElementFP.swift */; };
+		E5F496A1208A22960092AA0A /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4969A208A22960092AA0A /* Crypto.swift */; };
+		E5F496A2208A22960092AA0A /* RIPEMD160.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4969B208A22960092AA0A /* RIPEMD160.swift */; };
+		E5F496A3208A22960092AA0A /* Barret.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4969C208A22960092AA0A /* Barret.swift */; };
+		E5F496A4208A22960092AA0A /* EllipticCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4969D208A22960092AA0A /* EllipticCurve.swift */; };
+		E5F496A5208A22960092AA0A /* CurveFP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4969E208A22960092AA0A /* CurveFP.swift */; };
+		E5F496AD208A24010092AA0A /* bioAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496A7208A24010092AA0A /* bioAddress.swift */; };
+		E5F496AE208A24010092AA0A /* bioTransactionInputOutpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496A8208A24010092AA0A /* bioTransactionInputOutpoint.swift */; };
+		E5F496AF208A24010092AA0A /* bioTransactionOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496A9208A24010092AA0A /* bioTransactionOutput.swift */; };
+		E5F496B0208A24010092AA0A /* bioTransactionInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496AA208A24010092AA0A /* bioTransactionInput.swift */; };
+		E5F496B1208A24010092AA0A /* bioWalletType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496AB208A24010092AA0A /* bioWalletType.swift */; };
+		E5F496B2208A24010092AA0A /* bioTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496AC208A24010092AA0A /* bioTransaction.swift */; };
+		E5F496C2208A26590092AA0A /* HistoryItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496B4208A26580092AA0A /* HistoryItemType.swift */; };
+		E5F496C3208A26590092AA0A /* UnspentTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496B5208A26580092AA0A /* UnspentTransaction.swift */; };
+		E5F496C4208A26590092AA0A /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496B6208A26580092AA0A /* History.swift */; };
+		E5F496C5208A26590092AA0A /* BalanceDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496B7208A26580092AA0A /* BalanceDimension.swift */; };
+		E5F496C6208A26590092AA0A /* Unspent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496B8208A26580092AA0A /* Unspent.swift */; };
+		E5F496C7208A26590092AA0A /* MemPoolItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496B9208A26580092AA0A /* MemPoolItem.swift */; };
+		E5F496C8208A26590092AA0A /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496BA208A26590092AA0A /* Currency.swift */; };
+		E5F496C9208A26590092AA0A /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496BB208A26590092AA0A /* HistoryItem.swift */; };
+		E5F496CA208A26590092AA0A /* ModelRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496BC208A26590092AA0A /* ModelRoot.swift */; };
+		E5F496CB208A26590092AA0A /* RateInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496BD208A26590092AA0A /* RateInfo.swift */; };
+		E5F496CC208A26590092AA0A /* BalanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496BE208A26590092AA0A /* BalanceResponse.swift */; };
+		E5F496CD208A26590092AA0A /* MemPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496BF208A26590092AA0A /* MemPool.swift */; };
+		E5F496CE208A26590092AA0A /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496C0208A26590092AA0A /* Wallet.swift */; };
+		E5F496CF208A26590092AA0A /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496C1208A26590092AA0A /* Rates.swift */; };
+		E5F496E0208A2A090092AA0A /* Address+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496DE208A2A090092AA0A /* Address+CoreDataClass.swift */; };
+		E5F496E1208A2A090092AA0A /* Address+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496DF208A2A090092AA0A /* Address+CoreDataProperties.swift */; };
+		E5F496EB208A2E3C0092AA0A /* bitpayExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496E3208A2E3B0092AA0A /* bitpayExchangeRates.swift */; };
+		E5F496EC208A2E3C0092AA0A /* bitpayPaymentCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496E4208A2E3C0092AA0A /* bitpayPaymentCodes.swift */; };
+		E5F496ED208A2E3C0092AA0A /* bitpaySupportedTransactionCurrencyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496E5208A2E3C0092AA0A /* bitpaySupportedTransactionCurrencyInfo.swift */; };
+		E5F496EE208A2E3C0092AA0A /* bitpayMinerFees.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496E6208A2E3C0092AA0A /* bitpayMinerFees.swift */; };
+		E5F496EF208A2E3C0092AA0A /* bitpayMinerFee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496E7208A2E3C0092AA0A /* bitpayMinerFee.swift */; };
+		E5F496F0208A2E3C0092AA0A /* bitpaySupportedTransactionCurrencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496E8208A2E3C0092AA0A /* bitpaySupportedTransactionCurrencies.swift */; };
+		E5F496F1208A2E3C0092AA0A /* bitpayBuyerProvidedInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496E9208A2E3C0092AA0A /* bitpayBuyerProvidedInfo.swift */; };
+		E5F496F2208A2E3C0092AA0A /* bitpayInvoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F496EA208A2E3C0092AA0A /* bitpayInvoice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +121,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = E5C23E21207368A400C40AE0;
 			remoteInfo = bio;
+		};
+		E5F49670208A1AAA0092AA0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5C23E1A207368A400C40AE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5F49665208A1AA90092AA0A;
+			remoteInfo = CommonCrypto;
+		};
+		E5F49672208A1AAA0092AA0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5C23E1A207368A400C40AE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5C23E21207368A400C40AE0;
+			remoteInfo = bio;
+		};
+		E5F4968C208A1BC50092AA0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5C23E1A207368A400C40AE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5F49665208A1AA90092AA0A;
+			remoteInfo = CommonCrypto;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -75,9 +166,19 @@
 		E523FAE720737F7A0059E20B /* background003.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background003.jpg; sourceTree = "<group>"; };
 		E523FAE820737F7A0059E20B /* background004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background004.jpg; sourceTree = "<group>"; };
 		E523FAE920737F7A0059E20B /* background005.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background005.jpg; sourceTree = "<group>"; };
+		E55346DB2088AFD2007C80C5 /* symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = symbol.png; sourceTree = "<group>"; };
+		E55346DC2088AFD3007C80C5 /* symbol@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol@3x.png"; sourceTree = "<group>"; };
+		E55346DD2088AFD5007C80C5 /* symbol@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol@2x.png"; sourceTree = "<group>"; };
+		E55346E42088B291007C80C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E55346E62088B2CC007C80C5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		E55346E72088B2CC007C80C5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E55346E82088B2CC007C80C5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E55346E92088B2E6007C80C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E55346EB2088B2F4007C80C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		E55346ED2088B2F9007C80C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E55346EE2088DC59007C80C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E5C23E22207368A400C40AE0 /* bio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C23E25207368A400C40AE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E5C23E27207368A400C40AE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E5C23E2A207368A400C40AE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5C23E2D207368A400C40AE0 /* bio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bio.xcdatamodel; sourceTree = "<group>"; };
 		E5C23E2F207368A600C40AE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +190,80 @@
 		E5C23E44207368A600C40AE0 /* bioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C23E48207368A600C40AE0 /* bioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bioUITests.swift; sourceTree = "<group>"; };
 		E5C23E4A207368A600C40AE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5F4962F208A13880092AA0A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		E5F49631208A13CB0092AA0A /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
+		E5F49635208A14490092AA0A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E5F49638208A159B0092AA0A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		E5F4963A208A15A60092AA0A /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		E5F4963C208A15B70092AA0A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E5F4963E208A15C20092AA0A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		E5F49640208A15CF0092AA0A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E5F49642208A15E10092AA0A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E5F49644208A15ED0092AA0A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		E5F49646208A15FF0092AA0A /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		E5F49648208A160C0092AA0A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E5F4964A208A162D0092AA0A /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		E5F4964D208A16930092AA0A /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		E5F4964E208A16930092AA0A /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		E5F4964F208A16930092AA0A /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		E5F49650208A16930092AA0A /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		E5F49651208A16930092AA0A /* DataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		E5F49652208A16930092AA0A /* IntegerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerExtensions.swift; sourceTree = "<group>"; };
+		E5F49653208A16930092AA0A /* ApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationExtension.swift; sourceTree = "<group>"; };
+		E5F49654208A16930092AA0A /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		E5F49666208A1AA90092AA0A /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5F49668208A1AAA0092AA0A /* CommonCrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonCrypto.h; sourceTree = "<group>"; };
+		E5F49669208A1AAA0092AA0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5F4966E208A1AAA0092AA0A /* CommonCryptoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonCryptoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5F49675208A1AAA0092AA0A /* CommonCryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCryptoTests.swift; sourceTree = "<group>"; };
+		E5F49677208A1AAA0092AA0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5F49684208A1AFB0092AA0A /* watchos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchos.modulemap; sourceTree = "<group>"; };
+		E5F49685208A1AFB0092AA0A /* iphoneos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = "<group>"; };
+		E5F49686208A1AFB0092AA0A /* macosx.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = macosx.modulemap; sourceTree = "<group>"; };
+		E5F49687208A1AFB0092AA0A /* watchsimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchsimulator.modulemap; sourceTree = "<group>"; };
+		E5F49688208A1AFB0092AA0A /* CommonCrypto.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CommonCrypto.xcconfig; sourceTree = "<group>"; };
+		E5F49689208A1AFB0092AA0A /* iphonesimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = "<group>"; };
+		E5F4968E208A1D320092AA0A /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
+		E5F49690208A1D550092AA0A /* bio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bio.entitlements; sourceTree = "<group>"; };
+		E5F49692208A21E70092AA0A /* BigInteger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigInteger.swift; sourceTree = "<group>"; };
+		E5F49695208A22310092AA0A /* Convert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
+		E5F49698208A22960092AA0A /* PointFP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointFP.swift; sourceTree = "<group>"; };
+		E5F49699208A22960092AA0A /* FieldElementFP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldElementFP.swift; sourceTree = "<group>"; };
+		E5F4969A208A22960092AA0A /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		E5F4969B208A22960092AA0A /* RIPEMD160.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RIPEMD160.swift; sourceTree = "<group>"; };
+		E5F4969C208A22960092AA0A /* Barret.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Barret.swift; sourceTree = "<group>"; };
+		E5F4969D208A22960092AA0A /* EllipticCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticCurve.swift; sourceTree = "<group>"; };
+		E5F4969E208A22960092AA0A /* CurveFP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurveFP.swift; sourceTree = "<group>"; };
+		E5F496A7208A24010092AA0A /* bioAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bioAddress.swift; sourceTree = "<group>"; };
+		E5F496A8208A24010092AA0A /* bioTransactionInputOutpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bioTransactionInputOutpoint.swift; sourceTree = "<group>"; };
+		E5F496A9208A24010092AA0A /* bioTransactionOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bioTransactionOutput.swift; sourceTree = "<group>"; };
+		E5F496AA208A24010092AA0A /* bioTransactionInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bioTransactionInput.swift; sourceTree = "<group>"; };
+		E5F496AB208A24010092AA0A /* bioWalletType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bioWalletType.swift; sourceTree = "<group>"; };
+		E5F496AC208A24010092AA0A /* bioTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bioTransaction.swift; sourceTree = "<group>"; };
+		E5F496B4208A26580092AA0A /* HistoryItemType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryItemType.swift; sourceTree = "<group>"; };
+		E5F496B5208A26580092AA0A /* UnspentTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnspentTransaction.swift; sourceTree = "<group>"; };
+		E5F496B6208A26580092AA0A /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		E5F496B7208A26580092AA0A /* BalanceDimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceDimension.swift; sourceTree = "<group>"; };
+		E5F496B8208A26580092AA0A /* Unspent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unspent.swift; sourceTree = "<group>"; };
+		E5F496B9208A26580092AA0A /* MemPoolItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemPoolItem.swift; sourceTree = "<group>"; };
+		E5F496BA208A26590092AA0A /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		E5F496BB208A26590092AA0A /* HistoryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		E5F496BC208A26590092AA0A /* ModelRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelRoot.swift; sourceTree = "<group>"; };
+		E5F496BD208A26590092AA0A /* RateInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateInfo.swift; sourceTree = "<group>"; };
+		E5F496BE208A26590092AA0A /* BalanceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceResponse.swift; sourceTree = "<group>"; };
+		E5F496BF208A26590092AA0A /* MemPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemPool.swift; sourceTree = "<group>"; };
+		E5F496C0208A26590092AA0A /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		E5F496C1208A26590092AA0A /* Rates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rates.swift; sourceTree = "<group>"; };
+		E5F496DE208A2A090092AA0A /* Address+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E5F496DF208A2A090092AA0A /* Address+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E5F496E3208A2E3B0092AA0A /* bitpayExchangeRates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bitpayExchangeRates.swift; sourceTree = "<group>"; };
+		E5F496E4208A2E3C0092AA0A /* bitpayPaymentCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bitpayPaymentCodes.swift; sourceTree = "<group>"; };
+		E5F496E5208A2E3C0092AA0A /* bitpaySupportedTransactionCurrencyInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bitpaySupportedTransactionCurrencyInfo.swift; sourceTree = "<group>"; };
+		E5F496E6208A2E3C0092AA0A /* bitpayMinerFees.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bitpayMinerFees.swift; sourceTree = "<group>"; };
+		E5F496E7208A2E3C0092AA0A /* bitpayMinerFee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bitpayMinerFee.swift; sourceTree = "<group>"; };
+		E5F496E8208A2E3C0092AA0A /* bitpaySupportedTransactionCurrencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bitpaySupportedTransactionCurrencies.swift; sourceTree = "<group>"; };
+		E5F496E9208A2E3C0092AA0A /* bitpayBuyerProvidedInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bitpayBuyerProvidedInfo.swift; sourceTree = "<group>"; };
+		E5F496EA208A2E3C0092AA0A /* bitpayInvoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bitpayInvoice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +271,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5F4968B208A1B490092AA0A /* CommonCrypto.framework in Frameworks */,
+				E5F4964B208A162D0092AA0A /* PassKit.framework in Frameworks */,
+				E5F49649208A160C0092AA0A /* CoreData.framework in Frameworks */,
+				E5F49647208A16000092AA0A /* LocalAuthentication.framework in Frameworks */,
+				E5F49645208A15ED0092AA0A /* CoreFoundation.framework in Frameworks */,
+				E5F49643208A15E10092AA0A /* Security.framework in Frameworks */,
+				E5F49641208A15CF0092AA0A /* AVFoundation.framework in Frameworks */,
+				E5F4963F208A15C20092AA0A /* Accelerate.framework in Frameworks */,
+				E5F4963D208A15B70092AA0A /* MobileCoreServices.framework in Frameworks */,
+				E5F4963B208A15A60092AA0A /* WatchConnectivity.framework in Frameworks */,
+				E5F49639208A159B0092AA0A /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,12 +299,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5F49662208A1AA90092AA0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5F4966B208A1AAA0092AA0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F4966F208A1AAA0092AA0A /* CommonCrypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E523FAD5207377030059E20B /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				E55346DB2088AFD2007C80C5 /* symbol.png */,
+				E55346DD2088AFD5007C80C5 /* symbol@2x.png */,
+				E55346DC2088AFD3007C80C5 /* symbol@3x.png */,
 				E523FADA20737F790059E20B /* background000.jpg */,
 				E523FAD920737F790059E20B /* background001.jpg */,
 				E523FADB20737F790059E20B /* background002.jpg */,
@@ -139,6 +343,7 @@
 				E523FAD820737F790059E20B /* background017.jpg */,
 				E523FAE620737F7A0059E20B /* background018.jpg */,
 				E523FAD720737F790059E20B /* background019.jpg */,
+				E55346EE2088DC59007C80C5 /* Images.xcassets */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -146,11 +351,14 @@
 		E5C23E19207368A400C40AE0 = {
 			isa = PBXGroup;
 			children = (
-				E523FAD5207377030059E20B /* Content */,
 				E5C23E24207368A400C40AE0 /* bio */,
 				E5C23E3C207368A600C40AE0 /* bioTests */,
 				E5C23E47207368A600C40AE0 /* bioUITests */,
+				E5F49667208A1AAA0092AA0A /* CommonCrypto */,
+				E5F49674208A1AAA0092AA0A /* CommonCryptoTests */,
 				E5C23E23207368A400C40AE0 /* Products */,
+				E523FAD5207377030059E20B /* Content */,
+				E5F49637208A159B0092AA0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +368,8 @@
 				E5C23E22207368A400C40AE0 /* bio.app */,
 				E5C23E39207368A600C40AE0 /* bioTests.xctest */,
 				E5C23E44207368A600C40AE0 /* bioUITests.xctest */,
+				E5F49666208A1AA90092AA0A /* CommonCrypto.framework */,
+				E5F4966E208A1AAA0092AA0A /* CommonCryptoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,13 +377,17 @@
 		E5C23E24207368A400C40AE0 /* bio */ = {
 			isa = PBXGroup;
 			children = (
+				E5F49634208A140C0092AA0A /* Classes */,
 				E5C23E25207368A400C40AE0 /* AppDelegate.swift */,
-				E5C23E27207368A400C40AE0 /* ViewController.swift */,
+				E5F4962F208A13880092AA0A /* RootViewController.swift */,
+				E5F49631208A13CB0092AA0A /* BalanceViewController.swift */,
 				E5C23E29207368A400C40AE0 /* Main.storyboard */,
 				E5C23E2F207368A600C40AE0 /* Assets.xcassets */,
 				E5C23E31207368A600C40AE0 /* LaunchScreen.storyboard */,
 				E5C23E34207368A600C40AE0 /* Info.plist */,
 				E5C23E2C207368A400C40AE0 /* bio.xcdatamodeld */,
+				E5F49690208A1D550092AA0A /* bio.entitlements */,
+				E55346E52088B291007C80C5 /* InfoPlist.strings */,
 			);
 			path = bio;
 			sourceTree = "<group>";
@@ -196,7 +410,179 @@
 			path = bioUITests;
 			sourceTree = "<group>";
 		};
+		E5F49634208A140C0092AA0A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E5F49694208A22170092AA0A /* Utils */,
+				E5F4964C208A167B0092AA0A /* Extensions */,
+				E5F49697208A22630092AA0A /* Crypto */,
+				E5F49691208A21C30092AA0A /* Math */,
+				E5F496A6208A23B10092AA0A /* BIO */,
+				E5F496B3208A25F90092AA0A /* Models */,
+				E5F49635208A14490092AA0A /* BaseViewController.swift */,
+				E5F4968E208A1D320092AA0A /* PersistentContainer.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E5F49637208A159B0092AA0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5F4964A208A162D0092AA0A /* PassKit.framework */,
+				E5F49648208A160C0092AA0A /* CoreData.framework */,
+				E5F49646208A15FF0092AA0A /* LocalAuthentication.framework */,
+				E5F49644208A15ED0092AA0A /* CoreFoundation.framework */,
+				E5F49642208A15E10092AA0A /* Security.framework */,
+				E5F49640208A15CF0092AA0A /* AVFoundation.framework */,
+				E5F4963E208A15C20092AA0A /* Accelerate.framework */,
+				E5F4963C208A15B70092AA0A /* MobileCoreServices.framework */,
+				E5F4963A208A15A60092AA0A /* WatchConnectivity.framework */,
+				E5F49638208A159B0092AA0A /* MessageUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5F4964C208A167B0092AA0A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E5F49653208A16930092AA0A /* ApplicationExtension.swift */,
+				E5F4964E208A16930092AA0A /* ArrayExtensions.swift */,
+				E5F49651208A16930092AA0A /* DataExtensions.swift */,
+				E5F4964F208A16930092AA0A /* DateExtensions.swift */,
+				E5F49650208A16930092AA0A /* DoubleExtensions.swift */,
+				E5F49652208A16930092AA0A /* IntegerExtensions.swift */,
+				E5F49654208A16930092AA0A /* StringExtensions.swift */,
+				E5F4964D208A16930092AA0A /* UIImageExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E5F49667208A1AAA0092AA0A /* CommonCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				E5F49688208A1AFB0092AA0A /* CommonCrypto.xcconfig */,
+				E5F49685208A1AFB0092AA0A /* iphoneos.modulemap */,
+				E5F49689208A1AFB0092AA0A /* iphonesimulator.modulemap */,
+				E5F49686208A1AFB0092AA0A /* macosx.modulemap */,
+				E5F49684208A1AFB0092AA0A /* watchos.modulemap */,
+				E5F49687208A1AFB0092AA0A /* watchsimulator.modulemap */,
+				E5F49668208A1AAA0092AA0A /* CommonCrypto.h */,
+				E5F49669208A1AAA0092AA0A /* Info.plist */,
+			);
+			path = CommonCrypto;
+			sourceTree = "<group>";
+		};
+		E5F49674208A1AAA0092AA0A /* CommonCryptoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5F49675208A1AAA0092AA0A /* CommonCryptoTests.swift */,
+				E5F49677208A1AAA0092AA0A /* Info.plist */,
+			);
+			path = CommonCryptoTests;
+			sourceTree = "<group>";
+		};
+		E5F49691208A21C30092AA0A /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				E5F49692208A21E70092AA0A /* BigInteger.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		E5F49694208A22170092AA0A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E5F49695208A22310092AA0A /* Convert.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E5F49697208A22630092AA0A /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				E5F4969C208A22960092AA0A /* Barret.swift */,
+				E5F4969A208A22960092AA0A /* Crypto.swift */,
+				E5F4969E208A22960092AA0A /* CurveFP.swift */,
+				E5F4969D208A22960092AA0A /* EllipticCurve.swift */,
+				E5F49699208A22960092AA0A /* FieldElementFP.swift */,
+				E5F49698208A22960092AA0A /* PointFP.swift */,
+				E5F4969B208A22960092AA0A /* RIPEMD160.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		E5F496A6208A23B10092AA0A /* BIO */ = {
+			isa = PBXGroup;
+			children = (
+				E5F496A7208A24010092AA0A /* bioAddress.swift */,
+				E5F496AC208A24010092AA0A /* bioTransaction.swift */,
+				E5F496AA208A24010092AA0A /* bioTransactionInput.swift */,
+				E5F496A8208A24010092AA0A /* bioTransactionInputOutpoint.swift */,
+				E5F496A9208A24010092AA0A /* bioTransactionOutput.swift */,
+				E5F496AB208A24010092AA0A /* bioWalletType.swift */,
+			);
+			path = BIO;
+			sourceTree = "<group>";
+		};
+		E5F496B3208A25F90092AA0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E5F496E2208A2E0B0092AA0A /* BitPay */,
+				E5F496D9208A29300092AA0A /* Data */,
+				E5F496B7208A26580092AA0A /* BalanceDimension.swift */,
+				E5F496BE208A26590092AA0A /* BalanceResponse.swift */,
+				E5F496BA208A26590092AA0A /* Currency.swift */,
+				E5F496B6208A26580092AA0A /* History.swift */,
+				E5F496BB208A26590092AA0A /* HistoryItem.swift */,
+				E5F496B4208A26580092AA0A /* HistoryItemType.swift */,
+				E5F496BF208A26590092AA0A /* MemPool.swift */,
+				E5F496B9208A26580092AA0A /* MemPoolItem.swift */,
+				E5F496BC208A26590092AA0A /* ModelRoot.swift */,
+				E5F496BD208A26590092AA0A /* RateInfo.swift */,
+				E5F496C1208A26590092AA0A /* Rates.swift */,
+				E5F496B8208A26580092AA0A /* Unspent.swift */,
+				E5F496B5208A26580092AA0A /* UnspentTransaction.swift */,
+				E5F496C0208A26590092AA0A /* Wallet.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E5F496D9208A29300092AA0A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E5F496DE208A2A090092AA0A /* Address+CoreDataClass.swift */,
+				E5F496DF208A2A090092AA0A /* Address+CoreDataProperties.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E5F496E2208A2E0B0092AA0A /* BitPay */ = {
+			isa = PBXGroup;
+			children = (
+				E5F496E9208A2E3C0092AA0A /* bitpayBuyerProvidedInfo.swift */,
+				E5F496E3208A2E3B0092AA0A /* bitpayExchangeRates.swift */,
+				E5F496EA208A2E3C0092AA0A /* bitpayInvoice.swift */,
+				E5F496E7208A2E3C0092AA0A /* bitpayMinerFee.swift */,
+				E5F496E6208A2E3C0092AA0A /* bitpayMinerFees.swift */,
+				E5F496E4208A2E3C0092AA0A /* bitpayPaymentCodes.swift */,
+				E5F496E8208A2E3C0092AA0A /* bitpaySupportedTransactionCurrencies.swift */,
+				E5F496E5208A2E3C0092AA0A /* bitpaySupportedTransactionCurrencyInfo.swift */,
+			);
+			path = BitPay;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E5F49663208A1AA90092AA0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F49678208A1AAA0092AA0A /* CommonCrypto.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		E5C23E21207368A400C40AE0 /* bio */ = {
@@ -210,6 +596,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E5F4968D208A1BC50092AA0A /* PBXTargetDependency */,
 			);
 			name = bio;
 			productName = bio;
@@ -252,6 +639,43 @@
 			productReference = E5C23E44207368A600C40AE0 /* bioUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E5F49665208A1AA90092AA0A /* CommonCrypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5F4967D208A1AAA0092AA0A /* Build configuration list for PBXNativeTarget "CommonCrypto" */;
+			buildPhases = (
+				E5F49661208A1AA90092AA0A /* Sources */,
+				E5F49662208A1AA90092AA0A /* Frameworks */,
+				E5F49663208A1AA90092AA0A /* Headers */,
+				E5F49664208A1AA90092AA0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommonCrypto;
+			productName = CommonCrypto;
+			productReference = E5F49666208A1AA90092AA0A /* CommonCrypto.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E5F4966D208A1AAA0092AA0A /* CommonCryptoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5F49681208A1AAA0092AA0A /* Build configuration list for PBXNativeTarget "CommonCryptoTests" */;
+			buildPhases = (
+				E5F4966A208A1AAA0092AA0A /* Sources */,
+				E5F4966B208A1AAA0092AA0A /* Frameworks */,
+				E5F4966C208A1AAA0092AA0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5F49671208A1AAA0092AA0A /* PBXTargetDependency */,
+				E5F49673208A1AAA0092AA0A /* PBXTargetDependency */,
+			);
+			name = CommonCryptoTests;
+			productName = CommonCryptoTests;
+			productReference = E5F4966E208A1AAA0092AA0A /* CommonCryptoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -264,12 +688,36 @@
 				TargetAttributes = {
 					E5C23E21207368A400C40AE0 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.Wallet = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					E5C23E38207368A600C40AE0 = {
 						CreatedOnToolsVersion = 9.3;
 						TestTargetID = E5C23E21207368A400C40AE0;
 					};
 					E5C23E43207368A600C40AE0 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = E5C23E21207368A400C40AE0;
+					};
+					E5F49665208A1AA90092AA0A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					E5F4966D208A1AAA0092AA0A = {
 						CreatedOnToolsVersion = 9.3;
 						TestTargetID = E5C23E21207368A400C40AE0;
 					};
@@ -282,6 +730,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = E5C23E19207368A400C40AE0;
 			productRefGroup = E5C23E23207368A400C40AE0 /* Products */;
@@ -291,6 +740,8 @@
 				E5C23E21207368A400C40AE0 /* bio */,
 				E5C23E38207368A600C40AE0 /* bioTests */,
 				E5C23E43207368A600C40AE0 /* bioUITests */,
+				E5F49665208A1AA90092AA0A /* CommonCrypto */,
+				E5F4966D208A1AAA0092AA0A /* CommonCryptoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -309,15 +760,20 @@
 				E523FAEE20737F7A0059E20B /* background000.jpg in Resources */,
 				E523FAEF20737F7A0059E20B /* background002.jpg in Resources */,
 				E523FAFC20737F7A0059E20B /* background004.jpg in Resources */,
+				E55346EF2088DC59007C80C5 /* Images.xcassets in Resources */,
 				E5C23E33207368A600C40AE0 /* LaunchScreen.storyboard in Resources */,
 				E523FAEA20737F7A0059E20B /* background010.jpg in Resources */,
+				E55346DE2088AFD6007C80C5 /* symbol.png in Resources */,
 				E5C23E30207368A600C40AE0 /* Assets.xcassets in Resources */,
 				E5C23E2B207368A400C40AE0 /* Main.storyboard in Resources */,
 				E523FAF620737F7A0059E20B /* background009.jpg in Resources */,
 				E523FAF220737F7A0059E20B /* background012.jpg in Resources */,
+				E55346E32088B291007C80C5 /* InfoPlist.strings in Resources */,
 				E523FAF420737F7A0059E20B /* background007.jpg in Resources */,
 				E523FAF820737F7A0059E20B /* background014.jpg in Resources */,
+				E55346DF2088AFD6007C80C5 /* symbol@3x.png in Resources */,
 				E523FAF020737F7A0059E20B /* background013.jpg in Resources */,
+				E55346E02088AFD6007C80C5 /* symbol@2x.png in Resources */,
 				E523FAEC20737F7A0059E20B /* background017.jpg in Resources */,
 				E523FAED20737F7A0059E20B /* background001.jpg in Resources */,
 				E523FAEB20737F7A0059E20B /* background019.jpg in Resources */,
@@ -340,6 +796,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5F49664208A1AA90092AA0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F4968A208A1AFB0092AA0A /* CommonCrypto.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5F4966C208A1AAA0092AA0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -347,9 +818,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5F496C8208A26590092AA0A /* Currency.swift in Sources */,
+				E5F496CA208A26590092AA0A /* ModelRoot.swift in Sources */,
+				E5F49636208A14490092AA0A /* BaseViewController.swift in Sources */,
 				E5C23E2E207368A400C40AE0 /* bio.xcdatamodeld in Sources */,
-				E5C23E28207368A400C40AE0 /* ViewController.swift in Sources */,
+				E5F496AE208A24010092AA0A /* bioTransactionInputOutpoint.swift in Sources */,
+				E5F496CC208A26590092AA0A /* BalanceResponse.swift in Sources */,
+				E5F496A5208A22960092AA0A /* CurveFP.swift in Sources */,
+				E5F496B0208A24010092AA0A /* bioTransactionInput.swift in Sources */,
+				E5F496C3208A26590092AA0A /* UnspentTransaction.swift in Sources */,
+				E5F496C5208A26590092AA0A /* BalanceDimension.swift in Sources */,
+				E5F496C2208A26590092AA0A /* HistoryItemType.swift in Sources */,
+				E5F496C9208A26590092AA0A /* HistoryItem.swift in Sources */,
+				E5F496AD208A24010092AA0A /* bioAddress.swift in Sources */,
+				E5F496F1208A2E3C0092AA0A /* bitpayBuyerProvidedInfo.swift in Sources */,
+				E5F4965A208A16930092AA0A /* IntegerExtensions.swift in Sources */,
+				E5F496B1208A24010092AA0A /* bioWalletType.swift in Sources */,
+				E5F496AF208A24010092AA0A /* bioTransactionOutput.swift in Sources */,
+				E5F496E0208A2A090092AA0A /* Address+CoreDataClass.swift in Sources */,
+				E5F496EB208A2E3C0092AA0A /* bitpayExchangeRates.swift in Sources */,
+				E5F496E1208A2A090092AA0A /* Address+CoreDataProperties.swift in Sources */,
+				E5F496F0208A2E3C0092AA0A /* bitpaySupportedTransactionCurrencies.swift in Sources */,
+				E5F496ED208A2E3C0092AA0A /* bitpaySupportedTransactionCurrencyInfo.swift in Sources */,
+				E5F49656208A16930092AA0A /* ArrayExtensions.swift in Sources */,
+				E5F4968F208A1D320092AA0A /* PersistentContainer.swift in Sources */,
+				E5F496F2208A2E3C0092AA0A /* bitpayInvoice.swift in Sources */,
+				E5F496A1208A22960092AA0A /* Crypto.swift in Sources */,
+				E5F496A0208A22960092AA0A /* FieldElementFP.swift in Sources */,
+				E5F496A4208A22960092AA0A /* EllipticCurve.swift in Sources */,
+				E5F496C7208A26590092AA0A /* MemPoolItem.swift in Sources */,
+				E5F4969F208A22960092AA0A /* PointFP.swift in Sources */,
+				E5F49659208A16930092AA0A /* DataExtensions.swift in Sources */,
+				E5F49630208A13880092AA0A /* RootViewController.swift in Sources */,
+				E5F496A2208A22960092AA0A /* RIPEMD160.swift in Sources */,
+				E5F4965B208A16930092AA0A /* ApplicationExtension.swift in Sources */,
+				E5F496EF208A2E3C0092AA0A /* bitpayMinerFee.swift in Sources */,
+				E5F49658208A16930092AA0A /* DoubleExtensions.swift in Sources */,
+				E5F496A3208A22960092AA0A /* Barret.swift in Sources */,
+				E5F49696208A22310092AA0A /* Convert.swift in Sources */,
+				E5F496CB208A26590092AA0A /* RateInfo.swift in Sources */,
+				E5F496EC208A2E3C0092AA0A /* bitpayPaymentCodes.swift in Sources */,
+				E5F49655208A16930092AA0A /* UIImageExtensions.swift in Sources */,
+				E5F49657208A16930092AA0A /* DateExtensions.swift in Sources */,
+				E5F496C4208A26590092AA0A /* History.swift in Sources */,
+				E5F496B2208A24010092AA0A /* bioTransaction.swift in Sources */,
+				E5F496CF208A26590092AA0A /* Rates.swift in Sources */,
+				E5F496EE208A2E3C0092AA0A /* bitpayMinerFees.swift in Sources */,
+				E5F496CD208A26590092AA0A /* MemPool.swift in Sources */,
+				E5F496CE208A26590092AA0A /* Wallet.swift in Sources */,
 				E5C23E26207368A400C40AE0 /* AppDelegate.swift in Sources */,
+				E5F4965C208A16930092AA0A /* StringExtensions.swift in Sources */,
+				E5F49693208A21E70092AA0A /* BigInteger.swift in Sources */,
+				E5F49632208A13CB0092AA0A /* BalanceViewController.swift in Sources */,
+				E5F496C6208A26590092AA0A /* Unspent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +890,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5F49661208A1AA90092AA0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5F4966A208A1AAA0092AA0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F49676208A1AAA0092AA0A /* CommonCryptoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -382,13 +918,40 @@
 			target = E5C23E21207368A400C40AE0 /* bio */;
 			targetProxy = E5C23E45207368A600C40AE0 /* PBXContainerItemProxy */;
 		};
+		E5F49671208A1AAA0092AA0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5F49665208A1AA90092AA0A /* CommonCrypto */;
+			targetProxy = E5F49670208A1AAA0092AA0A /* PBXContainerItemProxy */;
+		};
+		E5F49673208A1AAA0092AA0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5C23E21207368A400C40AE0 /* bio */;
+			targetProxy = E5F49672208A1AAA0092AA0A /* PBXContainerItemProxy */;
+		};
+		E5F4968D208A1BC50092AA0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5F49665208A1AA90092AA0A /* CommonCrypto */;
+			targetProxy = E5F4968C208A1BC50092AA0A /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E55346E52088B291007C80C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E55346E42088B291007C80C5 /* en */,
+				E55346E82088B2CC007C80C5 /* ru */,
+				E55346E92088B2E6007C80C5 /* Base */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		E5C23E29207368A400C40AE0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E5C23E2A207368A400C40AE0 /* Base */,
+				E55346E62088B2CC007C80C5 /* ru */,
+				E55346EB2088B2F4007C80C5 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -397,6 +960,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				E5C23E32207368A600C40AE0 /* Base */,
+				E55346E72088B2CC007C80C5 /* ru */,
+				E55346ED2088B2F9007C80C5 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -408,6 +973,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -468,6 +1034,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -522,12 +1089,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = bio/bio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L3973VL47F;
 				INFOPLIST_FILE = bio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lc++",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.bio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -540,12 +1114,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = bio/bio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L3973VL47F;
 				INFOPLIST_FILE = bio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lc++",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.bio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -636,6 +1217,128 @@
 			};
 			name = Release;
 		};
+		E5F4967E208A1AAA0092AA0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L3973VL47F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"MODULEMAP_FILE[sdk=iphoneos*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/iphoneos.modulemap";
+				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/iphonesimulator.modulemap";
+				"MODULEMAP_FILE[sdk=macosx*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/macosx.modulemap";
+				"MODULEMAP_FILE[sdk=watchos*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/watchos.modulemap";
+				"MODULEMAP_FILE[sdk=watchsimulator*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/watchsimulator.modulemap";
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lc++",
+					"-ObjC",
+				);
+				PRELINK_FLAGS = "-objc_api_version 2";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.CommonCrypto;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E5F4967F208A1AAA0092AA0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L3973VL47F;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"MODULEMAP_FILE[sdk=iphoneos*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/iphoneos.modulemap";
+				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/iphonesimulator.modulemap";
+				"MODULEMAP_FILE[sdk=macosx*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/macosx.modulemap";
+				"MODULEMAP_FILE[sdk=watchos*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/watchos.modulemap";
+				"MODULEMAP_FILE[sdk=watchsimulator*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/watchsimulator.modulemap";
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lc++",
+					"-ObjC",
+				);
+				PRELINK_FLAGS = "-objc_api_version 2";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.CommonCrypto;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E5F49682208A1AAA0092AA0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3973VL47F;
+				INFOPLIST_FILE = CommonCryptoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.CommonCryptoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bio.app/bio";
+			};
+			name = Debug;
+		};
+		E5F49683208A1AAA0092AA0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3973VL47F;
+				INFOPLIST_FILE = CommonCryptoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.CommonCryptoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bio.app/bio";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -671,6 +1374,24 @@
 			buildConfigurations = (
 				E5C23E54207368A600C40AE0 /* Debug */,
 				E5C23E55207368A600C40AE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5F4967D208A1AAA0092AA0A /* Build configuration list for PBXNativeTarget "CommonCrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5F4967E208A1AAA0092AA0A /* Debug */,
+				E5F4967F208A1AAA0092AA0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5F49681208A1AAA0092AA0A /* Build configuration list for PBXNativeTarget "CommonCryptoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5F49682208A1AAA0092AA0A /* Debug */,
+				E5F49683208A1AAA0092AA0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

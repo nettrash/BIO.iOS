@@ -1,24 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="bio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="background001.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sAN-Th-Orf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aB-DW-dKq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="symbol.png" translatesAutoresizingMaskIntoConstraints="NO" id="8rE-Nq-TlP">
+                                <rect key="frame" x="37" y="183" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Aez-VJ-eIR"/>
+                                    <constraint firstAttribute="width" constant="300" id="b1n-61-EHs"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="y11-v7-x1h">
+                                <rect key="frame" x="169" y="483" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sAN-Th-Orf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4IM-pF-fMS"/>
+                            <constraint firstItem="sAN-Th-Orf" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="7SP-76-lFa"/>
+                            <constraint firstItem="sAN-Th-Orf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ill-0G-sHX"/>
+                            <constraint firstItem="y11-v7-x1h" firstAttribute="top" secondItem="8rE-Nq-TlP" secondAttribute="bottom" id="OS3-P4-gD6"/>
+                            <constraint firstItem="8rE-Nq-TlP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q0L-EQ-9Xw"/>
+                            <constraint firstItem="6aB-DW-dKq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="coR-uX-vpS"/>
+                            <constraint firstItem="8rE-Nq-TlP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lGW-wm-KHc"/>
+                            <constraint firstItem="6aB-DW-dKq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nRJ-mZ-Vpa"/>
+                            <constraint firstItem="6aB-DW-dKq" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="rDC-pQ-dre"/>
+                            <constraint firstItem="y11-v7-x1h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="req-NB-hI4"/>
+                            <constraint firstItem="sAN-Th-Orf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sxp-u9-ON3"/>
+                            <constraint firstItem="6aB-DW-dKq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tFL-we-wpc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="j84-R3-KtJ" kind="show" identifier="balance" id="sIu-Jz-RW3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Balance View Controller-->
+        <scene sceneID="YsF-8N-CY8">
+            <objects>
+                <viewController id="j84-R3-KtJ" customClass="BalanceViewController" customModule="bio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GPz-w3-EXN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="background014.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="p44-fN-pmT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4iA-Un-dLO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BIOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kBR-CM-OhT">
+                                <rect key="frame" x="0.0" y="20" width="375" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="8RY-7b-eBV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75g-Gh-M5m">
+                                <rect key="frame" x="0.0" y="164" width="375" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="DRe-Kw-dSw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="52"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ntq-90-ITX">
+                                <rect key="frame" x="20" y="239" width="335" height="29"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.19600813356164384" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="BIO"/>
+                                    <segment title="Курсы"/>
+                                    <segment title="Купить"/>
+                                    <segment title="Продать"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ntq-90-ITX" firstAttribute="centerX" secondItem="GPz-w3-EXN" secondAttribute="centerX" id="3KC-ka-Ltm"/>
+                            <constraint firstItem="p44-fN-pmT" firstAttribute="bottom" secondItem="GPz-w3-EXN" secondAttribute="bottom" id="BPt-XP-8Z2"/>
+                            <constraint firstItem="4iA-Un-dLO" firstAttribute="leading" secondItem="Vvh-vj-q1B" secondAttribute="leading" id="HOR-f8-rGP"/>
+                            <constraint firstItem="75g-Gh-M5m" firstAttribute="centerX" secondItem="GPz-w3-EXN" secondAttribute="centerX" id="JcC-X1-LiA"/>
+                            <constraint firstItem="kBR-CM-OhT" firstAttribute="trailing" secondItem="Vvh-vj-q1B" secondAttribute="trailing" id="LuR-m5-lOY"/>
+                            <constraint firstItem="4iA-Un-dLO" firstAttribute="trailing" secondItem="Vvh-vj-q1B" secondAttribute="trailing" id="YDF-sY-Zxe"/>
+                            <constraint firstItem="4iA-Un-dLO" firstAttribute="top" secondItem="GPz-w3-EXN" secondAttribute="top" id="aLR-X5-2Qf"/>
+                            <constraint firstItem="75g-Gh-M5m" firstAttribute="leading" secondItem="Vvh-vj-q1B" secondAttribute="leading" id="cP3-k8-srK"/>
+                            <constraint firstItem="kBR-CM-OhT" firstAttribute="top" secondItem="Vvh-vj-q1B" secondAttribute="top" id="cP7-pi-9Pb"/>
+                            <constraint firstItem="kBR-CM-OhT" firstAttribute="centerX" secondItem="GPz-w3-EXN" secondAttribute="centerX" id="cQP-Ks-sfi"/>
+                            <constraint firstItem="p44-fN-pmT" firstAttribute="leading" secondItem="Vvh-vj-q1B" secondAttribute="leading" id="dCt-YE-dvz"/>
+                            <constraint firstItem="75g-Gh-M5m" firstAttribute="top" secondItem="kBR-CM-OhT" secondAttribute="bottom" constant="38" id="eOd-ke-2xz"/>
+                            <constraint firstItem="p44-fN-pmT" firstAttribute="trailing" secondItem="Vvh-vj-q1B" secondAttribute="trailing" id="iAG-OO-0KJ"/>
+                            <constraint firstItem="Vvh-vj-q1B" firstAttribute="trailing" secondItem="Ntq-90-ITX" secondAttribute="trailing" constant="20" id="j5a-ti-QtB"/>
+                            <constraint firstItem="4iA-Un-dLO" firstAttribute="bottom" secondItem="GPz-w3-EXN" secondAttribute="bottom" id="lHX-wg-tg9"/>
+                            <constraint firstItem="kBR-CM-OhT" firstAttribute="leading" secondItem="Vvh-vj-q1B" secondAttribute="leading" id="upC-2a-YkJ"/>
+                            <constraint firstItem="Ntq-90-ITX" firstAttribute="leading" secondItem="Vvh-vj-q1B" secondAttribute="leading" constant="20" id="xfB-0k-skl"/>
+                            <constraint firstItem="Ntq-90-ITX" firstAttribute="top" secondItem="75g-Gh-M5m" secondAttribute="bottom" constant="8" id="yIL-Gs-7Fn"/>
+                            <constraint firstItem="75g-Gh-M5m" firstAttribute="trailing" secondItem="Vvh-vj-q1B" secondAttribute="trailing" id="ykz-nv-BKf"/>
+                            <constraint firstItem="p44-fN-pmT" firstAttribute="top" secondItem="GPz-w3-EXN" secondAttribute="top" id="zv3-2h-1hh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vvh-vj-q1B"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nei-QL-IvP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941.60000000000002" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BIOLogo" width="253" height="80"/>
+        <image name="background001.jpg" width="3299" height="2717"/>
+        <image name="background014.jpg" width="1200" height="799"/>
+        <image name="symbol.png" width="300" height="300"/>
+    </resources>
 </document>
