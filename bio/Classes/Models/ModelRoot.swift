@@ -80,11 +80,13 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		}
 	}
 	func initWatch() {
+		
 		if WCSession.isSupported() {
 			session = WCSession.default
 			session?.delegate = self
 			session?.activate()
 		}
+		
 	}
 	
 	func syncWatch() {
@@ -155,7 +157,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		DispatchQueue.global().async {
 			// prepare auth data
 			let ServiceName = "BIO"
-			let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 			let md5src = "\(ServiceName)\(ServiceSecret)"
 			let md5digest = Crypto.md5(md5src)
 			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
@@ -211,7 +213,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		DispatchQueue.global().async {
 			// prepare auth data
 			let ServiceName = "BIO"
-			let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 			let md5src = "\(ServiceName)\(ServiceSecret)"
 			let md5digest = Crypto.md5(md5src)
 			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
@@ -259,7 +261,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		DispatchQueue.global().async {
 			// prepare auth data
 			let ServiceName = "BIO"
-			let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 			let md5src = "\(ServiceName)\(ServiceSecret)"
 			let md5digest = Crypto.md5(md5src)
 			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
@@ -315,7 +317,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		DispatchQueue.global().async {
 			// prepare auth data
 			let ServiceName = "BIO"
-			let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 			let md5src = "\(ServiceName)\(ServiceSecret)"
 			let md5digest = Crypto.md5(md5src)
 			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
@@ -358,7 +360,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 						DispatchQueue.global().async {
 							// prepare auth data
 							let ServiceName = "BIO"
-							let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+							let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 							let md5src = "\(ServiceName)\(ServiceSecret)"
 							let md5digest = Crypto.md5(md5src)
 							let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
@@ -445,7 +447,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		DispatchQueue.global().async {
 			// prepare auth data
 			let ServiceName = "BIO"
-			let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 			let md5src = "\(ServiceName)\(ServiceSecret)"
 			let md5digest = Crypto.md5(md5src)
 			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
@@ -509,7 +511,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		DispatchQueue.global().async {
 			// prepare auth data
 			let ServiceName = "BIO"
-			let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 			let md5src = "\(ServiceName)\(ServiceSecret)"
 			let md5digest = Crypto.md5(md5src)
 			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
@@ -569,7 +571,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		DispatchQueue.global().async {
 			// prepare auth data
 			let ServiceName = "BIO"
-			let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 			let md5src = "\(ServiceName)\(ServiceSecret)"
 			let md5digest = Crypto.md5(md5src)
 			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
@@ -628,7 +630,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		DispatchQueue.global().async {
 			// prepare auth data
 			let ServiceName = "BIO"
-			let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 			let md5src = "\(ServiceName)\(ServiceSecret)"
 			let md5digest = Crypto.md5(md5src)
 			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
@@ -688,7 +690,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		DispatchQueue.global().async {
 			// prepare auth data
 			let ServiceName = "BIO"
-			let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 			let md5src = "\(ServiceName)\(ServiceSecret)"
 			let md5digest = Crypto.md5(md5src)
 			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
@@ -748,7 +750,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		DispatchQueue.global().async {
 			// prepare auth data
 			let ServiceName = "BIO"
-			let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 			let md5src = "\(ServiceName)\(ServiceSecret)"
 			let md5digest = Crypto.md5(md5src)
 			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
@@ -796,7 +798,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		DispatchQueue.global().async {
 			// prepare auth data
 			let ServiceName = "BIO"
-			let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 			let md5src = "\(ServiceName)\(ServiceSecret)"
 			let md5digest = Crypto.md5(md5src)
 			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
@@ -844,7 +846,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		DispatchQueue.global().async {
 			// prepare auth data
 			let ServiceName = "BIO"
-			let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 			let md5src = "\(ServiceName)\(ServiceSecret)"
 			let md5digest = Crypto.md5(md5src)
 			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
@@ -892,7 +894,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		DispatchQueue.global().async {
 			// prepare auth data
 			let ServiceName = "BIO"
-			let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 			let md5src = "\(ServiceName)\(ServiceSecret)"
 			let md5digest = Crypto.md5(md5src)
 			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
@@ -946,7 +948,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		DispatchQueue.global().async {
 			// prepare auth data
 			let ServiceName = "BIO"
-			let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 			let md5src = "\(ServiceName)\(ServiceSecret)"
 			let md5digest = Crypto.md5(md5src)
 			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
@@ -1001,7 +1003,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		DispatchQueue.global().async {
 			// prepare auth data
 			let ServiceName = "BIO"
-			let ServiceSecret = "E0FB115E-80D8-4F4E-9701-E655AF9E84EB"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
 			let md5src = "\(ServiceName)\(ServiceSecret)"
 			let md5digest = Crypto.md5(md5src)
 			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()

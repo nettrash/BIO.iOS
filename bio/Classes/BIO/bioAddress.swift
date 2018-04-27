@@ -94,7 +94,7 @@ class bioAddress: NSObject {
 		return data.subdata(in: index..<index+length)
 	}
 	
-	static func verify(_ address: String?) -> Bool {
+	static func verifySIB(_ address: String?) -> Bool {
 		do
 		{
 			if (address == nil) {
@@ -154,7 +154,7 @@ class bioAddress: NSObject {
 		}
 	}
 	
-	static func verifyBIO(_ address: String?) -> Bool {
+	static func verify(_ address: String?) -> Bool {
 		do
 		{
 			if (address == nil) {
@@ -189,7 +189,7 @@ class bioAddress: NSObject {
 		var md = RIPEMD160()
 		md.update(data: keyHash)
 		var hashData = md.finalize()
-		hashData.insert(0x3f, at: 0)
+		hashData.insert(0x19/*0x3f*/, at: 0)
 		let hash = Crypto.sha256(Crypto.sha256(hashData))
 		hashData.append(contentsOf: hash.subdata(in: 0..<4))
 		return encodeBase58(hashData)

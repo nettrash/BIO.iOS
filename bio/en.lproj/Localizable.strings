@@ -1,0 +1,66 @@
+/* 
+  Localizable.strings
+  bio
+
+  Created by Иван Алексеев on 23.04.2018.
+  Copyright © 2018 NETTRASH. All rights reserved.
+*/
+"reloadBalance" = "loading";
+"setPIN0" = "Create PIN-code";
+"setPIN1" = "Repeat PIN-code";
+"enterPIN" = "Enter PIN-code";
+"BiometricPIN" = "Check PIN";
+"BIOLogoImageName" = "BIOLogoEn";
+"Error" = "Error";
+"Cancel" = "Cancel";
+"SendAmountError" = "Amount + Commission is greather than ";
+"SuccessSend" = "Success";
+"SuccessSendMessage" = "Information about transfer successfull sent. txid ";
+"ErrorSend" = "Error";
+"ErrorSendMessage" = "Transaction information send error. Repeat later.";
+"OK" = "OK";
+"Share" = "Share";
+"ScanNotSupport" = "Error";
+"ScanNotSupportedMsg" = "Your device does not support scanning a code from an item. Please use a device with a camera.";
+"InMemoryPool" = "in processing";
+"BIO" = "BIO";
+"SellButtonText" = "Sell for ";
+"EmptySellButtonText" = "Sell";
+"ErrorStartSell" = "Error";
+"ErrorStartSellMessage" = "Invalid form data. Please correct and repeat again. For example: The amount receivable must be more than 50.";
+"BuyButtonText" = "Buy by ";
+"EmptyBuyButtonText" = "Buy";
+"CheckOpErrorTitle" = "Error";
+"CheckOpErrorMessage" = "Can't check operation state.";
+"CheckOpDoneTitle" = "Success";
+"CheckOpDoneMessage" = "Congrats. Await BIOCoin.";
+"CheckOpCancelTitle" = "Cancel";
+"CheckOpCancelMessage" = "Operation canceled.";
+"Key" = "Password";
+"EncryptTitle" = "Encryption";
+"EncryptMessage" = "Enter password for key file encryption.";
+"EncryptPasswordErrorMessage" = "Invalid password.";
+"KeyStoreImportTitle" = "Keystore";
+"KeyStoreImportMessage" = "Keystore imported.";
+"Today" = "Today";
+"Yesterday" = "Yesterday";
+"Month" = "Current month";
+"Other" = "A long time ago";
+"RUBCommission" = "commission 30₽ for every 70000₽";
+"USDCommission" = "commission 8$ for every 1000$";
+"EURCommission" = "commission 8€ for every 1000€";
+"CopyToClipboard" = "Clipboard";
+"CopyToClipboardMessage" = "Data copied to clipboard.";
+"OtherCryptoTransferTitle" = "Sending ";
+"OtherCryptoTransferMessageAddress" = "Receipt address: ";
+"OtherCryptoTransferMessageAmount" = "Amount receivable: ";
+"OtherCryptoTransferMessageAmountBIO" = "Amount to be sent: ";
+"OtherCryptoTransferMessageCommission" = "Commission: ";
+"OtherCryptoTransferDo" = "Fulfill";
+"OtherCryptoTransferAmountTitle" = "Amount in ";
+"UpdateAvailableTitle" = "Update";
+"UpdateAvailableMessage" = "A newer version of the application appeared.";
+"Update" = "Update now";
+"SupportSubject" = "Question about BIOCoin Wallet for iOS";
+"MailTitle" = "Mail send";
+"MailServicesAreNotAvailable" = "Mail services are not available.";

@@ -12,12 +12,12 @@ import CommonCrypto
 
 public class Wallet : NSObject {
 	
-	private let KeyTypePublic: UInt8 = 0x3f
+	private let KeyTypePublic: UInt8 = 0x19//0x3f
 	private let KeyTypePrivate: UInt8 = 0x80
 	private let KeyTypeMultisign: UInt8 = 0x28
 	
-	public let Ticker: String = "SIB"
-	public let URIScheme: String = "sibcoin:"
+	public let Ticker: String = "BIO"
+	public let URIScheme: String = "biocoin:"
 	
 	private let OperationReturnMax: Int8 = 40
 	
@@ -70,7 +70,7 @@ public class Wallet : NSObject {
 	}
 	
 	public func initialize(_ secret: String) -> Void {
-		let sourceForPrivateKey: String = "SIBPrivateKey\(3571 * secret.lengthOfBytes(using: String.Encoding.ascii))\(secret)NETTRASHSIB"
+		let sourceForPrivateKey: String = "BIOPrivateKey\(3571 * secret.lengthOfBytes(using: String.Encoding.ascii))\(secret)NETTRASHBIO"
 		let sourceForPrivateKeyData: Data = sourceForPrivateKey.data(using: String.Encoding.utf8)!
 		PrivateKey = sha256(sourceForPrivateKeyData)
 		PublicKey = generatePublicKey(PrivateKey!)

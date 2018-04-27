@@ -6,3 +6,7 @@
   Copyright © 2018 NETTRASH. All rights reserved.
 */
 "CFBundleDisplayName" = "BIO";
+"NSCameraUsageDescription" = "Access to the camera for scanning QR codes for transfer details.";
+"NSPhotoLibraryAddUsageDescription" = "Access to photos to save QR-codes of recharge details.";
+"NSSiriUsageDescription" = "Access to Siri for requesting and transfering funds using voice commands.";
+"NSFaceIDUsageDescription" = "Application sign in.";

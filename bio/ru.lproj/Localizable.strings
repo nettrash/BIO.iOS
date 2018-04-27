@@ -1,0 +1,66 @@
+/* 
+  Localizable.strings
+  bio
+
+  Created by Иван Алексеев on 23.04.2018.
+  Copyright © 2018 NETTRASH. All rights reserved.
+*/
+"reloadBalance" = "обновление";
+"setPIN0" = "Задайте PIN-код";
+"setPIN1" = "Повторите его";
+"enterPIN" = "Введите PIN-код";
+"BiometricPIN" = "Проверка входа";
+"BIOLogoImageName" = "BIOLogo";
+"Error" = "Ошибка";
+"Cancel" = "Отмена";
+"SendAmountError" = "Что-то с суммами. Всего можно потратить не более ";
+"SuccessSend" = "Успех";
+"SuccessSendMessage" = "Информация об отправке успешно разослана. txid ";
+"ErrorSend" = "Ошибка";
+"ErrorSendMessage" = "При отпарвке операции произошла ошибка. Попробуйте позднее.";
+"OK" = "OK";
+"Share" = "Поделиться";
+"ScanNotSupport" = "Ошибка";
+"ScanNotSupportedMsg" = "Для распознавания кодов нужно устройство с камерой.";
+"InMemoryPool" = "в обработке";
+"BIO" = "BIO";
+"SellButtonText" = "Продать за ";
+"EmptySellButtonText" = "Продать";
+"ErrorStartSell" = "Ошибка";
+"ErrorStartSellMessage" = "Неверные данные для продажи. Проверьте корректность заполнения формы. Например: Сумма к получению должна быть не менее 50.";
+"BuyButtonText" = "Купить за ";
+"EmptyBuyButtonText" = "Купить";
+"CheckOpErrorTitle" = "Ошибка";
+"CheckOpErrorMessage" = "Не удалось проверить состояние платежа.";
+"CheckOpDoneTitle" = "Успех";
+"CheckOpDoneMessage" = "Полный успех! Ожидайте зачисления монет.";
+"CheckOpCancelTitle" = "Отмена";
+"CheckOpCancelMessage" = "Оплата отменена. Повторите попытку позже.";
+"Key" = "Пароль";
+"EncryptTitle" = "Шифрование";
+"EncryptMessage" = "Укажите пароль для шифрования файла ключей.";
+"EncryptPasswordErrorMessage" = "Пароль не от этого хранилища ключей.";
+"KeyStoreImportTitle" = "Хранилище ключей";
+"KeyStoreImportMessage" = "Импорт ключей успешно произведён.";
+"Today" = "Сегодня";
+"Yesterday" = "Вчера";
+"Month" = "В этом месяце";
+"Other" = "Совсем давно";
+"RUBCommission" = "комиссия 30₽ за каждые 70000₽";
+"USDCommission" = "комиссия 3$ за каждые 1000$";
+"EURCommission" = "комиссия 3€ ₽ за каждые 1000€";
+"CopyToClipboard" = "Буфер обмена";
+"CopyToClipboardMessage" = "Данные скопированы в буфер обмена.";
+"OtherCryptoTransferTitle" = "Отправка ";
+"OtherCryptoTransferMessageAddress" = "Адрес получения: ";
+"OtherCryptoTransferMessageAmount" = "Сумма к получению: ";
+"OtherCryptoTransferMessageAmountBIO" = "Сумма к отправке: ";
+"OtherCryptoTransferMessageCommission" = "Комиссия: ";
+"OtherCryptoTransferDo" = "Исполнить";
+"OtherCryptoTransferAmountTitle" = "Сумма в ";
+"UpdateAvailableTitle" = "Обновление";
+"UpdateAvailableMessage" = "Есть более новая версия приложения.";
+"Update" = "Обновить";
+"SupportSubject" = "Вопрос по кошельку Червонца для iOS";
+"MailTitle" = "Отправка почты";
+"MailServicesAreNotAvailable" = "Отправка почтовых сообщзений не настроена.";

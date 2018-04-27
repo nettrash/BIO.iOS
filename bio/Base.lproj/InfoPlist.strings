@@ -6,3 +6,7 @@
   Copyright © 2018 NETTRASH. All rights reserved.
 */
 "CFBundleDisplayName" = "BIO";
+"NSCameraUsageDescription" = "Доступ к камере для сканирования QR-кодов реквизитов переводов.";
+"NSPhotoLibraryAddUsageDescription" = "Доступ к фотографиям для сохранения QR-кодов реквизитов пополнения.";
+"NSSiriUsageDescription" = "Доступ к Siri для запроса средств и переводов с помощью голосовых команд.";
+"NSFaceIDUsageDescription" = "Доступ в приложение";
