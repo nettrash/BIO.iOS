@@ -196,6 +196,7 @@
 		E5C23E33207368A600C40AE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C23E31207368A600C40AE0 /* LaunchScreen.storyboard */; };
 		E5C23E3E207368A600C40AE0 /* bioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C23E3D207368A600C40AE0 /* bioTests.swift */; };
 		E5C23E49207368A600C40AE0 /* bioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C23E48207368A600C40AE0 /* bioUITests.swift */; };
+		E5C83B7D209448AF00422429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C23E29207368A400C40AE0 /* Main.storyboard */; };
 		E5F49630208A13880092AA0A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4962F208A13880092AA0A /* RootViewController.swift */; };
 		E5F49632208A13CB0092AA0A /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49631208A13CB0092AA0A /* BalanceViewController.swift */; };
 		E5F49636208A14490092AA0A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49635208A14490092AA0A /* BaseViewController.swift */; };
@@ -410,11 +411,9 @@
 		E55346DC2088AFD3007C80C5 /* symbol@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol@3x.png"; sourceTree = "<group>"; };
 		E55346DD2088AFD5007C80C5 /* symbol@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol@2x.png"; sourceTree = "<group>"; };
 		E55346E42088B291007C80C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E55346E62088B2CC007C80C5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		E55346E72088B2CC007C80C5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E55346E82088B2CC007C80C5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E55346E92088B2E6007C80C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E55346EB2088B2F4007C80C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		E55346ED2088B2F9007C80C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E55346EE2088DC59007C80C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E58BD155208DABB300C26C33 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -474,6 +473,8 @@
 		E5C23E44207368A600C40AE0 /* bioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C23E48207368A600C40AE0 /* bioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bioUITests.swift; sourceTree = "<group>"; };
 		E5C23E4A207368A600C40AE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5C83B7A2094489E00422429 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		E5C83B7C209448AA00422429 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		E5F4962F208A13880092AA0A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		E5F49631208A13CB0092AA0A /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
 		E5F49635208A14490092AA0A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -1249,6 +1250,7 @@
 				E5A85C732092F5AC0033D171 /* AlphaRedArrowDown@2x.png in Resources */,
 				E5A85C8420930BFA0033D171 /* RedArrowDown@2x.png in Resources */,
 				E5A85C6F2092F5AC0033D171 /* AlphaRedArrowDown.png in Resources */,
+				E5C83B7D209448AF00422429 /* Main.storyboard in Resources */,
 				E5A85C652092F5AC0033D171 /* back.png in Resources */,
 				E5A85C8620930BFA0033D171 /* GreenArrowUp@2x.png in Resources */,
 				E5A85C6D2092F5AC0033D171 /* back@3x.png in Resources */,
@@ -1556,8 +1558,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				E5C23E2A207368A400C40AE0 /* Base */,
-				E55346E62088B2CC007C80C5 /* ru */,
-				E55346EB2088B2F4007C80C5 /* en */,
+				E5C83B7A2094489E00422429 /* ru */,
+				E5C83B7C209448AA00422429 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

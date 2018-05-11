@@ -469,7 +469,7 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="1Bf-6g-O2C">
                                 <rect key="frame" x="169" y="387" width="37" height="37"/>
                             </activityIndicatorView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="BIOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="HuF-Xz-dby" customClass="SIBLogoImageView" customModule="sib_lite" customModuleProvider="target">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="BIOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="HuF-Xz-dby" customClass="SIBLogoImageView" customModule="bio" customModuleProvider="target">
                                 <rect key="frame" x="112" y="684" width="253" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -542,7 +542,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="BIOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MHQ-sc-Du4" customClass="SIBLogoImageView" customModule="sib_lite" customModuleProvider="target">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="BIOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MHQ-sc-Du4" customClass="SIBLogoImageView" customModule="bio" customModuleProvider="target">
                                 <rect key="frame" x="112" y="684" width="253" height="80"/>
                             </imageView>
                             <view alpha="0.40000000596046448" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8EC-qs-C9d">
@@ -575,7 +575,7 @@
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HistoryCellSelected" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryCellSelected" rowHeight="96" id="9Sa-K1-fvZ" customClass="HistoryCellSelected" customModule="sib_lite" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HistoryCellSelected" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryCellSelected" rowHeight="96" id="9Sa-K1-fvZ" customClass="HistoryCellSelected" customModule="bio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Sa-K1-fvZ" id="B8K-OF-c4Y">
@@ -662,7 +662,7 @@
                                             <outlet property="lblDate" destination="cYD-xe-sUM" id="tuX-jm-UNx"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HistoryCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryCell" rowHeight="48" id="9rX-w3-XsH" customClass="HistoryCell" customModule="sib_lite" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HistoryCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryCell" rowHeight="48" id="9rX-w3-XsH" customClass="HistoryCell" customModule="bio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="124" width="375" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9rX-w3-XsH" id="fjS-eh-VLe">
@@ -719,8 +719,8 @@
                                     <outlet property="delegate" destination="bfG-LL-Qrc" id="7TP-5P-bLW"/>
                                 </connections>
                             </tableView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Нет операций" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlb-js-fX0">
-                                <rect key="frame" x="8" y="28" width="359" height="21"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нет операций" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlb-js-fX0">
+                                <rect key="frame" x="8" y="128" width="359" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="FkF-tS-eSZ"/>
                                 </constraints>
@@ -732,15 +732,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="AV8-VK-hXy" firstAttribute="top" secondItem="028-t1-y4q" secondAttribute="bottom" constant="8" id="24S-Lp-RA3"/>
+                            <constraint firstItem="nlb-js-fX0" firstAttribute="leading" secondItem="iJm-EP-b8S" secondAttribute="leading" constant="8" id="GVH-r3-m9m"/>
                             <constraint firstItem="7Lm-7n-M42" firstAttribute="top" secondItem="iJm-EP-b8S" secondAttribute="top" id="QGH-rw-tKJ"/>
                             <constraint firstItem="028-t1-y4q" firstAttribute="top" secondItem="iJm-EP-b8S" secondAttribute="top" id="S8o-r9-d7K"/>
                             <constraint firstItem="AV8-VK-hXy" firstAttribute="trailing" secondItem="iJm-EP-b8S" secondAttribute="trailing" id="Xg8-M8-IuX"/>
                             <constraint firstItem="028-t1-y4q" firstAttribute="centerX" secondItem="foC-yF-htL" secondAttribute="centerX" id="d59-tG-bj8"/>
                             <constraint firstItem="AV8-VK-hXy" firstAttribute="leading" secondItem="iJm-EP-b8S" secondAttribute="leading" id="e8b-nh-uEE"/>
+                            <constraint firstItem="nlb-js-fX0" firstAttribute="top" secondItem="028-t1-y4q" secondAttribute="bottom" constant="43" id="h05-Ib-0UJ"/>
                             <constraint firstItem="7Lm-7n-M42" firstAttribute="leading" secondItem="iJm-EP-b8S" secondAttribute="leading" id="k1A-a4-gRi"/>
                             <constraint firstAttribute="bottom" secondItem="AV8-VK-hXy" secondAttribute="bottom" id="snc-Bp-Jje"/>
                             <constraint firstItem="iJm-EP-b8S" firstAttribute="trailing" secondItem="MHQ-sc-Du4" secondAttribute="trailing" constant="10" id="tYF-jB-gWU"/>
                             <constraint firstItem="iJm-EP-b8S" firstAttribute="bottom" secondItem="MHQ-sc-Du4" secondAttribute="bottom" constant="14" id="wFq-BI-WPp"/>
+                            <constraint firstItem="iJm-EP-b8S" firstAttribute="trailing" secondItem="nlb-js-fX0" secondAttribute="trailing" constant="8" id="zvv-WV-qGa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iJm-EP-b8S"/>
                     </view>
@@ -776,8 +779,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IX-R1-h6J">
-                                <rect key="frame" x="312" y="95" width="31" height="14.666666666666671"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IX-R1-h6J">
+                                <rect key="frame" x="312" y="95" width="31" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -795,7 +798,7 @@
                                     <action selector="closeClick:" destination="sT2-di-JUY" eventType="touchUpInside" id="kvh-nA-Srm"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="BIOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="bCB-Xp-Lgs" customClass="SIBLogoImageView" customModule="sib_lite" customModuleProvider="target">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="BIOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="bCB-Xp-Lgs" customClass="SIBLogoImageView" customModule="bio" customModuleProvider="target">
                                 <rect key="frame" x="112" y="684" width="253" height="80"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgE-xZ-zcc">
@@ -812,12 +815,9 @@
                                     <action selector="shareKeys:" destination="sT2-di-JUY" eventType="touchUpInside" id="RKe-xs-DvI"/>
                                 </connections>
                             </button>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wmX-ge-Pwu">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmX-ge-Pwu">
                                 <rect key="frame" x="30" y="160" width="313" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="Fuv-1X-SlD"/>
-                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npW-8H-8zY">
                                 <rect key="frame" x="179" y="184" width="180" height="30"/>
@@ -833,12 +833,9 @@
                                     <action selector="loadKeys:" destination="sT2-di-JUY" eventType="touchUpInside" id="7qX-bs-dte"/>
                                 </connections>
                             </button>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R9J-bi-QfS">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R9J-bi-QfS">
                                 <rect key="frame" x="31" y="212" width="313" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="IyN-v7-eCv"/>
-                                </constraints>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rK8-RE-jCV">
                                 <rect key="frame" x="31" y="256" width="313" height="29"/>
@@ -869,10 +866,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="TON-tP-QU9">
-                                        <rect key="frame" x="169" y="387.66666666666669" width="37" height="37"/>
+                                        <rect key="frame" x="169" y="388" width="37" height="37"/>
                                     </activityIndicatorView>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ulW-Xj-L5D">
-                                        <rect key="frame" x="112" y="437.66666666666669" width="150" height="2"/>
+                                        <rect key="frame" x="112" y="438" width="150" height="2"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="OdD-mB-jSG"/>
@@ -893,17 +890,21 @@
                             <constraint firstItem="U7N-01-gOv" firstAttribute="centerX" secondItem="ho3-vY-GXi" secondAttribute="centerX" id="1qs-au-V0V"/>
                             <constraint firstItem="lgE-xZ-zcc" firstAttribute="leading" secondItem="nGg-65-dSO" secondAttribute="leading" constant="16" id="2hn-v7-rty"/>
                             <constraint firstItem="Nb8-X1-rZe" firstAttribute="top" secondItem="rK8-RE-jCV" secondAttribute="bottom" constant="24" id="2rl-ph-l0k"/>
+                            <constraint firstItem="wmX-ge-Pwu" firstAttribute="bottom" secondItem="lgE-xZ-zcc" secondAttribute="bottom" id="3Hm-LH-9Td"/>
                             <constraint firstAttribute="bottom" secondItem="kko-8R-vrP" secondAttribute="bottom" id="3kD-EY-BE7"/>
                             <constraint firstItem="SMb-FL-2D1" firstAttribute="top" secondItem="nGg-65-dSO" secondAttribute="top" id="5hB-IL-LMC"/>
                             <constraint firstItem="lgE-xZ-zcc" firstAttribute="top" secondItem="U7N-01-gOv" secondAttribute="bottom" constant="46" id="8Hx-vK-08N"/>
+                            <constraint firstItem="wmX-ge-Pwu" firstAttribute="trailing" secondItem="6IX-R1-h6J" secondAttribute="trailing" id="Cyg-h3-qPV"/>
                             <constraint firstItem="nGg-65-dSO" firstAttribute="trailing" secondItem="Nb8-X1-rZe" secondAttribute="trailing" constant="29" id="Gp7-nz-KMl"/>
+                            <constraint firstItem="wmX-ge-Pwu" firstAttribute="leading" secondItem="ho3-vY-GXi" secondAttribute="leadingMargin" constant="14" id="INh-cT-fD7"/>
                             <constraint firstItem="U7N-01-gOv" firstAttribute="top" secondItem="nGg-65-dSO" secondAttribute="top" id="MDV-oK-Km0"/>
-                            <constraint firstItem="wmX-ge-Pwu" firstAttribute="top" secondItem="6IX-R1-h6J" secondAttribute="bottom" constant="50.329999999999998" id="NJV-Hd-uim"/>
+                            <constraint firstItem="R9J-bi-QfS" firstAttribute="trailing" secondItem="rK8-RE-jCV" secondAttribute="trailing" id="OHB-zE-ioE"/>
                             <constraint firstItem="kko-8R-vrP" firstAttribute="leading" secondItem="nGg-65-dSO" secondAttribute="leading" id="Oe9-7m-0wd"/>
                             <constraint firstAttribute="bottom" secondItem="7AC-Ga-5nn" secondAttribute="bottom" id="Pog-5U-5B3"/>
-                            <constraint firstItem="wmX-ge-Pwu" firstAttribute="top" secondItem="lgE-xZ-zcc" secondAttribute="bottom" constant="-1" id="S5i-fL-fKc"/>
                             <constraint firstItem="nGg-65-dSO" firstAttribute="trailing" secondItem="bCB-Xp-Lgs" secondAttribute="trailing" constant="10" id="T4H-oQ-L7I"/>
                             <constraint firstItem="7AC-Ga-5nn" firstAttribute="top" secondItem="ho3-vY-GXi" secondAttribute="top" id="UnC-Yc-irP"/>
+                            <constraint firstItem="nGg-65-dSO" firstAttribute="trailing" secondItem="6IX-R1-h6J" secondAttribute="trailing" constant="32" id="WMM-v9-qZY"/>
+                            <constraint firstItem="R9J-bi-QfS" firstAttribute="leading" secondItem="rK8-RE-jCV" secondAttribute="leading" id="bdn-1O-LgP"/>
                             <constraint firstItem="6IX-R1-h6J" firstAttribute="top" secondItem="U7N-01-gOv" secondAttribute="bottom" constant="10" id="cak-lJ-NVd"/>
                             <constraint firstItem="7AC-Ga-5nn" firstAttribute="trailing" secondItem="nGg-65-dSO" secondAttribute="trailing" id="dYe-Ag-Kla"/>
                             <constraint firstItem="nGg-65-dSO" firstAttribute="trailing" secondItem="npW-8H-8zY" secondAttribute="trailing" constant="16" id="dnn-Dk-Qad"/>
@@ -911,12 +912,14 @@
                             <constraint firstItem="kko-8R-vrP" firstAttribute="top" secondItem="ho3-vY-GXi" secondAttribute="top" id="fv9-fb-IKX"/>
                             <constraint firstItem="rK8-RE-jCV" firstAttribute="leading" secondItem="nGg-65-dSO" secondAttribute="leading" constant="31" id="gPh-Ws-ria"/>
                             <constraint firstItem="kko-8R-vrP" firstAttribute="trailing" secondItem="nGg-65-dSO" secondAttribute="trailing" id="n50-uG-XmU"/>
+                            <constraint firstItem="wmX-ge-Pwu" firstAttribute="top" secondItem="6IX-R1-h6J" secondAttribute="bottom" constant="50" id="nG8-vz-AaI"/>
                             <constraint firstItem="nGg-65-dSO" firstAttribute="trailing" secondItem="rK8-RE-jCV" secondAttribute="trailing" constant="31" id="nup-yP-7dX"/>
                             <constraint firstItem="npW-8H-8zY" firstAttribute="top" secondItem="lgE-xZ-zcc" secondAttribute="bottom" constant="23" id="pGu-KL-Evx"/>
                             <constraint firstItem="rK8-RE-jCV" firstAttribute="top" secondItem="npW-8H-8zY" secondAttribute="bottom" constant="42" id="sFJ-Mx-sk7"/>
+                            <constraint firstItem="R9J-bi-QfS" firstAttribute="top" secondItem="lgE-xZ-zcc" secondAttribute="bottom" constant="51" id="tnh-KO-7WJ"/>
                             <constraint firstItem="nGg-65-dSO" firstAttribute="bottom" secondItem="bCB-Xp-Lgs" secondAttribute="bottom" constant="14" id="vBK-7i-gmk"/>
                             <constraint firstItem="7AC-Ga-5nn" firstAttribute="leading" secondItem="nGg-65-dSO" secondAttribute="leading" id="xME-V6-Pju"/>
-                            <constraint firstItem="R9J-bi-QfS" firstAttribute="top" secondItem="U7N-01-gOv" secondAttribute="bottom" constant="127" id="ybC-3x-Jby"/>
+                            <constraint firstItem="rK8-RE-jCV" firstAttribute="top" secondItem="R9J-bi-QfS" secondAttribute="bottom" constant="43" id="xuB-1z-Cg9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nGg-65-dSO"/>
                     </view>
@@ -993,7 +996,7 @@
                                     <action selector="setAmount:" destination="cIs-2z-art" eventType="touchUpInside" id="qhV-BA-9sR"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="BIOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Rkf-Mm-JV5" customClass="SIBLogoImageView" customModule="sib_lite" customModuleProvider="target">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="BIOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Rkf-Mm-JV5" customClass="SIBLogoImageView" customModule="bio" customModuleProvider="target">
                                 <rect key="frame" x="112" y="684" width="253" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="253" id="b6w-W4-EsI"/>
@@ -1127,10 +1130,10 @@
                                     <action selector="sendClick:" destination="Let-qW-44b" eventType="touchUpInside" id="iZN-cD-GdA"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="BIOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Cf8-9I-Gej" customClass="SIBLogoImageView" customModule="sib_lite" customModuleProvider="target">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="BIOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Cf8-9I-Gej" customClass="SIBLogoImageView" customModule="bio" customModuleProvider="target">
                                 <rect key="frame" x="112" y="684" width="253" height="80"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 SIB" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6l3-LS-rat">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 BIO" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6l3-LS-rat">
                                 <rect key="frame" x="125" y="243" width="240" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="Py3-H2-9fL"/>
@@ -1223,7 +1226,7 @@
                                     <action selector="btnClose_Click:" destination="meY-VR-909" eventType="touchUpInside" id="mhu-YK-1l4"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="BIOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hYF-td-qvT" customClass="SIBLogoImageView" customModule="sib_lite" customModuleProvider="target">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="BIOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hYF-td-qvT" customClass="SIBLogoImageView" customModule="bio" customModuleProvider="target">
                                 <rect key="frame" x="16" y="44" width="343" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94" id="6kS-Rt-Z9v"/>
@@ -1318,8 +1321,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="+ 0.00 SIB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YEe-eu-SRN">
-                                                    <rect key="frame" x="61.999999999999993" y="11.999999999999998" width="79.333333333333329" height="20.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="+ 0.00 BIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YEe-eu-SRN">
+                                                    <rect key="frame" x="62.000000000000007" y="11.999999999999998" width="81.666666666666671" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1348,8 +1351,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="- 0.00 SIB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3J6-E9-LHb">
-                                                    <rect key="frame" x="61.999999999999993" y="11.999999999999998" width="76.333333333333329" height="20.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="- 0.00 BIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3J6-E9-LHb">
+                                                    <rect key="frame" x="62.000000000000007" y="11.999999999999998" width="78.666666666666671" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1378,8 +1381,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="- 0.00 SIB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ha7-Wf-3I2">
-                                                    <rect key="frame" x="57.999999999999993" y="11.999999999999998" width="76.333333333333329" height="20.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="- 0.00 BIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ha7-Wf-3I2">
+                                                    <rect key="frame" x="58.000000000000007" y="11.999999999999998" width="78.666666666666671" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1408,8 +1411,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="- 0.00 SIB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SwF-sd-OWp">
-                                                    <rect key="frame" x="57.999999999999993" y="11.999999999999998" width="76.333333333333329" height="20.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="- 0.00 BIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SwF-sd-OWp">
+                                                    <rect key="frame" x="58.000000000000007" y="11.999999999999998" width="78.666666666666671" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1499,7 +1502,7 @@
                                             <action selector="scanCad:" destination="j84-R3-KtJ" eventType="touchUpInside" id="7UI-Z0-Dba"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="кол-во червонцев" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N34-jC-mTZ">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="кол-во BIO" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N34-jC-mTZ">
                                         <rect key="frame" x="149" y="37" width="186" height="29"/>
                                         <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1610,7 +1613,7 @@
                                             <action selector="scanCad:" destination="j84-R3-KtJ" eventType="touchUpInside" id="gVq-NT-VuV"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="количество червонцев" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02A-ta-Ti9">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="количество BIO" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02A-ta-Ti9">
                                         <rect key="frame" x="8" y="37" width="327" height="29"/>
                                         <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>

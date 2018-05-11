@@ -157,6 +157,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	// UPDATE
 	
 	func checkAvailableUpdate() -> Void {
+			/*
 		DispatchQueue.main.async {
 			let manifest = NSDictionary.init(contentsOf: URL.init(string: "https://sib.sale/manifest.plist")!)
 			
@@ -185,7 +186,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 				vc?.present(alert, animated: true, completion: nil)
 				
 			}
-		}
+		}*/
 	}
 
 }

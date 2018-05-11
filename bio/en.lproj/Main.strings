@@ -1,1 +1,219 @@
 
+/* Class = "UILabel"; text = "История"; ObjectID = "028-t1-y4q"; */
+"028-t1-y4q.text" = "История";
+
+/* Class = "UITextField"; placeholder = "количество BIO"; ObjectID = "02A-ta-Ti9"; */
+"02A-ta-Ti9.placeholder" = "количество BIO";
+
+/* Class = "UILabel"; text = "PIN-код"; ObjectID = "2Ad-2k-xLL"; */
+"2Ad-2k-xLL.text" = "PIN-код";
+
+/* Class = "UIButton"; normalTitle = "создать"; ObjectID = "2el-yy-UTK"; */
+"2el-yy-UTK.normalTitle" = "создать";
+
+/* Class = "UIButton"; normalTitle = "  Пополнить"; ObjectID = "3E0-rU-L69"; */
+"3E0-rU-L69.normalTitle" = "  Пополнить";
+
+/* Class = "UILabel"; text = "- 0.00 BIO"; ObjectID = "3J6-E9-LHb"; */
+"3J6-E9-LHb.text" = "- 0.00 BIO";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "4qq-sS-O70"; */
+"4qq-sS-O70.text" = "Address";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6IX-R1-h6J"; */
+"6IX-R1-h6J.text" = "Label";
+
+/* Class = "UILabel"; text = "0.00 BIO"; ObjectID = "6l3-LS-rat"; */
+"6l3-LS-rat.text" = "0.00 BIO";
+
+/* Class = "UILabel"; text = "0.0000"; ObjectID = "75g-Gh-M5m"; */
+"75g-Gh-M5m.text" = "0.0000";
+
+/* Class = "UIButton"; normalTitle = "Поделиться"; ObjectID = "7WN-Kf-pF7"; */
+"7WN-Kf-pF7.normalTitle" = "Поделиться";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "7iE-ka-UIw"; */
+"7iE-ka-UIw.text" = "Detail";
+
+/* Class = "UITextField"; placeholder = "сумма к получению"; ObjectID = "8cL-Ab-CZ9"; */
+"8cL-Ab-CZ9.placeholder" = "сумма к получению";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "9H6-cO-tkR"; */
+"9H6-cO-tkR.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Купить"; ObjectID = "C4x-ih-4xv"; */
+"C4x-ih-4xv.normalTitle" = "Купить";
+
+/* Class = "UILabel"; text = "2017-10-17"; ObjectID = "DtB-0A-YRt"; */
+"DtB-0A-YRt.text" = "2017-10-17";
+
+/* Class = "UIButton"; normalTitle = "Установить сумму"; ObjectID = "ESo-nD-nvO"; */
+"ESo-nD-nvO.normalTitle" = "Установить сумму";
+
+/* Class = "UIButton"; normalTitle = "Продать"; ObjectID = "EeD-Mk-xGN"; */
+"EeD-Mk-xGN.normalTitle" = "Продать";
+
+/* Class = "UILabel"; text = "2017-10-17"; ObjectID = "HEG-r9-eQZ"; */
+"HEG-r9-eQZ.text" = "2017-10-17";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "ILc-lW-hTn"; */
+"ILc-lW-hTn.text" = "Detail";
+
+/* Class = "UITextField"; placeholder = "комиссия"; ObjectID = "IZe-sI-Gce"; */
+"IZe-sI-Gce.placeholder" = "комиссия";
+
+/* Class = "UITextField"; text = "0.0001"; ObjectID = "IZe-sI-Gce"; */
+"IZe-sI-Gce.text" = "0.0001";
+
+/* Class = "UITextField"; placeholder = "◦"; ObjectID = "Jfy-gK-Fel"; */
+"Jfy-gK-Fel.placeholder" = "◦";
+
+/* Class = "UITextField"; placeholder = "сумма"; ObjectID = "Jw0-xY-WZj"; */
+"Jw0-xY-WZj.placeholder" = "сумма";
+
+/* Class = "UIButton"; normalTitle = "ВВЕСТИ РУКАМИ"; ObjectID = "KTb-1f-zqm"; */
+"KTb-1f-zqm.normalTitle" = "ВВЕСТИ РУКАМИ";
+
+/* Class = "UITextField"; placeholder = "◦"; ObjectID = "LWj-Ja-Wcr"; */
+"LWj-Ja-Wcr.placeholder" = "◦";
+
+/* Class = "UILabel"; text = "операций нет"; ObjectID = "MMc-Sq-L9w"; */
+"MMc-Sq-L9w.text" = "операций нет";
+
+/* Class = "UITextField"; placeholder = "кол-во BIO"; ObjectID = "N34-jC-mTZ"; */
+"N34-jC-mTZ.placeholder" = "кол-во BIO";
+
+/* Class = "UIButton"; normalTitle = "support@bitwallet.ge"; ObjectID = "Nb8-X1-rZe"; */
+"Nb8-X1-rZe.normalTitle" = "support@bitwallet.ge";
+
+/* Class = "UISegmentedControl"; Ntq-90-ITX.segmentTitles[0] = "BIO"; ObjectID = "Ntq-90-ITX"; */
+"Ntq-90-ITX.segmentTitles[0]" = "BIO";
+
+/* Class = "UISegmentedControl"; Ntq-90-ITX.segmentTitles[1] = "Курсы"; ObjectID = "Ntq-90-ITX"; */
+"Ntq-90-ITX.segmentTitles[1]" = "Курсы";
+
+/* Class = "UISegmentedControl"; Ntq-90-ITX.segmentTitles[2] = "Купить"; ObjectID = "Ntq-90-ITX"; */
+"Ntq-90-ITX.segmentTitles[2]" = "Купить";
+
+/* Class = "UISegmentedControl"; Ntq-90-ITX.segmentTitles[3] = "Продать"; ObjectID = "Ntq-90-ITX"; */
+"Ntq-90-ITX.segmentTitles[3]" = "Продать";
+
+/* Class = "UITextField"; placeholder = "◦"; ObjectID = "Rhe-Yz-Pb2"; */
+"Rhe-Yz-Pb2.placeholder" = "◦";
+
+/* Class = "UITextField"; placeholder = "◦"; ObjectID = "SYf-H4-uHd"; */
+"SYf-H4-uHd.placeholder" = "◦";
+
+/* Class = "UILabel"; text = "2017-10-17"; ObjectID = "Sbj-5i-psQ"; */
+"Sbj-5i-psQ.text" = "2017-10-17";
+
+/* Class = "UILabel"; text = "- 0.00 BIO"; ObjectID = "SwF-sd-OWp"; */
+"SwF-sd-OWp.text" = "- 0.00 BIO";
+
+/* Class = "UILabel"; text = "Настройки"; ObjectID = "U7N-01-gOv"; */
+"U7N-01-gOv.text" = "Настройки";
+
+/* Class = "UITextField"; placeholder = "CVV"; ObjectID = "UQe-vU-Z8h"; */
+"UQe-vU-Z8h.placeholder" = "CVV";
+
+/* Class = "UITextField"; placeholder = "номер карты"; ObjectID = "WBP-3Z-lJ3"; */
+"WBP-3Z-lJ3.placeholder" = "номер карты";
+
+/* Class = "UITextField"; placeholder = "адрес получателя"; ObjectID = "YAm-vR-tb8"; */
+"YAm-vR-tb8.placeholder" = "адрес получателя";
+
+/* Class = "UILabel"; text = "+ 0.00 BIO"; ObjectID = "YEe-eu-SRN"; */
+"YEe-eu-SRN.text" = "+ 0.00 BIO";
+
+/* Class = "UILabel"; text = "Перевод"; ObjectID = "b6Z-GS-NwW"; */
+"b6Z-GS-NwW.text" = "Перевод";
+
+/* Class = "UIButton"; normalTitle = "Отправить перевод"; ObjectID = "bRs-r0-Oe8"; */
+"bRs-r0-Oe8.normalTitle" = "Отправить перевод";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "cYD-xe-sUM"; */
+"cYD-xe-sUM.text" = "Title";
+
+/* Class = "UITextField"; placeholder = "◦"; ObjectID = "dqx-o5-5jD"; */
+"dqx-o5-5jD.placeholder" = "◦";
+
+/* Class = "UIButton"; normalTitle = "  История"; ObjectID = "eRE-sJ-kOH"; */
+"eRE-sJ-kOH.normalTitle" = "  История";
+
+/* Class = "UITextField"; placeholder = "MM/YY"; ObjectID = "fG3-Qm-3KO"; */
+"fG3-Qm-3KO.placeholder" = "MM/YY";
+
+/* Class = "UITextField"; placeholder = "◦"; ObjectID = "fVL-ZL-Wxy"; */
+"fVL-ZL-Wxy.placeholder" = "◦";
+
+/* Class = "UILabel"; text = "PIN-код"; ObjectID = "gsQ-G7-dI8"; */
+"gsQ-G7-dI8.text" = "PIN-код";
+
+/* Class = "UITextField"; placeholder = "сумма"; ObjectID = "hM6-cd-WMn"; */
+"hM6-cd-WMn.placeholder" = "сумма";
+
+/* Class = "UILabel"; text = "- 0.00 BIO"; ObjectID = "ha7-Wf-3I2"; */
+"ha7-Wf-3I2.text" = "- 0.00 BIO";
+
+/* Class = "UILabel"; text = "Создать кошелёк"; ObjectID = "hvf-6m-69X"; */
+"hvf-6m-69X.text" = "Создать кошелёк";
+
+/* Class = "UIButton"; normalTitle = "Выгрузить ключи"; ObjectID = "lgE-xZ-zcc"; */
+"lgE-xZ-zcc.normalTitle" = "Выгрузить ключи";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "m2o-X5-kME"; */
+"m2o-X5-kME.text" = "Address";
+
+/* Class = "UILabel"; text = "Нет операций"; ObjectID = "nlb-js-fX0"; */
+"nlb-js-fX0.text" = "Нет операций";
+
+/* Class = "UIButton"; normalTitle = "Загрузить ключи"; ObjectID = "npW-8H-8zY"; */
+"npW-8H-8zY.normalTitle" = "Загрузить ключи";
+
+/* Class = "UITextField"; placeholder = "◦"; ObjectID = "pNr-r0-Gy5"; */
+"pNr-r0-Gy5.placeholder" = "◦";
+
+/* Class = "UISegmentedControl"; rK8-RE-jCV.segmentTitles[0] = "RUB"; ObjectID = "rK8-RE-jCV"; */
+"rK8-RE-jCV.segmentTitles[0]" = "RUB";
+
+/* Class = "UISegmentedControl"; rK8-RE-jCV.segmentTitles[1] = "USD"; ObjectID = "rK8-RE-jCV"; */
+"rK8-RE-jCV.segmentTitles[1]" = "USD";
+
+/* Class = "UISegmentedControl"; rK8-RE-jCV.segmentTitles[2] = "EUR"; ObjectID = "rK8-RE-jCV"; */
+"rK8-RE-jCV.segmentTitles[2]" = "EUR";
+
+/* Class = "UILabel"; text = "Адрес"; ObjectID = "rke-4o-tdt"; */
+"rke-4o-tdt.text" = "Адрес";
+
+/* Class = "UILabel"; text = "2017-10-17"; ObjectID = "roy-3j-XFh"; */
+"roy-3j-XFh.text" = "2017-10-17";
+
+/* Class = "UIButton"; normalTitle = "Детали"; ObjectID = "suN-Qy-mYD"; */
+"suN-Qy-mYD.normalTitle" = "Детали";
+
+/* Class = "UILabel"; text = "Сумма перевода"; ObjectID = "tJk-Oe-V73"; */
+"tJk-Oe-V73.text" = "Сумма перевода";
+
+/* Class = "UITextField"; placeholder = "◦"; ObjectID = "uIH-Nk-0K3"; */
+"uIH-Nk-0K3.placeholder" = "◦";
+
+/* Class = "UILabel"; text = "Задайте PIN-код"; ObjectID = "uz6-Mr-Enl"; */
+"uz6-Mr-Enl.text" = "Задайте PIN-код";
+
+/* Class = "UIButton"; normalTitle = "  Перевести"; ObjectID = "vM5-gU-M1B"; */
+"vM5-gU-M1B.normalTitle" = "  Перевести";
+
+/* Class = "UITextField"; placeholder = "номер карты"; ObjectID = "vYl-bg-IWz"; */
+"vYl-bg-IWz.placeholder" = "номер карты";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "wla-bR-Jce"; */
+"wla-bR-Jce.text" = "Detail";
+
+/* Class = "UITextField"; placeholder = "секретная фраза"; ObjectID = "wtc-37-3gj"; */
+"wtc-37-3gj.placeholder" = "секретная фраза";
+
+/* Class = "UILabel"; text = "Введите PIN-код"; ObjectID = "y6F-Xh-Uo3"; */
+"y6F-Xh-Uo3.text" = "Введите PIN-код";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "yMb-l6-iek"; */
+"yMb-l6-iek.text" = "Title";
