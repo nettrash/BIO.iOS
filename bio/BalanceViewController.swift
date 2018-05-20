@@ -512,7 +512,7 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 		let item = app.model!.CurrentRates.Items[indexPath.row]
 		let cell = tableView.dequeueReusableCell(withIdentifier: "RateInfo", for: indexPath)
 		cell.textLabel?.text = "1 BIO"
-		cell.detailTextLabel?.text = "~ " + (item.Currency! == "BTC" ? String(format: "%.8f", item.Rate!) : String(format: "%.2f", item.Rate!)) + " " + item.Currency!
+		cell.detailTextLabel?.text = "~ " + (item.Currency! == "RUB" ? String(format: "%.2f", item.Rate!) : String(format: "%.8f", item.Rate!)) + " " + item.Currency!
 		return cell
 	}
 	

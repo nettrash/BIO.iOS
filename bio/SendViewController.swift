@@ -318,6 +318,7 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 			if verifyData() {
 				DispatchQueue.main.sync {
 					let tx: bioTransaction = self._prepareTransaction()
+					print(tx.serialize().hexEncodedString())
 					self._sendTransaction(tx)
 					self.vWait.isHidden = false;
 				}
