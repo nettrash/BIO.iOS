@@ -204,7 +204,13 @@ class bioTransaction : NSObject {
 	func serialize() -> Data {
 		var data = [UInt8]()
 		data.append(contentsOf: Convert.toByteArray(version))
-
+		
+		let time = Convert.toByteArray(UInt32(Date().timeIntervalSince1970)-10)
+		
+		for n in time {
+			data.append(n);
+		}
+		
 		data.append(contentsOf: Convert.toVarIntByteArray(UInt64(Input.count)))
 		for i in Input {
 			data.append(contentsOf: i.outPoint.Hash.hexa2Bytes.reversed())

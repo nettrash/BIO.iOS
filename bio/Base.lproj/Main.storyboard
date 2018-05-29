@@ -364,6 +364,7 @@
                         <viewLayoutGuide key="safeArea" id="BYo-w8-cJK"/>
                     </view>
                     <connections>
+                        <outlet property="lblMode" destination="y6F-Xh-Uo3" id="xZA-jh-1wU"/>
                         <outlet property="tfPIN0" destination="Jfy-gK-Fel" id="1gf-4M-sna"/>
                         <outlet property="tfPIN1" destination="LWj-Ja-Wcr" id="O2Q-jQ-JVm"/>
                         <outlet property="tfPIN2" destination="pNr-r0-Gy5" id="R0I-xv-jBD"/>

@@ -22,10 +22,8 @@ class bioTests: XCTestCase {
     }
     
     func testCreateWallet() {
-		let w = Wallet()
-		w.initialize("test")
-		XCTAssert(w.Address == "SRcxum6SzkCLkgC3W8vzSeiVtdiPrbH9zB")
-		XCTAssert(w.WIF == "Kz45ruVNX4YRYobW6nqjCjFnjDw67rRV2ZJoq3akysBX9qQNWHNC")
+		let n = UInt32(Date().timeIntervalSince1970)
+		let a = Convert.toByteArray(n);
     }
     
     func testPerformanceExample() {
