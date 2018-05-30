@@ -61,6 +61,6 @@
 "UpdateAvailableTitle" = "Обновление";
 "UpdateAvailableMessage" = "Есть более новая версия приложения.";
 "Update" = "Обновить";
-"SupportSubject" = "Вопрос по кошельку Червонца для iOS";
+"SupportSubject" = "Вопрос по кошельку BIO для iOS";
 "MailTitle" = "Отправка почты";
 "MailServicesAreNotAvailable" = "Отправка почтовых сообщзений не настроена.";
