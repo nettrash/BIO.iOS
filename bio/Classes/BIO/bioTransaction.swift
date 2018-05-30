@@ -205,7 +205,7 @@ class bioTransaction : NSObject {
 		var data = [UInt8]()
 		data.append(contentsOf: Convert.toByteArray(version))
 		
-		let time = Convert.toByteArray(UInt32(Date().timeIntervalSince1970)-10)
+		let time = Convert.toByteArray(UInt32(Date().timeIntervalSince1970)-60)
 		
 		for n in time {
 			data.append(n);

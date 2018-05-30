@@ -11,10 +11,10 @@ import CoreData
 import CommonCrypto
 import WatchConnectivity
 
-public class ModelRoot: NSObject/*, WCSessionDelegate*/ {
+public class ModelRoot: NSObject, WCSessionDelegate {
 
 	var delegate: ModelRootDelegate?
-	//var session: WCSession?
+	var session: WCSession?
 	
 	public var Addresses: [Address] = [Address]()
 	
@@ -53,7 +53,7 @@ public class ModelRoot: NSObject/*, WCSessionDelegate*/ {
 	init(_ app: AppDelegate) {
 		super.init()
 		BIO = Wallet()
-		//initWatch()
+		initWatch()
 		reload(app)
 		currency = loadCurrency()
 	}
@@ -68,19 +68,19 @@ public class ModelRoot: NSObject/*, WCSessionDelegate*/ {
 		} catch {
 			Addresses = [Address]()
 		}
-		//syncWatch()
+		syncWatch()
 	}
 	
 	func save(_ app: AppDelegate) -> Void {
 		do {
 			let moc = app.persistentContainer.viewContext
 			try moc.save()
-			//syncWatch()
+			syncWatch()
 		} catch {
 		}
 	}
 	
-	/*func initWatch() {
+	func initWatch() {
 		
 		if WCSession.isSupported() {
 			session = WCSession.default
@@ -104,7 +104,7 @@ public class ModelRoot: NSObject/*, WCSessionDelegate*/ {
 		} else {
 			session?.activate()
 		}
-	}*/
+	}
 	
 	func setCurrency(_ curr: Currency) {
 		let defs = UserDefaults.standard
@@ -1117,7 +1117,7 @@ public class ModelRoot: NSObject/*, WCSessionDelegate*/ {
 	}
 	
 	//WCSessionDelegate
-	/*public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+	public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
 		if activationState == WCSessionActivationState.activated {
 			syncWatch()
 		}
@@ -1155,7 +1155,7 @@ public class ModelRoot: NSObject/*, WCSessionDelegate*/ {
 				session.sendMessageData(image.pngData!, replyHandler: nil, errorHandler: nil)
 			}
 		}
-	}*/
+	}
 }
 
 protocol ModelRootDelegate {

@@ -144,7 +144,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		if context.hasChanges {
 			do {
 				try context.save()
-				//model!.syncWatch()
+				model!.syncWatch()
 			} catch {
 				// Replace this implementation with code to handle the error appropriately.
 				// fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
@@ -157,9 +157,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	// UPDATE
 	
 	func checkAvailableUpdate() -> Void {
-			/*
 		DispatchQueue.main.async {
-			let manifest = NSDictionary.init(contentsOf: URL.init(string: "https://sib.sale/manifest.plist")!)
+			let manifest = NSDictionary.init(contentsOf: URL.init(string: "https://biocoin.shop/manifest.plist")!)
 			
 			let items = manifest?.value(forKey: "items") as? [NSDictionary?]
 			if items?.count ?? 0 < 1 { return }
@@ -178,7 +177,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 				
 				let alert = UIAlertController.init(title: NSLocalizedString("UpdateAvailableTitle", comment: "UpdateAvailableTitle"), message: NSLocalizedString("UpdateAvailableMessage", comment: "UpdateAvailableTitle"), preferredStyle: UIAlertControllerStyle.alert)
 				alert.addAction(UIAlertAction.init(title: NSLocalizedString("Update", comment: "Обновить"), style: UIAlertActionStyle.default, handler: { _ in
-					UIApplication.shared.open(URL.init(string: "itms-services://?action=download-manifest&url=https://sib.sale/manifest.plist")!, options: [:], completionHandler: nil)
+					UIApplication.shared.open(URL.init(string: "itms-services://?action=download-manifest&url=https://biocoin.shop/manifest.plist")!, options: [:], completionHandler: nil)
 					alert.dismiss(animated: true, completion: nil) }))
 				alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertActionStyle.cancel, handler: { _ in
 					alert.dismiss(animated: true, completion: nil) }))
@@ -186,7 +185,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 				vc?.present(alert, animated: true, completion: nil)
 				
 			}
-		}*/
+		}
 	}
 
 }
