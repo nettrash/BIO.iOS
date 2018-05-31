@@ -10,7 +10,7 @@ import Foundation
 
 class bitpayMinerFee {
 	
-	public var totalFee: UInt64?
-	public var satoshisPerByte: UInt64?
+	public var totalFee: Double?
+	public var satoshisPerByte: Double?
 	
 }

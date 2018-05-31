@@ -117,7 +117,7 @@ class bitpayInvoice {
 					exchangeRates = bitpayExchangeRates()
 					exchangeRates?.BTC = exchangeRatesSource["BTC"]
 				}
-				if let minerFeesSource = json["minerFees"] as? [String:[String:UInt64]] {
+				if let minerFeesSource = json["minerFees"] as? [String:[String:Double]] {
 					minerFees = bitpayMinerFees()
 					minerFees?.BTC = bitpayMinerFee()
 					let btcFee = minerFeesSource["BTC"]
@@ -211,7 +211,7 @@ class bitpayInvoice {
 \(itemDesc ?? "")
 		
 \(String(format: "%.2f", price!)) \(currency!)
-\(String(format: "%.8f", btcDue!)) BTC
+\(String(format: "%.8f", (btcDue ?? btcPrice)!)) BTC
 
 1 BTC = \(String(format: "%.2f", rate!)) \(currency!)
 

@@ -727,7 +727,9 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 		if app.needToProcessURL {
 			if (app.openUrl != nil) {
 				let components = URLComponents(url: app.openUrl!, resolvingAgainstBaseURL: true)
-				if components?.scheme?.lowercased() == "biocoin" {
+				if components?.scheme?.lowercased() == "sibcoin" ||
+					components?.scheme?.lowercased() == "biocoin" ||
+					components?.scheme?.lowercased() == "bitcoin" {
 					app.needToProcessURL = false
 					performSegue(withIdentifier: "send-bio", sender: components)
 				}
