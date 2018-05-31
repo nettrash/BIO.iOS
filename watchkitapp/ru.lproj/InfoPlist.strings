@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  bio
+
+  Created by Иван Алексеев on 31.05.2018.
+  Copyright © 2018 NETTRASH. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "BIO";
+"CFBundleName" = "BIO";
+

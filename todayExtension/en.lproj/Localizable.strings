@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  bio
+
+  Created by Иван Алексеев on 31.05.2018.
+  Copyright © 2018 NETTRASH. All rights reserved.
+*/
+
+"BIOLogoImageName" = "BIOLogoEn";
+"BalanceLabel" = "Balance";
+"QRLabel" = "Requisites for receive";
+"QRInfo" = "Scan QR Code at the left of this text to make receive transaction from another BIOCoin Wallet.";

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="todayExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="background002.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qJE-9v-kcL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                            </imageView>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq0-vD-tU8">
+                                <rect key="frame" x="6" y="16" width="308" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="VjF-Mn-WVq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BIOLogo" translatesAutoresizingMaskIntoConstraints="NO" id="h0Z-ag-Sh7">
+                                <rect key="frame" x="6" y="250" width="73" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="a1n-qO-0c0"/>
+                                    <constraint firstAttribute="height" constant="24" id="xYh-Q7-44L"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Баланс" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35t-Xo-OsE">
+                                <rect key="frame" x="12" y="6" width="296" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="FLI-2j-e3B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Реквизиты получения" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9V-eI-8kw">
+                                <rect key="frame" x="12" y="90" width="296" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="laV-fG-Q9J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9oA-WG-7aQ">
+                                <rect key="frame" x="12" y="119" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="lDd-A2-zVy"/>
+                                    <constraint firstAttribute="height" constant="120" id="qra-89-g0k"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Просканируйте любым кошельком Сибирского Червонца код слева от этого текста для перевода пополнения Вашего баланса." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWG-5h-l9w">
+                                <rect key="frame" x="151" y="119" width="157" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="6IQ-ic-TmI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="n1Q-Th-cvT">
+                                <rect key="frame" x="267" y="35" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="qJE-9v-kcL" firstAttribute="trailing" secondItem="ssy-KU-ocm" secondAttribute="trailing" id="1lN-UN-Xs1"/>
+                            <constraint firstItem="n1Q-Th-cvT" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="35" id="6X8-Yd-JSq"/>
+                            <constraint firstItem="Xq0-vD-tU8" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="6" id="83e-gc-ksx"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="fWG-5h-l9w" secondAttribute="trailing" constant="12" id="9vI-Sa-sNQ"/>
+                            <constraint firstItem="qJE-9v-kcL" firstAttribute="bottom" secondItem="ssy-KU-ocm" secondAttribute="bottom" id="Dmy-Fg-78H"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="n1Q-Th-cvT" secondAttribute="trailing" constant="16" id="EYQ-Hx-CFW"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="35t-Xo-OsE" secondAttribute="trailing" constant="12" id="HTe-g7-hyz"/>
+                            <constraint firstItem="h0Z-ag-Sh7" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="6" id="IZm-OH-ktW"/>
+                            <constraint firstItem="9oA-WG-7aQ" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="12" id="Jpt-Ox-uJz"/>
+                            <constraint firstItem="fWG-5h-l9w" firstAttribute="top" secondItem="a9V-eI-8kw" secondAttribute="bottom" constant="8" id="LLf-Ul-UY6"/>
+                            <constraint firstItem="fWG-5h-l9w" firstAttribute="leading" secondItem="9oA-WG-7aQ" secondAttribute="trailing" constant="19" id="OEd-0n-CZe"/>
+                            <constraint firstItem="35t-Xo-OsE" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="12" id="OzH-nM-Ed2"/>
+                            <constraint firstItem="qJE-9v-kcL" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="QlX-s3-DJn"/>
+                            <constraint firstItem="a9V-eI-8kw" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="12" id="REL-aX-A3K"/>
+                            <constraint firstItem="35t-Xo-OsE" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="6" id="SeF-i8-XbT"/>
+                            <constraint firstItem="Xq0-vD-tU8" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="16" id="U4s-Bb-g20"/>
+                            <constraint firstItem="9oA-WG-7aQ" firstAttribute="top" secondItem="a9V-eI-8kw" secondAttribute="bottom" constant="8" id="acH-YB-wXf"/>
+                            <constraint firstItem="a9V-eI-8kw" firstAttribute="top" secondItem="Xq0-vD-tU8" secondAttribute="bottom" id="eW8-xo-MIG"/>
+                            <constraint firstItem="qJE-9v-kcL" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="fZG-Ap-Pvd"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="a9V-eI-8kw" secondAttribute="trailing" constant="12" id="gGR-ao-V2x"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="h0Z-ag-Sh7" secondAttribute="bottom" constant="6" id="hKK-CK-DZi"/>
+                            <constraint firstItem="9oA-WG-7aQ" firstAttribute="top" secondItem="a9V-eI-8kw" secondAttribute="bottom" constant="8" id="qrf-7X-wFI"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="Xq0-vD-tU8" secondAttribute="trailing" constant="6" id="yFp-UY-eA8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="280"/>
+                    <connections>
+                        <outlet property="aiWait" destination="n1Q-Th-cvT" id="gZI-Mt-uwB"/>
+                        <outlet property="imgLogo" destination="h0Z-ag-Sh7" id="cg4-Z1-85g"/>
+                        <outlet property="imgQR" destination="9oA-WG-7aQ" id="ZiZ-4a-VV5"/>
+                        <outlet property="lblBalance" destination="Xq0-vD-tU8" id="aOd-DG-Dqp"/>
+                        <outlet property="lblBalanceLabel" destination="35t-Xo-OsE" id="tEh-ul-IgE"/>
+                        <outlet property="lblQRInfo" destination="fWG-5h-l9w" id="d3Y-li-8xq"/>
+                        <outlet property="lblQRLabel" destination="a9V-eI-8kw" id="5cD-9n-qor"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="-73"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BIOLogo" width="253" height="80"/>
+        <image name="background002.jpg" width="2997" height="2000"/>
+    </resources>
+</document>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchkitapp" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="overlap" id="eJi-Ac-mi9">
+                            <items>
+                                <imageView width="1" height="1" alignment="center" verticalAlignment="center" image="WKBackground" contentMode="scaleAspectFill" id="L61-pk-Gn6"/>
+                                <imageView width="1" height="48" alignment="center" image="BIOLogo" contentMode="scaleAspectFit" id="Je1-B5-yQJ"/>
+                                <label width="1" height="148" alignment="center" verticalAlignment="bottom" text="10000.00" textAlignment="center" id="26n-kf-iZS">
+                                    <fontDescription key="font" type="system" pointSize="24"/>
+                                </label>
+                            </items>
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="ZjD-l1-T2w">
+                                    <connections>
+                                        <action selector="refreshTap:" destination="AgC-eL-Hgc" id="Sui-D4-6bO"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="imgBack" destination="L61-pk-Gn6" id="UfP-do-uGi"/>
+                        <outlet property="imgLogo" destination="Je1-B5-yQJ" id="zbs-yK-ewI"/>
+                        <outlet property="lblBalance" destination="26n-kf-iZS" id="ZUA-TL-ss3"/>
+                        <segue destination="F8S-7s-Bg8" kind="relationship" relationship="nextPage" id="Z7A-uo-KBE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Receive Controller-->
+        <scene sceneID="19J-IE-e9o">
+            <objects>
+                <controller id="F8S-7s-Bg8" customClass="QRReceiveController" customModule="watchkitapp_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="overlap" id="Zbn-1b-qre">
+                            <items>
+                                <imageView width="1" height="1" alignment="center" verticalAlignment="center" image="WKBackground" contentMode="scaleAspectFill" id="HHe-CE-aze"/>
+                                <imageView width="110" height="110" alignment="center" verticalAlignment="center" id="emS-ae-zV9"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="imgBack" destination="HHe-CE-aze" id="j8Z-4R-EX5"/>
+                        <outlet property="imgQR" destination="emS-ae-zV9" id="zk0-MQ-aNL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="482" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="watchkitapp" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

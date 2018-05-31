@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  bio
+
+  Created by Иван Алексеев on 31.05.2018.
+  Copyright © 2018 NETTRASH. All rights reserved.
+*/
+
+"BIOLogoImageName" = "BIOLogo";
+"BalanceLabel" = "Баланс";
+"QRLabel" = "Реквизиты для пополнения";
+"QRInfo" = "Просканируйте любым кошельком BIO код слева от этого текста для перевода пополнения Вашего баланса.";
