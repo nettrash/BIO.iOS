@@ -294,6 +294,17 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 				tfAmount.becomeFirstResponder()
 				return false
 			} else {
+				if bioAddress.verifyBTC(txtAfterUpdate) {
+					textField.text = ""
+					processOtherCrypto(.BTC, txtAfterUpdate, nil, nil)
+					return false
+				} else {
+					if bioAddress.verifySIB(txtAfterUpdate) {
+						textField.text = ""
+						processOtherCrypto(.SIB, txtAfterUpdate, nil, nil)
+						return false
+					}
+				}
 				textField.backgroundColor = UIColor(displayP3Red: 1, green: 0.9, blue: 0.9, alpha: 0.8)
 			}
 		}
