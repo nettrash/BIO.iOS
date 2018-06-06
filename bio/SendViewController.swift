@@ -249,6 +249,7 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 			}
 		}
 		tx.addChange(amount: spent - _amount! - _commission!)
+		print(tx.serialize().hexEncodedString())
 		return tx
 	}
 	

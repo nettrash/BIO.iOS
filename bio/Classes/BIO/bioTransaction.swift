@@ -23,6 +23,8 @@ class bioTransaction : NSObject {
 	
 	var Change: Wallet? = nil
 	
+	let txtime: UInt32 = UInt32(Date().timeIntervalSince1970 - 10)
+	
 	override init() {
 		super.init()
 		self.Change = Wallet()
@@ -205,10 +207,12 @@ class bioTransaction : NSObject {
 		var data = [UInt8]()
 		data.append(contentsOf: Convert.toByteArray(version))
 		
-		let time = Convert.toByteArray(UInt32(Date().timeIntervalSince1970)-60)
+		let btxtime = Convert.toByteArray(txtime)
 		
-		for n in time {
-			data.append(n);
+		data.append(UInt8(0))
+		
+		for b in btxtime[1...3] {
+			data.append(b)
 		}
 		
 		data.append(contentsOf: Convert.toVarIntByteArray(UInt64(Input.count)))
