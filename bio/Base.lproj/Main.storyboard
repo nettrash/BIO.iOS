@@ -1295,7 +1295,7 @@
                                     <constraint firstAttribute="height" constant="106" id="8RY-7b-eBV"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75g-Gh-M5m">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75g-Gh-M5m">
                                 <rect key="frame" x="0.0" y="188" width="375" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="DRe-Kw-dSw"/>
@@ -1304,7 +1304,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="6RF-8k-RKr" appends="YES" id="tRa-f5-Agg"/>
+                                    <outletCollection property="gestureRecognizers" destination="6RF-8k-RKr" appends="YES" id="LAr-Tt-qhv"/>
                                 </connections>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ntq-90-ITX">
@@ -1886,7 +1886,7 @@
                 </swipeGestureRecognizer>
                 <tapGestureRecognizer id="6RF-8k-RKr">
                     <connections>
-                        <action selector="refreshBalanceClick:" destination="j84-R3-KtJ" id="dbd-NG-mLs"/>
+                        <action selector="refreshBalanceClick:" destination="j84-R3-KtJ" id="nJa-4z-DUj"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
