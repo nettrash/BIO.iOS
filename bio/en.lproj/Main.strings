@@ -63,7 +63,7 @@
 "IZe-sI-Gce.placeholder" = "комиссия";
 
 /* Class = "UITextField"; text = "0.0001"; ObjectID = "IZe-sI-Gce"; */
-"IZe-sI-Gce.text" = "0.0001";
+"IZe-sI-Gce.text" = "0.0000";
 
 /* Class = "UITextField"; placeholder = "◦"; ObjectID = "Jfy-gK-Fel"; */
 "Jfy-gK-Fel.placeholder" = "◦";

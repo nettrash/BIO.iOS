@@ -222,7 +222,7 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 	func verifyData() -> Bool {
 		DispatchQueue.main.sync {
 			_amount = Double(tfAmount.text!.replacingOccurrences(of: ",", with: ".", options: .literal, range: nil))
-			_commission = Double(tfCommission.text!.replacingOccurrences(of: ",", with: ".", options: .literal, range: nil))
+			_commission = Double(0)//Double(tfCommission.text!.replacingOccurrences(of: ",", with: ".", options: .literal, range: nil))
 			_unspentAmount = 0
 			if _unspent?.Items.count ?? 0 > 0 {
 				for u in _unspent!.Items {
@@ -312,7 +312,7 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 		
 		if textField == tfAmount {
 			let amount = Double(txtAfterUpdate.replacingOccurrences(of: ",", with: ".", options: .literal, range: nil))
-			let commission = Double(0.001 * (amount ?? 0))
+			let commission = Double(0)//Double(0.001 * (amount ?? 0))
 			self.tfCommission.text = String(format: "%.4f", commission)
 			if self.app.model!.Balance < (amount ?? 0) + commission {
 				textField.backgroundColor = UIColor(displayP3Red: 1, green: 0.9, blue: 0.9, alpha: 0.8)
@@ -354,7 +354,7 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 		_unspent = data
 		if (self._otherInvoice != nil) {
 			//prepare signed transaction data to pay invoice
-			self._commission = Double(0.001 * (self._amount ?? 0))
+			self._commission = Double(0)//Double(0.001 * (self._amount ?? 0))
 			let tx: bioTransaction = self._prepareTransaction()
 			app.model!.storeWallet(tx.Change!, true, .Change) //В слычае неуспеха отправки надо удалять
 			let sign = tx.sign(app.model!.Addresses)
@@ -423,7 +423,7 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 	func updateSellRate() {
 		DispatchQueue.main.async {
 			self._amount = (self._otherAmount! as NSDecimalNumber).doubleValue / self.app.model!.sellRate
-			let commission = Double(0.001 * (self._amount ?? 0))
+			let commission = Double(0)//Double(0.001 * (self._amount ?? 0))
 			if self.app.model!.Balance < (self._amount ?? 0) + commission {
 				self.vWait.isHidden = true
 				
