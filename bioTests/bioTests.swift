@@ -20,17 +20,21 @@ class bioTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testCreateWallet() {
-		let n = UInt32(Date().timeIntervalSince1970)
-		let a = Convert.toByteArray(n);
-    }
-    
+	
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
         }
     }
+	
+	func testMultisig() {
+		let addr = "94ncrFySg9QGBWngfNKkUVe3aB6b1cZ5M7"
+		let _ = bioAddress.spendToScript(addr)
+		assert(bioAddress.verify(addr))
+		let addr2 = "B9Q4NskVvn82yQErcdJUdtit3uktEQTCX8"
+		let _ = bioAddress.spendToScript(addr2)
+		assert(bioAddress.verify(addr2))
+	}
     
 }
