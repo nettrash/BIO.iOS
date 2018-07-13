@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "static PersistentContainer.defaultDirectoryURL():PersistentContainer.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: &quot;group.ru.nettrash.biocoinwallet-bw&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "bioTransaction.serialize():bioTransaction.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "INT64_MAX">
+            </PersistentString>
+            <PersistentString
+               value = "time.bitPattern">
+            </PersistentString>
+            <PersistentString
+               value = "UInt64(INT64_MAX)">
+            </PersistentString>
+            <PersistentString
+               value = "time.bitPattern+UInt64(INT64_MAX)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in SendViewController.unspetData(_:):SendViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

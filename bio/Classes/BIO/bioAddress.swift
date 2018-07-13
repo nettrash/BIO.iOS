@@ -211,7 +211,7 @@ class bioAddress: NSObject {
 		let version = addrBytes[0]
 		
 		var retVal: [UInt8] = []
-		if version != 20 {
+		if version != 20 { //multisig
 			retVal.append(118) //OP_DUP
 		}
 		retVal.append(169) //HASH_160
@@ -237,7 +237,7 @@ class bioAddress: NSObject {
 			}
 		}
 		retVal.append(contentsOf: addrBytes[1..<addrBytes.count-4])
-		if version != 5 {
+		if version != 20 { //multisig
 			retVal.append(136) //OP_EQUALVERIFY
 			retVal.append(172) //OP_CHECKSIG
 		} else {
