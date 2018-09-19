@@ -273,11 +273,6 @@
 		E5F4965A208A16930092AA0A /* IntegerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49652208A16930092AA0A /* IntegerExtensions.swift */; };
 		E5F4965B208A16930092AA0A /* ApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49653208A16930092AA0A /* ApplicationExtension.swift */; };
 		E5F4965C208A16930092AA0A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49654208A16930092AA0A /* StringExtensions.swift */; };
-		E5F4966F208A1AAA0092AA0A /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F49666208A1AA90092AA0A /* CommonCrypto.framework */; };
-		E5F49676208A1AAA0092AA0A /* CommonCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49675208A1AAA0092AA0A /* CommonCryptoTests.swift */; };
-		E5F49678208A1AAA0092AA0A /* CommonCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = E5F49668208A1AAA0092AA0A /* CommonCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5F4968A208A1AFB0092AA0A /* CommonCrypto.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E5F49688208A1AFB0092AA0A /* CommonCrypto.xcconfig */; };
-		E5F4968B208A1B490092AA0A /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F49666208A1AA90092AA0A /* CommonCrypto.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E5F4968F208A1D320092AA0A /* PersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F4968E208A1D320092AA0A /* PersistentContainer.swift */; };
 		E5F49693208A21E70092AA0A /* BigInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49692208A21E70092AA0A /* BigInteger.swift */; };
 		E5F49696208A22310092AA0A /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F49695208A22310092AA0A /* Convert.swift */; };
@@ -397,27 +392,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = E5D4CED820BFCD8400F8765A;
 			remoteInfo = watchkitapp;
-		};
-		E5F49670208A1AAA0092AA0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E5C23E1A207368A400C40AE0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E5F49665208A1AA90092AA0A;
-			remoteInfo = CommonCrypto;
-		};
-		E5F49672208A1AAA0092AA0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E5C23E1A207368A400C40AE0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E5C23E21207368A400C40AE0;
-			remoteInfo = bio;
-		};
-		E5F4968C208A1BC50092AA0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E5C23E1A207368A400C40AE0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E5F49665208A1AA90092AA0A;
-			remoteInfo = CommonCrypto;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -638,18 +612,6 @@
 		E5F49652208A16930092AA0A /* IntegerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerExtensions.swift; sourceTree = "<group>"; };
 		E5F49653208A16930092AA0A /* ApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationExtension.swift; sourceTree = "<group>"; };
 		E5F49654208A16930092AA0A /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
-		E5F49666208A1AA90092AA0A /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5F49668208A1AAA0092AA0A /* CommonCrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonCrypto.h; sourceTree = "<group>"; };
-		E5F49669208A1AAA0092AA0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5F4966E208A1AAA0092AA0A /* CommonCryptoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonCryptoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5F49675208A1AAA0092AA0A /* CommonCryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCryptoTests.swift; sourceTree = "<group>"; };
-		E5F49677208A1AAA0092AA0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5F49684208A1AFB0092AA0A /* watchos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchos.modulemap; sourceTree = "<group>"; };
-		E5F49685208A1AFB0092AA0A /* iphoneos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = "<group>"; };
-		E5F49686208A1AFB0092AA0A /* macosx.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = macosx.modulemap; sourceTree = "<group>"; };
-		E5F49687208A1AFB0092AA0A /* watchsimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchsimulator.modulemap; sourceTree = "<group>"; };
-		E5F49688208A1AFB0092AA0A /* CommonCrypto.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CommonCrypto.xcconfig; sourceTree = "<group>"; };
-		E5F49689208A1AFB0092AA0A /* iphonesimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = "<group>"; };
 		E5F4968E208A1D320092AA0A /* PersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContainer.swift; sourceTree = "<group>"; };
 		E5F49690208A1D550092AA0A /* bio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = bio.entitlements; sourceTree = "<group>"; };
 		E5F49692208A21E70092AA0A /* BigInteger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigInteger.swift; sourceTree = "<group>"; };
@@ -699,7 +661,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5A85C482092EE2D0033D171 /* CardIO.framework in Frameworks */,
-				E5F4968B208A1B490092AA0A /* CommonCrypto.framework in Frameworks */,
 				E5F4964B208A162D0092AA0A /* PassKit.framework in Frameworks */,
 				E5F49649208A160C0092AA0A /* CoreData.framework in Frameworks */,
 				E5F49647208A16000092AA0A /* LocalAuthentication.framework in Frameworks */,
@@ -740,21 +701,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E5F49662208A1AA90092AA0A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E5F4966B208A1AAA0092AA0A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5F4966F208A1AAA0092AA0A /* CommonCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -858,8 +804,6 @@
 				E5C23E24207368A400C40AE0 /* bio */,
 				E5C23E3C207368A600C40AE0 /* bioTests */,
 				E5C23E47207368A600C40AE0 /* bioUITests */,
-				E5F49667208A1AAA0092AA0A /* CommonCrypto */,
-				E5F49674208A1AAA0092AA0A /* CommonCryptoTests */,
 				E5D4CE9820BFC1DB00F8765A /* todayExtension */,
 				E5D4CEDA20BFCD8400F8765A /* watchkitapp */,
 				E5D4CEE920BFCD8C00F8765A /* watchkitapp Extension */,
@@ -875,8 +819,6 @@
 				E5C23E22207368A400C40AE0 /* bio.app */,
 				E5C23E39207368A600C40AE0 /* bioTests.xctest */,
 				E5C23E44207368A600C40AE0 /* bioUITests.xctest */,
-				E5F49666208A1AA90092AA0A /* CommonCrypto.framework */,
-				E5F4966E208A1AAA0092AA0A /* CommonCryptoTests.xctest */,
 				E5D4CE9520BFC1DB00F8765A /* todayExtension.appex */,
 				E5D4CED920BFCD8400F8765A /* watchkitapp.app */,
 				E5D4CEE520BFCD8C00F8765A /* watchkitapp Extension.appex */,
@@ -1027,30 +969,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		E5F49667208A1AAA0092AA0A /* CommonCrypto */ = {
-			isa = PBXGroup;
-			children = (
-				E5F49688208A1AFB0092AA0A /* CommonCrypto.xcconfig */,
-				E5F49685208A1AFB0092AA0A /* iphoneos.modulemap */,
-				E5F49689208A1AFB0092AA0A /* iphonesimulator.modulemap */,
-				E5F49686208A1AFB0092AA0A /* macosx.modulemap */,
-				E5F49684208A1AFB0092AA0A /* watchos.modulemap */,
-				E5F49687208A1AFB0092AA0A /* watchsimulator.modulemap */,
-				E5F49668208A1AAA0092AA0A /* CommonCrypto.h */,
-				E5F49669208A1AAA0092AA0A /* Info.plist */,
-			);
-			path = CommonCrypto;
-			sourceTree = "<group>";
-		};
-		E5F49674208A1AAA0092AA0A /* CommonCryptoTests */ = {
-			isa = PBXGroup;
-			children = (
-				E5F49675208A1AAA0092AA0A /* CommonCryptoTests.swift */,
-				E5F49677208A1AAA0092AA0A /* Info.plist */,
-			);
-			path = CommonCryptoTests;
-			sourceTree = "<group>";
-		};
 		E5F49691208A21C30092AA0A /* Math */ = {
 			isa = PBXGroup;
 			children = (
@@ -1143,17 +1061,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		E5F49663208A1AA90092AA0A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5F49678208A1AAA0092AA0A /* CommonCrypto.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		E5C23E21207368A400C40AE0 /* bio */ = {
 			isa = PBXNativeTarget;
@@ -1169,7 +1076,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				E5F4968D208A1BC50092AA0A /* PBXTargetDependency */,
 				E5A85C4D2092EE510033D171 /* PBXTargetDependency */,
 				E5D4CEA020BFC1DE00F8765A /* PBXTargetDependency */,
 				E5D4CEF520BFCD8C00F8765A /* PBXTargetDependency */,
@@ -1266,43 +1172,6 @@
 			productReference = E5D4CEE520BFCD8C00F8765A /* watchkitapp Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
-		E5F49665208A1AA90092AA0A /* CommonCrypto */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E5F4967D208A1AAA0092AA0A /* Build configuration list for PBXNativeTarget "CommonCrypto" */;
-			buildPhases = (
-				E5F49661208A1AA90092AA0A /* Sources */,
-				E5F49662208A1AA90092AA0A /* Frameworks */,
-				E5F49663208A1AA90092AA0A /* Headers */,
-				E5F49664208A1AA90092AA0A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CommonCrypto;
-			productName = CommonCrypto;
-			productReference = E5F49666208A1AA90092AA0A /* CommonCrypto.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E5F4966D208A1AAA0092AA0A /* CommonCryptoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E5F49681208A1AAA0092AA0A /* Build configuration list for PBXNativeTarget "CommonCryptoTests" */;
-			buildPhases = (
-				E5F4966A208A1AAA0092AA0A /* Sources */,
-				E5F4966B208A1AAA0092AA0A /* Frameworks */,
-				E5F4966C208A1AAA0092AA0A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E5F49671208A1AAA0092AA0A /* PBXTargetDependency */,
-				E5F49673208A1AAA0092AA0A /* PBXTargetDependency */,
-			);
-			name = CommonCryptoTests;
-			productName = CommonCryptoTests;
-			productReference = E5F4966E208A1AAA0092AA0A /* CommonCryptoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1372,13 +1241,6 @@
 							};
 						};
 					};
-					E5F49665208A1AA90092AA0A = {
-						CreatedOnToolsVersion = 9.3;
-					};
-					E5F4966D208A1AAA0092AA0A = {
-						CreatedOnToolsVersion = 9.3;
-						TestTargetID = E5C23E21207368A400C40AE0;
-					};
 				};
 			};
 			buildConfigurationList = E5C23E1D207368A400C40AE0 /* Build configuration list for PBXProject "bio" */;
@@ -1404,8 +1266,6 @@
 				E5C23E21207368A400C40AE0 /* bio */,
 				E5C23E38207368A600C40AE0 /* bioTests */,
 				E5C23E43207368A600C40AE0 /* bioUITests */,
-				E5F49665208A1AA90092AA0A /* CommonCrypto */,
-				E5F4966D208A1AAA0092AA0A /* CommonCryptoTests */,
 				E5D4CE9420BFC1DB00F8765A /* todayExtension */,
 				E5D4CED820BFCD8400F8765A /* watchkitapp */,
 				E5D4CEE420BFCD8C00F8765A /* watchkitapp Extension */,
@@ -1632,21 +1492,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5F49664208A1AA90092AA0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5F4968A208A1AFB0092AA0A /* CommonCrypto.xcconfig in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E5F4966C208A1AAA0092AA0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1836,21 +1681,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5F49661208A1AA90092AA0A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E5F4966A208A1AAA0092AA0A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E5F49676208A1AAA0092AA0A /* CommonCryptoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1883,21 +1713,6 @@
 			isa = PBXTargetDependency;
 			target = E5D4CED820BFCD8400F8765A /* watchkitapp */;
 			targetProxy = E5D4CEF420BFCD8C00F8765A /* PBXContainerItemProxy */;
-		};
-		E5F49671208A1AAA0092AA0A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E5F49665208A1AA90092AA0A /* CommonCrypto */;
-			targetProxy = E5F49670208A1AAA0092AA0A /* PBXContainerItemProxy */;
-		};
-		E5F49673208A1AAA0092AA0A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E5C23E21207368A400C40AE0 /* bio */;
-			targetProxy = E5F49672208A1AAA0092AA0A /* PBXContainerItemProxy */;
-		};
-		E5F4968D208A1BC50092AA0A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E5F49665208A1AA90092AA0A /* CommonCrypto */;
-			targetProxy = E5F4968C208A1BC50092AA0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2182,7 +1997,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.bio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -2208,7 +2023,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.bio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -2228,7 +2043,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.bioTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bio.app/bio";
 			};
@@ -2249,7 +2064,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.bioTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bio.app/bio";
 			};
@@ -2269,7 +2084,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.bioUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = bio;
 			};
@@ -2289,7 +2104,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.bioUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = bio;
 			};
@@ -2316,7 +2131,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.bio.todayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2342,7 +2157,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.bio.todayExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -2372,7 +2187,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "watchkitapp Extension/watchkitapp Extension-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
@@ -2402,7 +2217,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "watchkitapp Extension/watchkitapp Extension-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
@@ -2427,7 +2242,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
 			};
@@ -2452,131 +2267,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
-			};
-			name = Release;
-		};
-		E5F4967E208A1AAA0092AA0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = L3973VL47F;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CommonCrypto/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				"MODULEMAP_FILE[sdk=iphoneos*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/iphoneos.modulemap";
-				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/iphonesimulator.modulemap";
-				"MODULEMAP_FILE[sdk=macosx*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/macosx.modulemap";
-				"MODULEMAP_FILE[sdk=watchos*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/watchos.modulemap";
-				"MODULEMAP_FILE[sdk=watchsimulator*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/watchsimulator.modulemap";
-				OTHER_LDFLAGS = (
-					"-lstdc++",
-					"-lc++",
-					"-ObjC",
-				);
-				PRELINK_FLAGS = "-objc_api_version 2";
-				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.CommonCrypto;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E5F4967F208A1AAA0092AA0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = L3973VL47F;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CommonCrypto/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				"MODULEMAP_FILE[sdk=iphoneos*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/iphoneos.modulemap";
-				"MODULEMAP_FILE[sdk=iphonesimulator*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/iphonesimulator.modulemap";
-				"MODULEMAP_FILE[sdk=macosx*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/macosx.modulemap";
-				"MODULEMAP_FILE[sdk=watchos*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/watchos.modulemap";
-				"MODULEMAP_FILE[sdk=watchsimulator*]" = "/Volumes/NETTRASH DATA/Develop/iOS/bio/CommonCrypto/watchsimulator.modulemap";
-				OTHER_LDFLAGS = (
-					"-lstdc++",
-					"-lc++",
-					"-ObjC",
-				);
-				PRELINK_FLAGS = "-objc_api_version 2";
-				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.CommonCrypto;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E5F49682208A1AAA0092AA0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L3973VL47F;
-				INFOPLIST_FILE = CommonCryptoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.CommonCryptoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bio.app/bio";
-			};
-			name = Debug;
-		};
-		E5F49683208A1AAA0092AA0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L3973VL47F;
-				INFOPLIST_FILE = CommonCryptoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.nettrash.CommonCryptoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bio.app/bio";
 			};
 			name = Release;
 		};
@@ -2642,24 +2335,6 @@
 			buildConfigurations = (
 				E5D4CEFC20BFCD8C00F8765A /* Debug */,
 				E5D4CEFD20BFCD8C00F8765A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E5F4967D208A1AAA0092AA0A /* Build configuration list for PBXNativeTarget "CommonCrypto" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E5F4967E208A1AAA0092AA0A /* Debug */,
-				E5F4967F208A1AAA0092AA0A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E5F49681208A1AAA0092AA0A /* Build configuration list for PBXNativeTarget "CommonCryptoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E5F49682208A1AAA0092AA0A /* Debug */,
-				E5F49683208A1AAA0092AA0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

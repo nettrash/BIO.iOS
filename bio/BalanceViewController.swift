@@ -40,6 +40,7 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 	@IBOutlet var lblSellRate: UILabel!
 	@IBOutlet var lblBuyRate: UILabel!
 	@IBOutlet var btnSettings: UIButton!
+	@IBOutlet var btnGetBIOCard: UIButton!
 	
 	var refreshControl: UIRefreshControl!
 	var refreshControlRates: UIRefreshControl!
@@ -76,8 +77,8 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 		refreshControlRates.tintColor = UIColor.white
 		tblRate.addSubview(refreshControlRates)
 		
-		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -105,7 +106,7 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 	}
 	
 	@objc func keyboardWillShow(notification: NSNotification) {
-		if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+		if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
 			if self.view.frame.origin.y == 0 {
 				self.view.frame.origin.y -= keyboardSize.height / 2
 			}
@@ -113,7 +114,7 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 	}
 	
 	@objc func keyboardWillHide(notification: NSNotification) {
-		if ((notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue) != nil {
+		if ((notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue) != nil {
 			if self.view.frame.origin.y != 0 {
 				self.view.frame.origin.y = 0//+= keyboardSize.height / 2
 			}
@@ -167,6 +168,11 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 				dst.fileUrl = url
 			}
 		}
+	}
+	
+	@IBAction func btnGetBIOCard_Click(_ sender: Any?) {
+		guard let url = URL(string: "http://www.talkbank.io/biocoin/") else { return }
+		UIApplication.shared.open(url)
 	}
 	
 	@IBAction func unwindToBalance(unwindSegue: UIStoryboardSegue) {
@@ -395,8 +401,8 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 			self.tfAmount_Sell.backgroundColor = UIColor(displayP3Red: 1, green: 1, blue: 1, alpha: 0.7)
 			setButtonText(self.btnBIOSell, NSLocalizedString("EmptySellButtonText", comment: "EmptySellButtonText"))
 		} else {
-			let alert = UIAlertController.init(title: NSLocalizedString("ErrorStartSell", comment: "Ошибка"), message: NSLocalizedString("ErrorStartSellMessage", comment: "Ошибка"), preferredStyle: UIAlertControllerStyle.alert)
-			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertActionStyle.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
+			let alert = UIAlertController.init(title: NSLocalizedString("ErrorStartSell", comment: "Ошибка"), message: NSLocalizedString("ErrorStartSellMessage", comment: "Ошибка"), preferredStyle: UIAlertController.Style.alert)
+			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertAction.Style.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
 			self.present(alert, animated: true, completion: nil)
 		}
 	}
@@ -415,8 +421,8 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 			self.tfAmount_Buy.backgroundColor = UIColor(displayP3Red: 1, green: 1, blue: 1, alpha: 0.7)
 			setButtonText(self.btnBIOBuy, NSLocalizedString("EmptyBuyButtonText", comment: "EmptyBuyButtonText"))
 		} else {
-			let alert = UIAlertController.init(title: NSLocalizedString("ErrorStartSell", comment: "Ошибка"), message: NSLocalizedString("ErrorStartSellMessage", comment: "Ошибка"), preferredStyle: UIAlertControllerStyle.alert)
-			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertActionStyle.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
+			let alert = UIAlertController.init(title: NSLocalizedString("ErrorStartSell", comment: "Ошибка"), message: NSLocalizedString("ErrorStartSellMessage", comment: "Ошибка"), preferredStyle: UIAlertController.Style.alert)
+			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertAction.Style.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
 			self.present(alert, animated: true, completion: nil)
 		}
 	}
@@ -546,7 +552,7 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 				self.lblBalance.font = self.lblBalance.font.withSize(18)
 				UIView.transition(with: self.lblBalance,
 								  duration: 0.35,
-								  options: UIViewAnimationOptions.transitionFlipFromTop,
+								  options: UIView.AnimationOptions.transitionFlipFromTop,
 								  animations: { [weak self] in
 									self?.lblBalance.text = NSLocalizedString("reloadBalance", comment: "")
 					}, completion: nil)
@@ -562,7 +568,7 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 				self.lblBalance.font = self.lblBalance.font.withSize(56)
 				UIView.transition(with: self.lblBalance,
 								  duration: 0.35,
-								  options: UIViewAnimationOptions.transitionFlipFromBottom,
+								  options: UIView.AnimationOptions.transitionFlipFromBottom,
 								  animations: { [weak self] in
 									self?.refreshBalanceView()
 									self?.processUrlCommand()
@@ -602,15 +608,15 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 	func broadcastTransactionResult(_ result: Bool, _ txid: String?, _ message: String?) {
 		//		DispatchQueue.main.sync { self.vWait.isHidden = true }
 		if result {
-			let alert = UIAlertController.init(title: NSLocalizedString("SuccessSend", comment: "Успех"), message: NSLocalizedString("SuccessSendMessage", comment: "Success") + txid!, preferredStyle: UIAlertControllerStyle.alert)
-			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertActionStyle.cancel, handler: nil))
-			alert.addAction(UIAlertAction.init(title: NSLocalizedString("Share", comment: "Поделться"), style: UIAlertActionStyle.default, handler: { _ in self.shareText(txid!) }))
+			let alert = UIAlertController.init(title: NSLocalizedString("SuccessSend", comment: "Успех"), message: NSLocalizedString("SuccessSendMessage", comment: "Success") + txid!, preferredStyle: UIAlertController.Style.alert)
+			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertAction.Style.cancel, handler: nil))
+			alert.addAction(UIAlertAction.init(title: NSLocalizedString("Share", comment: "Поделться"), style: UIAlertAction.Style.default, handler: { _ in self.shareText(txid!) }))
 			self.present(alert, animated: true, completion: nil)
 			
 		} else {
 			//Добавить удаление последнего адреса Change
-			let alert = UIAlertController.init(title: NSLocalizedString("ErrorSend", comment: "Ошибка"), message: NSLocalizedString("ErrorSendMessage", comment: "Ошибка") + (message ?? ""), preferredStyle: UIAlertControllerStyle.alert)
-			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertActionStyle.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
+			let alert = UIAlertController.init(title: NSLocalizedString("ErrorSend", comment: "Ошибка"), message: NSLocalizedString("ErrorSendMessage", comment: "Ошибка") + (message ?? ""), preferredStyle: UIAlertController.Style.alert)
+			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertAction.Style.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
 			self.present(alert, animated: true, completion: nil)
 		}
 	}
@@ -664,6 +670,10 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 		checkOpComplete(app.model!.buyState)
 	}
 	
+	func buyError(error: String?) {
+		if error != nil { showError(error: error!) } else { showError(error: NSLocalizedString("BuyError", comment: "BuyError"))}
+	}
+
 	func updateBuyRate() {
 		DispatchQueue.main.sync {
 			self.lblBuyRate.text = " 1 BIO ~ \(String(format: "%.2f", Double(1) / app.model!.buyRate)) " + app.model!.currency.symbol()
@@ -674,8 +684,8 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 	func checkOpComplete(_ process: String) {
 		switch process {
 		case "ERROR":
-			let alert = UIAlertController.init(title: NSLocalizedString("CheckOpErrorTitle", comment: ""), message: NSLocalizedString("CheckOpErrorMessage", comment: ""), preferredStyle: UIAlertControllerStyle.alert)
-			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertActionStyle.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
+			let alert = UIAlertController.init(title: NSLocalizedString("CheckOpErrorTitle", comment: ""), message: NSLocalizedString("CheckOpErrorMessage", comment: ""), preferredStyle: UIAlertController.Style.alert)
+			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertAction.Style.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
 			self.present(alert, animated: true, completion: nil)
 			DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
 				self.app.model!.buyOpKey = ""
@@ -684,8 +694,8 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 			})
 			break;
 		case "Done":
-			let alert = UIAlertController.init(title: NSLocalizedString("CheckOpDoneTitle", comment: ""), message: NSLocalizedString("CheckOpDoneMessage", comment: ""), preferredStyle: UIAlertControllerStyle.alert)
-			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertActionStyle.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
+			let alert = UIAlertController.init(title: NSLocalizedString("CheckOpDoneTitle", comment: ""), message: NSLocalizedString("CheckOpDoneMessage", comment: ""), preferredStyle: UIAlertController.Style.alert)
+			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertAction.Style.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
 			self.present(alert, animated: true, completion: nil)
 			DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
 				self.app.model!.buyOpKey = ""
@@ -694,8 +704,8 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 			})
 			break;
 		case "Cancel":
-			let alert = UIAlertController.init(title: NSLocalizedString("CheckOpCancelTitle", comment: ""), message: NSLocalizedString("CheckOpCancelMessage", comment: ""), preferredStyle: UIAlertControllerStyle.alert)
-			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertActionStyle.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
+			let alert = UIAlertController.init(title: NSLocalizedString("CheckOpCancelTitle", comment: ""), message: NSLocalizedString("CheckOpCancelMessage", comment: ""), preferredStyle: UIAlertController.Style.alert)
+			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertAction.Style.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
 			self.present(alert, animated: true, completion: nil)
 			DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
 				self.app.model!.buyOpKey = ""
@@ -787,7 +797,7 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 		
 	}
 	
-	public func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+	public func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
 		
 	}
 	
@@ -872,6 +882,8 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 		}
 		
 		if textField == self.tfAmount_Buy {
+			self.app.model!.getBuyRateWithAmount(app.model!.currency.rawValue, Double(txtAfterUpdate.replacingOccurrences(of: ",", with: ".", options: .literal, range: nil)) ?? 0)
+			
 			updateBuyAmount(txtAfterUpdate)
 		}
 		

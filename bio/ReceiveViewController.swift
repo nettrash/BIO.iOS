@@ -65,7 +65,7 @@ class ReceiveViewController : BaseViewController, UITextFieldDelegate {
 	}
 	
 	@IBAction func shareAddress(_ sender: Any?) -> Void {
-		let png = imgQR.image!.pngData!
+		let png = imgQR.image!.pngData()!
 		let activityViewController : UIActivityViewController = UIActivityViewController(
 			activityItems: [addressFullUrl.absoluteString, UIImage.init(data: png)!], applicationActivities: [])
 		
@@ -104,8 +104,8 @@ class ReceiveViewController : BaseViewController, UITextFieldDelegate {
 	public func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
 		if textField == tfAddress {
 			UIPasteboard.general.string = textField.text
-			let alert = UIAlertController.init(title: NSLocalizedString("CopyToClipboard", comment: "CopyToClipboard"), message: NSLocalizedString("CopyToClipboardMessage", comment: "CopyToClipboardMessage"), preferredStyle: UIAlertControllerStyle.alert)
-			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertActionStyle.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
+			let alert = UIAlertController.init(title: NSLocalizedString("CopyToClipboard", comment: "CopyToClipboard"), message: NSLocalizedString("CopyToClipboardMessage", comment: "CopyToClipboardMessage"), preferredStyle: UIAlertController.Style.alert)
+			alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertAction.Style.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
 			self.present(alert, animated: true, completion: nil)
 		}
 		return textField != tfAddress
@@ -123,7 +123,7 @@ class ReceiveViewController : BaseViewController, UITextFieldDelegate {
 		
 	}
 	
-	public func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+	public func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
 		
 	}
 	

@@ -248,7 +248,9 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 				break;
 			}
 		}
-		tx.addChange(amount: spent - _amount! - _commission!)
+		if (spent - _amount! - _commission! > 0) {
+			tx.addChange(amount: spent - _amount! - _commission!)
+		}
 		print(tx.serialize().hexEncodedString())
 		return tx
 	}
@@ -280,7 +282,7 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 		
 	}
 	
-	public func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+	public func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
 		
 	}
 	
@@ -371,8 +373,8 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 			} else {
 				DispatchQueue.main.sync {
 					self.vWait.isHidden = true
-					let alert = UIAlertController.init(title: NSLocalizedString("Error", comment: "Ошибка"), message: NSLocalizedString("SendAmountError", comment: "Ошибка") + String(format: "%.2f", self._unspentAmount!), preferredStyle: UIAlertControllerStyle.alert)
-					alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertActionStyle.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
+					let alert = UIAlertController.init(title: NSLocalizedString("Error", comment: "Ошибка"), message: NSLocalizedString("SendAmountError", comment: "Ошибка") + String(format: "%.2f", self._unspentAmount!), preferredStyle: UIAlertController.Style.alert)
+					alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertAction.Style.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
 					self.present(alert, animated: true, completion: nil)
 				}
 			}
@@ -383,15 +385,15 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 		DispatchQueue.main.async {
 			self.vWait.isHidden = true
 			if result {
-				let alert = UIAlertController.init(title: NSLocalizedString("SuccessSend", comment: "Успех"), message: NSLocalizedString("SuccessSendMessage", comment: "Success") + txid!, preferredStyle: UIAlertControllerStyle.alert)
-				alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertActionStyle.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil); self.closeClick(nil) }))
-				alert.addAction(UIAlertAction.init(title: NSLocalizedString("Share", comment: "Поделться"), style: UIAlertActionStyle.default, handler: { _ in self.shareText(txid!); alert.dismiss(animated: true, completion: nil) }))
+				let alert = UIAlertController.init(title: NSLocalizedString("SuccessSend", comment: "Успех"), message: NSLocalizedString("SuccessSendMessage", comment: "Success") + txid!, preferredStyle: UIAlertController.Style.alert)
+				alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertAction.Style.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil); self.closeClick(nil) }))
+				alert.addAction(UIAlertAction.init(title: NSLocalizedString("Share", comment: "Поделться"), style: UIAlertAction.Style.default, handler: { _ in self.shareText(txid!); alert.dismiss(animated: true, completion: nil) }))
 				self.present(alert, animated: true, completion: nil)
 				
 			} else {
 				//Добавить удаление последнего адреса Change
-				let alert = UIAlertController.init(title: NSLocalizedString("ErrorSend", comment: "Ошибка"), message: NSLocalizedString("ErrorSendMessage", comment: "Ошибка") + (message ?? ""), preferredStyle: UIAlertControllerStyle.alert)
-				alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertActionStyle.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
+				let alert = UIAlertController.init(title: NSLocalizedString("ErrorSend", comment: "Ошибка"), message: NSLocalizedString("ErrorSendMessage", comment: "Ошибка") + (message ?? ""), preferredStyle: UIAlertController.Style.alert)
+				alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertAction.Style.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
 				self.present(alert, animated: true, completion: nil)
 			}
 		}
@@ -434,8 +436,8 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 					
 					self._otherInvoice!.showErrorInfo(self, msg)
 				} else {
-					let alert = UIAlertController.init(title: NSLocalizedString("Error", comment: "Ошибка"), message: NSLocalizedString("SendAmountError", comment: "Ошибка") + String(format: "%.2f", self.app.model!.Balance), preferredStyle: UIAlertControllerStyle.alert)
-					alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertActionStyle.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
+					let alert = UIAlertController.init(title: NSLocalizedString("Error", comment: "Ошибка"), message: NSLocalizedString("SendAmountError", comment: "Ошибка") + String(format: "%.2f", self.app.model!.Balance), preferredStyle: UIAlertController.Style.alert)
+					alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertAction.Style.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
 					self.present(alert, animated: true, completion: nil)
 				}
 				return
@@ -458,13 +460,13 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 				msg += NSLocalizedString("OtherCryptoTransferMessageAmountBIO", comment: "OtherCryptoTransferMessageAmountBIO") + String(format: "%.8f", self._amount!) + " BIO\n"
 				msg += NSLocalizedString("OtherCryptoTransferMessageCommission", comment: "OtherCryptoTransferMessageCommission") + String(format: "%.8f", commission) + " BIO"
 				
-				let alert = UIAlertController.init(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
-				alert.addAction(UIAlertAction.init(title: NSLocalizedString("OtherCryptoTransferDo", comment: "Исполнить"), style: 	UIAlertActionStyle.default, handler: { _ in
+				let alert = UIAlertController.init(title: title, message: msg, preferredStyle: UIAlertController.Style.alert)
+				alert.addAction(UIAlertAction.init(title: NSLocalizedString("OtherCryptoTransferDo", comment: "Исполнить"), style: 	UIAlertAction.Style.default, handler: { _ in
 					//Регистрируем выплату
 					//Выплачиваем
 					self.app.model!.sell(self._otherCurrency!.rawValue, self._amount!, (self._otherAmount! as NSDecimalNumber).doubleValue, self._otherAddress!)
 					alert.dismiss(animated: true, completion: nil) }))
-				alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertActionStyle.cancel, handler: 	{ _ in
+				alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertAction.Style.cancel, handler: 	{ _ in
 					self.vWait.isHidden = true
 					alert.dismiss(animated: true, completion: nil) }))
 				self.present(alert, animated: true, completion: nil)
@@ -477,6 +479,10 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 	}
 	
 	func buyComplete() {
+		
+	}
+	
+	func buyError(error: String?) {
 		
 	}
 	

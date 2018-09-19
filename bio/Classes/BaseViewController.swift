@@ -45,8 +45,8 @@ class BaseViewController: UIViewController {
 	}
 	
 	public func showError(error: String) -> Void {
-		let alert = UIAlertController.init(title: NSLocalizedString("Error", comment: "Ошибка"), message: error, preferredStyle: UIAlertControllerStyle.alert)
-		alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertActionStyle.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
+		let alert = UIAlertController.init(title: NSLocalizedString("Error", comment: "Ошибка"), message: error, preferredStyle: UIAlertController.Style.alert)
+		alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertAction.Style.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
 		self.present(alert, animated: true, completion: nil)
 	}
 	
@@ -64,7 +64,7 @@ class BaseViewController: UIViewController {
 	
 	@objc func flip(_ firstView: UIView, _ secondView: UIView) {
 		
-		let transitionOptions: UIViewAnimationOptions = [flipRight ? .transitionFlipFromRight : .transitionFlipFromLeft, .showHideTransitionViews]
+		let transitionOptions: UIView.AnimationOptions = [flipRight ? .transitionFlipFromRight : .transitionFlipFromLeft, .showHideTransitionViews]
 		
 		UIView.transition(with: firstView, duration: 1.0, options: transitionOptions, animations: {
 			firstView.isHidden = true

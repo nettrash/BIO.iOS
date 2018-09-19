@@ -105,8 +105,8 @@ class ScanViewController: BaseViewController, AVCaptureMetadataOutputObjectsDele
 		previewLayer.videoGravity = .resizeAspectFill
 		view.layer.addSublayer(previewLayer)
 		
-		view.bringSubview(toFront: btnClose)
-		view.bringSubview(toFront: imgLogo)
+		view.bringSubviewToFront(btnClose)
+		view.bringSubviewToFront(imgLogo)
 		
 		configured = true;
 	}

@@ -175,8 +175,8 @@ class bitpayInvoice {
 				msg = "\(invoiceInformation())"
 			}
 		}
-		let alert = UIAlertController.init(title: "BitPay Invoice", message: msg, preferredStyle: UIAlertControllerStyle.alert)
-		alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertActionStyle.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
+		let alert = UIAlertController.init(title: "BitPay Invoice", message: msg, preferredStyle: UIAlertController.Style.alert)
+		alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertAction.Style.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
 		vc.present(alert, animated: true, completion: nil)
 
 	}
@@ -190,16 +190,16 @@ class bitpayInvoice {
 				s = "\(invoiceInformation())\n\(msg)"
 			}
 		}
-		let alert = UIAlertController.init(title: "BitPay Invoice", message: s, preferredStyle: UIAlertControllerStyle.alert)
-		alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertActionStyle.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
+		let alert = UIAlertController.init(title: "BitPay Invoice", message: s, preferredStyle: UIAlertController.Style.alert)
+		alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertAction.Style.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil) }))
 		vc.present(alert, animated: true, completion: nil)
 		
 	}
 
 	func showInfo(_ vc: UIViewController, _ msg: String, _ pay: @escaping () -> (), _ cancel: @escaping () -> ()) -> Void {
-		let alert = UIAlertController.init(title: "BitPay Invoice", message: "\(invoiceInformation())\n\(msg)", preferredStyle: UIAlertControllerStyle.alert)
-		alert.addAction(UIAlertAction.init(title: NSLocalizedString("OtherCryptoTransferDo", comment: "Исполнить"), style: UIAlertActionStyle.default, handler: { _ in alert.dismiss(animated: true, completion: nil); pay(); }))
-		alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertActionStyle.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil); cancel(); }))
+		let alert = UIAlertController.init(title: "BitPay Invoice", message: "\(invoiceInformation())\n\(msg)", preferredStyle: UIAlertController.Style.alert)
+		alert.addAction(UIAlertAction.init(title: NSLocalizedString("OtherCryptoTransferDo", comment: "Исполнить"), style: UIAlertAction.Style.default, handler: { _ in alert.dismiss(animated: true, completion: nil); pay(); }))
+		alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertAction.Style.cancel, handler: { _ in alert.dismiss(animated: true, completion: nil); cancel(); }))
 		vc.present(alert, animated: true, completion: nil)
 		
 	}

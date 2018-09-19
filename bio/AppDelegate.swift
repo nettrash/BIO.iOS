@@ -18,14 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	var needToProcessURL: Bool = false
 	var openUrl: URL? = nil
 	
-	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
 		model = ModelRoot(self)
 		
 		return true
 	}
 	
-	func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+	func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
 		let components = URLComponents.init(url: url, resolvingAgainstBaseURL: true)
 		if components?.scheme?.lowercased() != "sibcoin" &&
 			components?.scheme?.lowercased() != "biocoin" &&
@@ -53,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		let vc = UIApplication.topViewController()
 		
-		let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.regular)
+		let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.regular)
 		let blurEffectView = UIVisualEffectView(effect: blurEffect)
 		blurEffectView.frame = vc!.view.bounds
 		blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -178,11 +178,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 			
 			if nVersion! > nAppVersion! {
 				
-				let alert = UIAlertController.init(title: NSLocalizedString("UpdateAvailableTitle", comment: "UpdateAvailableTitle"), message: NSLocalizedString("UpdateAvailableMessage", comment: "UpdateAvailableTitle"), preferredStyle: UIAlertControllerStyle.alert)
-				alert.addAction(UIAlertAction.init(title: NSLocalizedString("Update", comment: "Обновить"), style: UIAlertActionStyle.default, handler: { _ in
+				let alert = UIAlertController.init(title: NSLocalizedString("UpdateAvailableTitle", comment: "UpdateAvailableTitle"), message: NSLocalizedString("UpdateAvailableMessage", comment: "UpdateAvailableTitle"), preferredStyle: UIAlertController.Style.alert)
+				alert.addAction(UIAlertAction.init(title: NSLocalizedString("Update", comment: "Обновить"), style: UIAlertAction.Style.default, handler: { _ in
 					UIApplication.shared.open(URL.init(string: "itms-services://?action=download-manifest&url=https://biocoin.shop/manifest.plist")!, options: [:], completionHandler: nil)
 					alert.dismiss(animated: true, completion: nil) }))
-				alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertActionStyle.cancel, handler: { _ in
+				alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Отмена"), style: UIAlertAction.Style.cancel, handler: { _ in
 					alert.dismiss(animated: true, completion: nil) }))
 				let vc = UIApplication.topViewController()
 				vc?.present(alert, animated: true, completion: nil)

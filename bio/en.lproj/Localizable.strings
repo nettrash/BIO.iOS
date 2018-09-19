@@ -64,3 +64,4 @@
 "SupportSubject" = "Question about BIOCoin Wallet for iOS";
 "MailTitle" = "Mail send";
 "MailServicesAreNotAvailable" = "Mail services are not available.";
+"BuyError" = "Unable to complete purchase. Please try again later.";

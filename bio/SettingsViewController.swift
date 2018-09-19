@@ -82,8 +82,8 @@ class SettingsViewController : BaseViewController, UIDocumentPickerDelegate, MFM
 	
 	@IBAction func supportClick(_ sender: Any?) -> Void {
 		if !MFMailComposeViewController.canSendMail() {
-			let alert = UIAlertController.init(title: NSLocalizedString("MailTitle", comment: "MailTitle"), message: NSLocalizedString("MailServicesAreNotAvailable", comment: "MailServicesAreNotAvailable"), preferredStyle: UIAlertControllerStyle.alert)
-			alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Cancel"), style: UIAlertActionStyle.cancel, handler: { _ in
+			let alert = UIAlertController.init(title: NSLocalizedString("MailTitle", comment: "MailTitle"), message: NSLocalizedString("MailServicesAreNotAvailable", comment: "MailServicesAreNotAvailable"), preferredStyle: UIAlertController.Style.alert)
+			alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Cancel"), style: UIAlertAction.Style.cancel, handler: { _ in
 				alert.dismiss(animated: true, completion: nil)
 			}))
 			self.present(alert, animated: true, completion: nil)
@@ -109,9 +109,9 @@ class SettingsViewController : BaseViewController, UIDocumentPickerDelegate, MFM
 		self.pvProgress.isHidden = false
 		self.vWait.isHidden = false
 		
-		let alert = UIAlertController.init(title: NSLocalizedString("EncryptTitle", comment: "Шифрование"), message: NSLocalizedString("EncryptMessage", comment: "Шифрование"), preferredStyle: UIAlertControllerStyle.alert)
+		let alert = UIAlertController.init(title: NSLocalizedString("EncryptTitle", comment: "Шифрование"), message: NSLocalizedString("EncryptMessage", comment: "Шифрование"), preferredStyle: UIAlertController.Style.alert)
 		alert.addTextField(configurationHandler: configurationTextField)
-		alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertActionStyle.default, handler: { _ in
+		alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertAction.Style.default, handler: { _ in
 			
 			let psw = alert.textFields![0].text ?? ""
 			
@@ -144,7 +144,7 @@ class SettingsViewController : BaseViewController, UIDocumentPickerDelegate, MFM
 				alert.dismiss(animated: true, completion: nil)
 			}
 		}))
-		alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Cancel"), style: UIAlertActionStyle.cancel, handler: { _ in
+		alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Cancel"), style: UIAlertAction.Style.cancel, handler: { _ in
 			self.vWait.isHidden = true
 			alert.dismiss(animated: true, completion: nil)
 		}))
@@ -177,9 +177,9 @@ class SettingsViewController : BaseViewController, UIDocumentPickerDelegate, MFM
 			let jsonData = try? JSONSerialization.jsonObject(with: file!, options: JSONSerialization.ReadingOptions.mutableContainers)
 			
 			if jsonData != nil {
-				let alert = UIAlertController.init(title: NSLocalizedString("EncryptTitle", comment: "Шифрование"), message: NSLocalizedString("EncryptMessage", comment: "Шифрование"), preferredStyle: UIAlertControllerStyle.alert)
+				let alert = UIAlertController.init(title: NSLocalizedString("EncryptTitle", comment: "Шифрование"), message: NSLocalizedString("EncryptMessage", comment: "Шифрование"), preferredStyle: UIAlertController.Style.alert)
 				alert.addTextField(configurationHandler: configurationTextField)
-				alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertActionStyle.default, handler: { _ in
+				alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertAction.Style.default, handler: { _ in
 					
 					let psw = alert.textFields![0].text ?? ""
 					
@@ -215,14 +215,14 @@ class SettingsViewController : BaseViewController, UIDocumentPickerDelegate, MFM
 										self.vWait.isHidden = true
 										self.keysAction = false
 										
-										let alert = UIAlertController.init(title: NSLocalizedString("KeyStoreImportTitle", comment: "Ключи"), message: NSLocalizedString("KeyStoreImportMessage", comment: "Ключи"), preferredStyle: UIAlertControllerStyle.alert)
-										alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertActionStyle.cancel, handler: nil))
+										let alert = UIAlertController.init(title: NSLocalizedString("KeyStoreImportTitle", comment: "Ключи"), message: NSLocalizedString("KeyStoreImportMessage", comment: "Ключи"), preferredStyle: UIAlertController.Style.alert)
+										alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertAction.Style.cancel, handler: nil))
 										self.present(alert, animated: true, completion: nil)
 									}
 								}
 							} else {
-								let alert = UIAlertController.init(title: NSLocalizedString("EncryptTitle", comment: "Шифрование"), message: NSLocalizedString("EncryptPasswordErrorMessage", comment: "Шифрование"), preferredStyle: UIAlertControllerStyle.alert)
-								alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertActionStyle.cancel, handler: nil))
+								let alert = UIAlertController.init(title: NSLocalizedString("EncryptTitle", comment: "Шифрование"), message: NSLocalizedString("EncryptPasswordErrorMessage", comment: "Шифрование"), preferredStyle: UIAlertController.Style.alert)
+								alert.addAction(UIAlertAction.init(title: NSLocalizedString("OK", comment: "OK"), style: UIAlertAction.Style.cancel, handler: nil))
 								self.present(alert, animated: true, completion: nil)
 								
 								self.vWait.isHidden = true
@@ -231,7 +231,7 @@ class SettingsViewController : BaseViewController, UIDocumentPickerDelegate, MFM
 						}
 					}
 				}))
-				alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Cancel"), style: UIAlertActionStyle.cancel, handler: { _ in
+				alert.addAction(UIAlertAction.init(title: NSLocalizedString("Cancel", comment: "Cancel"), style: UIAlertAction.Style.cancel, handler: { _ in
 					DispatchQueue.main.sync {
 						self.vWait.isHidden = true
 						self.keysAction = false

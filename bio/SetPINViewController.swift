@@ -68,7 +68,7 @@ class SetPINViewController : BaseViewController, UITextFieldDelegate {
 		
 	}
 	
-	public func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+	public func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
 		
 	}
 	

@@ -18,11 +18,11 @@ extension UIImage {
 		return UIGraphicsGetImageFromCurrentImageContext()
 	}
 	
-	var pngData: Data? {
+	/*var pngData: Data? {
 		UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
 		defer { UIGraphicsEndImageContext() }
 		UIImage(ciImage: self.ciImage!).draw(in: CGRect(origin: .zero, size: self.size))
 		guard let redraw = UIGraphicsGetImageFromCurrentImageContext() else { return nil }
-		return UIImagePNGRepresentation(redraw)
-	}
+		return UIImagePNGRepresentation(redraw as UIImage)
+	}*/
 }

@@ -1,18 +1,18 @@
 
 /* Class = "UILabel"; text = "История"; ObjectID = "028-t1-y4q"; */
-"028-t1-y4q.text" = "История";
+"028-t1-y4q.text" = "History";
 
 /* Class = "UITextField"; placeholder = "количество BIO"; ObjectID = "02A-ta-Ti9"; */
-"02A-ta-Ti9.placeholder" = "количество BIO";
+"02A-ta-Ti9.placeholder" = "amount in BIO";
 
 /* Class = "UILabel"; text = "PIN-код"; ObjectID = "2Ad-2k-xLL"; */
-"2Ad-2k-xLL.text" = "PIN-код";
+"2Ad-2k-xLL.text" = "PIN";
 
 /* Class = "UIButton"; normalTitle = "создать"; ObjectID = "2el-yy-UTK"; */
-"2el-yy-UTK.normalTitle" = "создать";
+"2el-yy-UTK.normalTitle" = "create";
 
 /* Class = "UIButton"; normalTitle = "  Пополнить"; ObjectID = "3E0-rU-L69"; */
-"3E0-rU-L69.normalTitle" = "  Пополнить";
+"3E0-rU-L69.normalTitle" = "  Receive";
 
 /* Class = "UILabel"; text = "- 0.00 BIO"; ObjectID = "3J6-E9-LHb"; */
 "3J6-E9-LHb.text" = "- 0.00 BIO";
@@ -30,7 +30,7 @@
 "75g-Gh-M5m.text" = "0.0000";
 
 /* Class = "UIButton"; normalTitle = "Поделиться"; ObjectID = "7WN-Kf-pF7"; */
-"7WN-Kf-pF7.normalTitle" = "Поделиться";
+"7WN-Kf-pF7.normalTitle" = "Share";
 
 /* Class = "UILabel"; text = "Detail"; ObjectID = "7iE-ka-UIw"; */
 "7iE-ka-UIw.text" = "Detail";
@@ -42,16 +42,16 @@
 "9H6-cO-tkR.text" = "Title";
 
 /* Class = "UIButton"; normalTitle = "Купить"; ObjectID = "C4x-ih-4xv"; */
-"C4x-ih-4xv.normalTitle" = "Купить";
+"C4x-ih-4xv.normalTitle" = "Buy";
 
 /* Class = "UILabel"; text = "2017-10-17"; ObjectID = "DtB-0A-YRt"; */
 "DtB-0A-YRt.text" = "2017-10-17";
 
 /* Class = "UIButton"; normalTitle = "Установить сумму"; ObjectID = "ESo-nD-nvO"; */
-"ESo-nD-nvO.normalTitle" = "Установить сумму";
+"ESo-nD-nvO.normalTitle" = "Set amount";
 
 /* Class = "UIButton"; normalTitle = "Продать"; ObjectID = "EeD-Mk-xGN"; */
-"EeD-Mk-xGN.normalTitle" = "Продать";
+"EeD-Mk-xGN.normalTitle" = "Sell";
 
 /* Class = "UILabel"; text = "2017-10-17"; ObjectID = "HEG-r9-eQZ"; */
 "HEG-r9-eQZ.text" = "2017-10-17";
@@ -60,7 +60,7 @@
 "ILc-lW-hTn.text" = "Detail";
 
 /* Class = "UITextField"; placeholder = "комиссия"; ObjectID = "IZe-sI-Gce"; */
-"IZe-sI-Gce.placeholder" = "комиссия";
+"IZe-sI-Gce.placeholder" = "commission";
 
 /* Class = "UITextField"; text = "0.0001"; ObjectID = "IZe-sI-Gce"; */
 "IZe-sI-Gce.text" = "0.0000";
@@ -69,19 +69,19 @@
 "Jfy-gK-Fel.placeholder" = "◦";
 
 /* Class = "UITextField"; placeholder = "сумма"; ObjectID = "Jw0-xY-WZj"; */
-"Jw0-xY-WZj.placeholder" = "сумма";
+"Jw0-xY-WZj.placeholder" = "amount";
 
 /* Class = "UIButton"; normalTitle = "ВВЕСТИ РУКАМИ"; ObjectID = "KTb-1f-zqm"; */
-"KTb-1f-zqm.normalTitle" = "ВВЕСТИ РУКАМИ";
+"KTb-1f-zqm.normalTitle" = "ENTER MANUAL";
 
 /* Class = "UITextField"; placeholder = "◦"; ObjectID = "LWj-Ja-Wcr"; */
 "LWj-Ja-Wcr.placeholder" = "◦";
 
 /* Class = "UILabel"; text = "операций нет"; ObjectID = "MMc-Sq-L9w"; */
-"MMc-Sq-L9w.text" = "операций нет";
+"MMc-Sq-L9w.text" = "no ops";
 
 /* Class = "UITextField"; placeholder = "кол-во BIO"; ObjectID = "N34-jC-mTZ"; */
-"N34-jC-mTZ.placeholder" = "кол-во BIO";
+"N34-jC-mTZ.placeholder" = "amount BIO";
 
 /* Class = "UIButton"; normalTitle = "support@bitwallet.ge"; ObjectID = "Nb8-X1-rZe"; */
 "Nb8-X1-rZe.normalTitle" = "support@bitwallet.ge";
@@ -90,13 +90,13 @@
 "Ntq-90-ITX.segmentTitles[0]" = "BIO";
 
 /* Class = "UISegmentedControl"; Ntq-90-ITX.segmentTitles[1] = "Курсы"; ObjectID = "Ntq-90-ITX"; */
-"Ntq-90-ITX.segmentTitles[1]" = "Курсы";
+"Ntq-90-ITX.segmentTitles[1]" = "Rates";
 
 /* Class = "UISegmentedControl"; Ntq-90-ITX.segmentTitles[2] = "Купить"; ObjectID = "Ntq-90-ITX"; */
-"Ntq-90-ITX.segmentTitles[2]" = "Купить";
+"Ntq-90-ITX.segmentTitles[2]" = "Buy";
 
 /* Class = "UISegmentedControl"; Ntq-90-ITX.segmentTitles[3] = "Продать"; ObjectID = "Ntq-90-ITX"; */
-"Ntq-90-ITX.segmentTitles[3]" = "Продать";
+"Ntq-90-ITX.segmentTitles[3]" = "Sell";
 
 /* Class = "UITextField"; placeholder = "◦"; ObjectID = "Rhe-Yz-Pb2"; */
 "Rhe-Yz-Pb2.placeholder" = "◦";
@@ -111,25 +111,25 @@
 "SwF-sd-OWp.text" = "- 0.00 BIO";
 
 /* Class = "UILabel"; text = "Настройки"; ObjectID = "U7N-01-gOv"; */
-"U7N-01-gOv.text" = "Настройки";
+"U7N-01-gOv.text" = "Settings";
 
 /* Class = "UITextField"; placeholder = "CVV"; ObjectID = "UQe-vU-Z8h"; */
 "UQe-vU-Z8h.placeholder" = "CVV";
 
 /* Class = "UITextField"; placeholder = "номер карты"; ObjectID = "WBP-3Z-lJ3"; */
-"WBP-3Z-lJ3.placeholder" = "номер карты";
+"WBP-3Z-lJ3.placeholder" = "card number";
 
 /* Class = "UITextField"; placeholder = "адрес получателя"; ObjectID = "YAm-vR-tb8"; */
-"YAm-vR-tb8.placeholder" = "адрес получателя";
+"YAm-vR-tb8.placeholder" = "receiver's address";
 
 /* Class = "UILabel"; text = "+ 0.00 BIO"; ObjectID = "YEe-eu-SRN"; */
 "YEe-eu-SRN.text" = "+ 0.00 BIO";
 
 /* Class = "UILabel"; text = "Перевод"; ObjectID = "b6Z-GS-NwW"; */
-"b6Z-GS-NwW.text" = "Перевод";
+"b6Z-GS-NwW.text" = "Transfer";
 
 /* Class = "UIButton"; normalTitle = "Отправить перевод"; ObjectID = "bRs-r0-Oe8"; */
-"bRs-r0-Oe8.normalTitle" = "Отправить перевод";
+"bRs-r0-Oe8.normalTitle" = "Send";
 
 /* Class = "UILabel"; text = "Title"; ObjectID = "cYD-xe-sUM"; */
 "cYD-xe-sUM.text" = "Title";
@@ -138,7 +138,7 @@
 "dqx-o5-5jD.placeholder" = "◦";
 
 /* Class = "UIButton"; normalTitle = "  История"; ObjectID = "eRE-sJ-kOH"; */
-"eRE-sJ-kOH.normalTitle" = "  История";
+"eRE-sJ-kOH.normalTitle" = "  History";
 
 /* Class = "UITextField"; placeholder = "MM/YY"; ObjectID = "fG3-Qm-3KO"; */
 "fG3-Qm-3KO.placeholder" = "MM/YY";
@@ -147,28 +147,28 @@
 "fVL-ZL-Wxy.placeholder" = "◦";
 
 /* Class = "UILabel"; text = "PIN-код"; ObjectID = "gsQ-G7-dI8"; */
-"gsQ-G7-dI8.text" = "PIN-код";
+"gsQ-G7-dI8.text" = "PIN";
 
 /* Class = "UITextField"; placeholder = "сумма"; ObjectID = "hM6-cd-WMn"; */
-"hM6-cd-WMn.placeholder" = "сумма";
+"hM6-cd-WMn.placeholder" = "amount";
 
 /* Class = "UILabel"; text = "- 0.00 BIO"; ObjectID = "ha7-Wf-3I2"; */
 "ha7-Wf-3I2.text" = "- 0.00 BIO";
 
 /* Class = "UILabel"; text = "Создать кошелёк"; ObjectID = "hvf-6m-69X"; */
-"hvf-6m-69X.text" = "Создать кошелёк";
+"hvf-6m-69X.text" = "Create wallet";
 
 /* Class = "UIButton"; normalTitle = "Выгрузить ключи"; ObjectID = "lgE-xZ-zcc"; */
-"lgE-xZ-zcc.normalTitle" = "Выгрузить ключи";
+"lgE-xZ-zcc.normalTitle" = "Save keys";
 
 /* Class = "UILabel"; text = "Address"; ObjectID = "m2o-X5-kME"; */
 "m2o-X5-kME.text" = "Address";
 
 /* Class = "UILabel"; text = "Нет операций"; ObjectID = "nlb-js-fX0"; */
-"nlb-js-fX0.text" = "Нет операций";
+"nlb-js-fX0.text" = "No ops";
 
 /* Class = "UIButton"; normalTitle = "Загрузить ключи"; ObjectID = "npW-8H-8zY"; */
-"npW-8H-8zY.normalTitle" = "Загрузить ключи";
+"npW-8H-8zY.normalTitle" = "Load keys";
 
 /* Class = "UITextField"; placeholder = "◦"; ObjectID = "pNr-r0-Gy5"; */
 "pNr-r0-Gy5.placeholder" = "◦";
@@ -183,37 +183,41 @@
 "rK8-RE-jCV.segmentTitles[2]" = "EUR";
 
 /* Class = "UILabel"; text = "Адрес"; ObjectID = "rke-4o-tdt"; */
-"rke-4o-tdt.text" = "Адрес";
+"rke-4o-tdt.text" = "Address";
 
 /* Class = "UILabel"; text = "2017-10-17"; ObjectID = "roy-3j-XFh"; */
 "roy-3j-XFh.text" = "2017-10-17";
 
 /* Class = "UIButton"; normalTitle = "Детали"; ObjectID = "suN-Qy-mYD"; */
-"suN-Qy-mYD.normalTitle" = "Детали";
+"suN-Qy-mYD.normalTitle" = "Details";
 
 /* Class = "UILabel"; text = "Сумма перевода"; ObjectID = "tJk-Oe-V73"; */
-"tJk-Oe-V73.text" = "Сумма перевода";
+"tJk-Oe-V73.text" = "Transfer amount";
 
 /* Class = "UITextField"; placeholder = "◦"; ObjectID = "uIH-Nk-0K3"; */
 "uIH-Nk-0K3.placeholder" = "◦";
 
 /* Class = "UILabel"; text = "Задайте PIN-код"; ObjectID = "uz6-Mr-Enl"; */
-"uz6-Mr-Enl.text" = "Задайте PIN-код";
+"uz6-Mr-Enl.text" = "Create PIN";
 
 /* Class = "UIButton"; normalTitle = "  Перевести"; ObjectID = "vM5-gU-M1B"; */
-"vM5-gU-M1B.normalTitle" = "  Перевести";
+"vM5-gU-M1B.normalTitle" = "  Send";
 
 /* Class = "UITextField"; placeholder = "номер карты"; ObjectID = "vYl-bg-IWz"; */
-"vYl-bg-IWz.placeholder" = "номер карты";
+"vYl-bg-IWz.placeholder" = "card number";
 
 /* Class = "UILabel"; text = "Detail"; ObjectID = "wla-bR-Jce"; */
 "wla-bR-Jce.text" = "Detail";
 
 /* Class = "UITextField"; placeholder = "секретная фраза"; ObjectID = "wtc-37-3gj"; */
-"wtc-37-3gj.placeholder" = "секретная фраза";
+"wtc-37-3gj.placeholder" = "secret word";
 
 /* Class = "UILabel"; text = "Введите PIN-код"; ObjectID = "y6F-Xh-Uo3"; */
-"y6F-Xh-Uo3.text" = "Введите PIN-код";
+"y6F-Xh-Uo3.text" = "Enter PIN";
 
 /* Class = "UILabel"; text = "Title"; ObjectID = "yMb-l6-iek"; */
 "yMb-l6-iek.text" = "Title";
+
+"sjf-AY-w4D.normalTitle" = "Get BIO Card";
+
+"0A2-0o-35X.text" = "Use BIOCOIN card for withdrawal";

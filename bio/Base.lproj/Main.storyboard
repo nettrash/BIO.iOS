@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -334,7 +333,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите PIN-код" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6F-Xh-Uo3">
-                                <rect key="frame" x="120.99999999999999" y="176.66666666666666" width="133.66666666666663" height="20.333333333333343"/>
+                                <rect key="frame" x="120.66666666666667" y="176.66666666666666" width="133.66666666666663" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -887,10 +886,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="TON-tP-QU9">
-                                        <rect key="frame" x="169.66666666666666" y="388" width="37" height="37"/>
+                                        <rect key="frame" x="169" y="387.66666666666669" width="37" height="37"/>
                                     </activityIndicatorView>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ulW-Xj-L5D">
-                                        <rect key="frame" x="112.66666666666669" y="438" width="150" height="2"/>
+                                        <rect key="frame" x="112.66666666666669" y="437.66666666666669" width="150" height="2"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="OdD-mB-jSG"/>
@@ -1164,7 +1163,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="eE5-gD-tOm">
-                                        <rect key="frame" x="169.66666666666666" y="387.66666666666669" width="37" height="37"/>
+                                        <rect key="frame" x="169" y="387.66666666666669" width="37" height="37"/>
                                     </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1607,7 +1606,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xji-Hh-q9v">
                                 <rect key="frame" x="16" y="303" width="343" height="157"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="номер карты" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vYl-bg-IWz">
+                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="номер карты" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vYl-bg-IWz">
                                         <rect key="frame" x="8" y="0.0" width="290" height="29"/>
                                         <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1619,7 +1618,7 @@
                                             <outlet property="delegate" destination="j84-R3-KtJ" id="emr-QA-bxt"/>
                                         </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="My2-YA-7mi">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="My2-YA-7mi">
                                         <rect key="frame" x="306" y="0.0" width="29" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="29" id="jPx-dj-2Ee"/>
@@ -1630,7 +1629,7 @@
                                             <action selector="scanCad:" destination="j84-R3-KtJ" eventType="touchUpInside" id="gVq-NT-VuV"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="количество BIO" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02A-ta-Ti9">
+                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="количество BIO" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02A-ta-Ti9">
                                         <rect key="frame" x="8" y="37" width="327" height="29"/>
                                         <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1642,7 +1641,7 @@
                                             <outlet property="delegate" destination="j84-R3-KtJ" id="bfe-9I-qLt"/>
                                         </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeD-Mk-xGN">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeD-Mk-xGN">
                                         <rect key="frame" x="8" y="74" width="327" height="29"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -1655,7 +1654,7 @@
                                             <action selector="btnBIOSellClick:" destination="j84-R3-KtJ" eventType="touchUpInside" id="b2R-bo-F99"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geJ-W0-97G">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geJ-W0-97G">
                                         <rect key="frame" x="8" y="111" width="327" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="dJ1-Ke-6Tf"/>
@@ -1664,6 +1663,22 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для вывода используйте карту BIOCOIN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0A2-0o-35X">
+                                        <rect key="frame" x="8" y="50" width="327" height="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjf-AY-w4D">
+                                        <rect key="frame" x="8" y="119" width="327" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Заказать карту">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnGetBIOCard_Click:" destination="j84-R3-KtJ" eventType="touchUpInside" id="1fy-Bf-mfR"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1673,14 +1688,22 @@
                                     <constraint firstItem="geJ-W0-97G" firstAttribute="top" secondItem="EeD-Mk-xGN" secondAttribute="bottom" constant="8" id="EJk-US-9gQ"/>
                                     <constraint firstItem="EeD-Mk-xGN" firstAttribute="leading" secondItem="xji-Hh-q9v" secondAttribute="leading" constant="8" id="IIZ-e2-e1Y"/>
                                     <constraint firstAttribute="trailing" secondItem="EeD-Mk-xGN" secondAttribute="trailing" constant="8" id="Iet-RA-FQt"/>
+                                    <constraint firstItem="0A2-0o-35X" firstAttribute="centerX" secondItem="xji-Hh-q9v" secondAttribute="centerX" id="JiC-S3-nvC"/>
+                                    <constraint firstAttribute="trailing" secondItem="sjf-AY-w4D" secondAttribute="trailing" constant="8" id="PdB-2n-Zkm"/>
                                     <constraint firstAttribute="trailing" secondItem="My2-YA-7mi" secondAttribute="trailing" constant="8" id="Q9R-PK-Ire"/>
                                     <constraint firstItem="vYl-bg-IWz" firstAttribute="top" secondItem="xji-Hh-q9v" secondAttribute="top" id="Qj9-b0-dZB"/>
+                                    <constraint firstItem="sjf-AY-w4D" firstAttribute="centerX" secondItem="xji-Hh-q9v" secondAttribute="centerX" id="TI1-mB-MTK"/>
+                                    <constraint firstItem="0A2-0o-35X" firstAttribute="top" secondItem="xji-Hh-q9v" secondAttribute="top" constant="50" id="daF-Ty-gWx"/>
                                     <constraint firstAttribute="height" constant="157" id="dcY-Qh-ymK"/>
+                                    <constraint firstAttribute="bottom" secondItem="sjf-AY-w4D" secondAttribute="bottom" constant="8" id="fL6-hZ-Lyi"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="157" id="fdb-Qm-eIp"/>
                                     <constraint firstItem="My2-YA-7mi" firstAttribute="top" secondItem="xji-Hh-q9v" secondAttribute="top" id="iDS-nO-xiZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="0A2-0o-35X" secondAttribute="trailing" constant="8" id="iyV-KM-EW1"/>
+                                    <constraint firstItem="sjf-AY-w4D" firstAttribute="leading" secondItem="xji-Hh-q9v" secondAttribute="leading" constant="8" id="nwt-O7-QZz"/>
                                     <constraint firstItem="vYl-bg-IWz" firstAttribute="leading" secondItem="xji-Hh-q9v" secondAttribute="leading" constant="8" id="pbe-Vb-02n"/>
                                     <constraint firstItem="02A-ta-Ti9" firstAttribute="top" secondItem="vYl-bg-IWz" secondAttribute="bottom" constant="8" id="sve-go-F4f"/>
                                     <constraint firstItem="My2-YA-7mi" firstAttribute="leading" secondItem="vYl-bg-IWz" secondAttribute="trailing" constant="8" id="wPc-cn-6cP"/>
+                                    <constraint firstItem="0A2-0o-35X" firstAttribute="leading" secondItem="xji-Hh-q9v" secondAttribute="leading" constant="8" id="wdR-dZ-9Hq"/>
                                     <constraint firstItem="geJ-W0-97G" firstAttribute="leading" secondItem="xji-Hh-q9v" secondAttribute="leading" constant="8" id="xeJ-Ng-TcH"/>
                                     <constraint firstItem="02A-ta-Ti9" firstAttribute="leading" secondItem="xji-Hh-q9v" secondAttribute="leading" constant="8" id="zHx-En-AOB"/>
                                 </constraints>
@@ -1764,7 +1787,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="y0l-m0-1Wv">
-                                        <rect key="frame" x="169.66666666666666" y="387.66666666666669" width="37" height="37"/>
+                                        <rect key="frame" x="169" y="387.66666666666669" width="37" height="37"/>
                                     </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1846,6 +1869,7 @@
                         <outlet property="btnBIOBuy" destination="C4x-ih-4xv" id="D3k-A9-HE8"/>
                         <outlet property="btnBIOSell" destination="EeD-Mk-xGN" id="uZg-Gh-0QV"/>
                         <outlet property="btnBuy" destination="eRE-sJ-kOH" id="SYT-bG-ZeV"/>
+                        <outlet property="btnGetBIOCard" destination="sjf-AY-w4D" id="xPw-vR-BJX"/>
                         <outlet property="btnRequisites" destination="vM5-gU-M1B" id="Izh-ge-reV"/>
                         <outlet property="btnSettings" destination="Q4h-qH-SpP" id="qQA-Ll-5Zi"/>
                         <outlet property="imgActionInfo" destination="cxD-LP-LiU" id="Wg0-zE-yTr"/>
