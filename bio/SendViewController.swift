@@ -248,7 +248,7 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 				break;
 			}
 		}
-		if (spent - _amount! - _commission! > 0) {
+		if (spent - _amount! - _commission! >= 0.01) {
 			tx.addChange(amount: spent - _amount! - _commission!)
 		}
 		print(tx.serialize().hexEncodedString())
@@ -257,7 +257,9 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 	
 	private func _sendTransaction(_ tx: bioTransaction) -> Void {
 		let app = UIApplication.shared.delegate as! AppDelegate
-		app.model!.storeWallet(tx.Change!, true, .Change) //В слычае неуспеха отправки надо удалять
+		if tx.Change != nil && tx.Change!.PrivateKey != nil && tx.Change!.PublicKey != nil && tx.Change!.Address != nil && tx.Change!.WIF != nil {
+			app.model!.storeWallet(tx.Change!, true, .Change) //В слычае неуспеха отправки надо удалять
+		}
 		let sign = tx.sign(app.model!.Addresses)
 		print(sign.hexEncodedString())
 		//Отправляем sign как rawtx
