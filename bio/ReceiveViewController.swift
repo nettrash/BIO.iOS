@@ -89,9 +89,14 @@ class ReceiveViewController : BaseViewController, UITextFieldDelegate {
 		let scaleX = imgQR.frame.size.width / qrcodeImage!.extent.size.width
 		let scaleY = imgQR.frame.size.height / qrcodeImage!.extent.size.height
 		
-		let transformedImage = qrcodeImage!.transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY))
-		
-		imgQR.image = UIImage(ciImage: transformedImage)
+		let output = CGSize(width: 110, height: 110)
+		let matrix = CGAffineTransform(scaleX: scaleX, y: scaleY)
+
+		UIGraphicsBeginImageContextWithOptions(output, false, 0)
+		defer { UIGraphicsEndImageContext() }
+		UIImage(ciImage: qrcodeImage!.transformed(by: matrix))
+			.draw(in: CGRect(origin: .zero, size: output))
+		imgQR.image = UIGraphicsGetImageFromCurrentImageContext()
 		
 		aiWait.stopAnimating()
 	}

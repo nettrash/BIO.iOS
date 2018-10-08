@@ -170,6 +170,10 @@ class SettingsViewController : BaseViewController, UIDocumentPickerDelegate, MFM
 	}
 	
 	//UIDocumentPickerDelegateb
+	public func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
+		self.vWait.isHidden = true
+		self.keysAction = false
+	}
 	
 	public func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
 		let file: Data? = try? Data.init(contentsOf: urls[0], options: .uncachedRead)

@@ -1206,10 +1206,18 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 				let scaleX = 110.0 / qrcodeImage!.extent.size.width
 				let scaleY = 110.0 / qrcodeImage!.extent.size.height
 				
-				let transformedImage = qrcodeImage!.transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY))
+				let output = CGSize(width: 110, height: 110)
+				let matrix = CGAffineTransform(scaleX: scaleX, y: scaleY)
 				
-				let image = UIImage(ciImage: transformedImage)
-				session.sendMessageData(image.pngData()!, replyHandler: nil, errorHandler: nil)
+				UIGraphicsBeginImageContextWithOptions(output, false, 0)
+				defer { UIGraphicsEndImageContext() }
+				UIImage(ciImage: qrcodeImage!.transformed(by: matrix))
+					.draw(in: CGRect(origin: .zero, size: output))
+				let image = UIGraphicsGetImageFromCurrentImageContext()
+				if image == nil { return }
+				let png = image!.pngData()
+				if png == nil { return }
+				session.sendMessageData(png!, replyHandler: nil, errorHandler: nil)
 			}
 		}
 	}
