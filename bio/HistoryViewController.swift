@@ -177,6 +177,22 @@ class HistoryViewController : BaseViewController, ModelRootDelegate, UITableView
 		}
 	}
 	
+	func startTransactionsUpdate() {
+
+	}
+	
+	func stopTransactionsUpdate() {
+
+	}
+	
+	func startMemoryPoolUpdate() {
+
+	}
+	
+	func stopMemoryPoolUpdate() {
+
+	}
+
 	func startCurrentRatesUpdate() {
 		
 	}

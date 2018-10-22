@@ -578,6 +578,13 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 	}
 	
 	func startHistoryUpdate() {
+
+	}
+	
+	func stopHistoryUpdate() {
+	}
+	
+	func startTransactionsUpdate() {
 		DispatchQueue.main.async {
 			self.app.model!.HistoryItems.Items = []
 			self.historyItemsCount = 0
@@ -586,13 +593,18 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 		}
 	}
 	
-	func stopHistoryUpdate() {
+	func stopTransactionsUpdate() {
 		DispatchQueue.main.sync {
 			self.vWait.isHidden = true
 		}
+		if self.app.model!.needShowLastOps {
+			self.app.model!.needShowLastOps = false
+			DispatchQueue.main.async {
+				self.scDimension.selectedSegmentIndex = 0
+				self.segmentControlValueChanged(nil)
+			}
+		}
 		DispatchQueue.main.async {
-			self.scDimension.selectedSegmentIndex = 0
-			self.segmentControlValueChanged(nil)
 			self.refreshControl.endRefreshing()
 			self.historyItemsCount = self.app.model!.HistoryItems.Items.count + self.app.model!.MemoryPool.Items.count
 			if self.historyItemsCount > 3 { self.historyItemsCount = 3 }
@@ -601,6 +613,36 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 		}
 	}
 	
+	func startMemoryPoolUpdate() {
+		DispatchQueue.main.async {
+			self.app.model!.HistoryItems.Items = []
+			self.historyItemsCount = self.app.model!.HistoryItems.Items.count
+			if self.historyItemsCount > 3 { self.historyItemsCount = 3 }
+			self.tblHistory.reloadData()
+			self.refreshControl.beginRefreshing()
+		}
+	}
+	
+	func stopMemoryPoolUpdate() {
+		DispatchQueue.main.sync {
+			self.vWait.isHidden = true
+		}
+		if self.app.model!.needShowLastOps {
+			self.app.model!.needShowLastOps = false
+			DispatchQueue.main.async {
+				self.scDimension.selectedSegmentIndex = 0
+				self.segmentControlValueChanged(nil)
+			}
+		}
+		DispatchQueue.main.async {
+			self.refreshControl.endRefreshing()
+			self.historyItemsCount = self.app.model!.HistoryItems.Items.count + self.app.model!.MemoryPool.Items.count
+			if self.historyItemsCount > 3 { self.historyItemsCount = 3 }
+			self.tblHistory.reloadData()
+			self.lblNoOps.isHidden = self.historyItemsCount > 0 || self.scDimension.selectedSegmentIndex > 0
+		}
+	}
+
 	func unspetData(_ unspent: Unspent) {
 		
 	}
@@ -642,6 +684,7 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 	
 	func sellComplete() {
 		DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
+			self.app.model!.needShowLastOps = true
 			self.app.model!.refresh()
 		})
 	}
@@ -690,6 +733,7 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 			DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
 				self.app.model!.buyOpKey = ""
 				self.app.model!.buyState = ""
+				self.app.model!.needShowLastOps = true
 				self.app.model!.refresh()
 			})
 			break;
@@ -700,6 +744,7 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 			DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
 				self.app.model!.buyOpKey = ""
 				self.app.model!.buyState = ""
+				self.app.model!.needShowLastOps = true
 				self.app.model!.refresh()
 			})
 			break;
@@ -710,6 +755,7 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 			DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3), execute: {
 				self.app.model!.buyOpKey = ""
 				self.app.model!.buyState = ""
+				self.app.model!.needShowLastOps = true
 				self.app.model!.refresh()
 			})
 			break;

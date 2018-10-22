@@ -31,6 +31,12 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 	public var isRefresh: Bool = false
 	public var isHistoryRefresh: Bool = false
 	public var isCurrentRatesRefresh: Bool = false
+	public var isCheckOperationRefresh: Bool = false
+	public var isProcessSellRefresh: Bool = false
+	public var isProcessBuyRefresh: Bool = false
+	public var isLoadBalanceDataRefresh: Bool = false
+	public var isLoadTransactionsDataRefresh: Bool = false
+	public var isMemoryPoolRefresh: Bool = false
 	
 	public var Dimension: BalanceDimension = .BIO
 	public var HistoryItems: History = History()
@@ -40,6 +46,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 	public var BIO: Wallet?
 	
 	public var needNewAddress: Bool = false
+	public var needShowLastOps: Bool = false
 	
 	public var sellRate: Double = 0
 	public var buyRate: Double = 0
@@ -291,7 +298,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 			let task = URLSession.shared.dataTask(with: request) { data, response, error in
 				guard let data = data, error == nil else {
 					print(error?.localizedDescription ?? "No data")
-					self.isRefresh = false
+					self.isCheckOperationRefresh = false
 					self.buyRedirectUrl = ""
 					self.buyState = ""
 					self.delegate?.checkOpComplete("ERROR")
@@ -306,14 +313,15 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 						self.delegate?.checkOpComplete(responseJSON["CheckOpResult"]!["State"] as! String)
 					}
 				}
+				self.isCheckOperationRefresh = false
 			}
 			
-			if (!self.isRefresh) {
-				self.isRefresh = true
+			if (!self.isCheckOperationRefresh) {
+				self.isCheckOperationRefresh = true
 				self.delegate?.buyStart()
+				
+				task.resume()
 			}
-			
-			task.resume()
 		}
 	}
 	
@@ -351,7 +359,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 			let task = URLSession.shared.dataTask(with: request) { data, response, error in
 				guard let data = data, error == nil else {
 					print(error?.localizedDescription ?? "No data")
-					self.isRefresh = false
+					self.isProcessSellRefresh = false
 					self.delegate?.sellComplete()
 					return
 				}
@@ -360,7 +368,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 				let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
 				if let responseJSON = responseJSON as? [String: [String: Any]] {
 					print(responseJSON)
-					if responseJSON["RegisterSellResult"]?["Success"] as? Bool ?? false{
+					if responseJSON["RegisterSellResult"]?["Success"] as? Bool ?? false {
 						let Address = responseJSON["RegisterSellResult"]!["Address"] as! String
 						DispatchQueue.global().async {
 							// prepare auth data
@@ -392,6 +400,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 							let task = URLSession.shared.dataTask(with: request) { data, response, error in
 								guard let data = data, error == nil else {
 									print(error?.localizedDescription ?? "No data")
+									self.isProcessSellRefresh = false
 									self.delegate?.sellComplete()
 									return
 								}
@@ -429,6 +438,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 										//Отправляем sign как rawtx
 										self.broadcastTransaction(sign)
 										self.delegate?.sellComplete()
+										self.isProcessSellRefresh = false
 									}
 								}
 							}
@@ -438,12 +448,12 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 				}
 			}
 			
-			if (!self.isRefresh) {
-				self.isRefresh = true
+			if (!self.isProcessSellRefresh) {
+				self.isProcessSellRefresh = true
 				self.delegate?.sellStart()
+				
+				task.resume()
 			}
-			
-			task.resume()
 		}
 	}
 	
@@ -484,7 +494,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 			let task = URLSession.shared.dataTask(with: request) { data, response, error in
 				guard let data = data, error == nil else {
 					print(error?.localizedDescription ?? "No data")
-					self.isRefresh = false
+					self.isProcessBuyRefresh = false
 					self.buyRedirectUrl = ""
 					self.buyState = ""
 					self.delegate?.buyComplete()
@@ -499,20 +509,23 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 						self.buyRedirectUrl = responseJSON["RegisterBuyResult"]!["RedirectUrl"] as! String
 						self.buyState = responseJSON["RegisterBuyResult"]!["State"] as! String
 						self.delegate?.buyComplete()
+						self.isProcessBuyRefresh = false
 					} else {
 						self.delegate?.buyError(error: nil)
+						self.isProcessBuyRefresh = false
 					}
 				} else {
 					self.delegate?.buyError(error: nil)
+					self.isProcessBuyRefresh = false
 				}
 			}
 			
-			if (!self.isRefresh) {
-				self.isRefresh = true
+			if (!self.isProcessBuyRefresh) {
+				self.isProcessBuyRefresh = true
 				self.delegate?.buyStart()
+				
+				task.resume()
 			}
-			
-			task.resume()
 		}
 	}
 	
@@ -547,7 +560,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 			let task = URLSession.shared.dataTask(with: request) { data, response, error in
 				guard let data = data, error == nil else {
 					print(error?.localizedDescription ?? "No data")
-					self.isRefresh = false
+					self.isLoadBalanceDataRefresh = false
 					self.delegate?.stopBalanceUpdate(error: error?.localizedDescription ?? "No data")
 					return
 				}
@@ -558,7 +571,7 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 					print(responseJSON)
 					let value = BalanceResponse.init(json: responseJSON["BalanceResult"]!)
 					self.Balance = Double(value?.Value ?? 0) / Double(100000000.00)
-					self.isRefresh = false
+					self.isLoadBalanceDataRefresh = false
 					self.delegate?.stopBalanceUpdate(error: nil)
 					DispatchQueue.main.async {
 						//Запрашиваем историю
@@ -567,12 +580,12 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 				}
 			}
 		
-			if (!self.isRefresh) {
-				self.isRefresh = true
+			if (!self.isLoadBalanceDataRefresh) {
+				self.isLoadBalanceDataRefresh = true
 				self.delegate?.startBalanceUpdate()
+				
+				task.resume()
 			}
-			
-			task.resume()
 		}
 	}
 	
@@ -608,8 +621,8 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 			let task = URLSession.shared.dataTask(with: request) { data, response, error in
 				guard let data = data, error == nil else {
 					print(error?.localizedDescription ?? "No data")
-					self.delegate?.stopHistoryUpdate()
-					self.isHistoryRefresh = false
+					self.delegate?.stopTransactionsUpdate()
+					self.isLoadTransactionsDataRefresh = false
 					return
 				}
 				let responseString = String(data: data, encoding: String.Encoding.utf8)
@@ -623,15 +636,16 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 						self.HistoryItems.load(txs!, addresses: self.Addresses)
 					}
 					self._loadMemoryPoolData()
+					self.isLoadTransactionsDataRefresh = false
 				}
 			}
 			
-			if (!self.isHistoryRefresh) {
-				self.isHistoryRefresh = true
-				self.delegate?.startHistoryUpdate()
+			if (!self.isLoadTransactionsDataRefresh) {
+				self.isLoadTransactionsDataRefresh = true
+				self.delegate?.startTransactionsUpdate()
+				
+				task.resume()
 			}
-			
-			task.resume()
 		}
 	}
 	
@@ -726,8 +740,8 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 			let task = URLSession.shared.dataTask(with: request) { data, response, error in
 				guard let data = data, error == nil else {
 					print(error?.localizedDescription ?? "No data")
-					self.delegate?.stopHistoryUpdate()
-					self.isHistoryRefresh = false
+					self.delegate?.stopMemoryPoolUpdate()
+					self.isMemoryPoolRefresh = false
 					return
 				}
 				let responseString = String(data: data, encoding: String.Encoding.utf8)
@@ -741,17 +755,17 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 						self.MemoryPool.load(mempoolItems!, addresses: self.Addresses)
 					}
 					//Инициализируем историю
-					self.delegate?.stopHistoryUpdate()
-					self.isHistoryRefresh = false
+					self.delegate?.stopMemoryPoolUpdate()
+					self.isMemoryPoolRefresh = false
 				}
 			}
 			
-			if (!self.isHistoryRefresh) {
-				self.isHistoryRefresh = true
-				self.delegate?.startHistoryUpdate()
+			if (!self.isMemoryPoolRefresh) {
+				self.isMemoryPoolRefresh = true
+				self.delegate?.startMemoryPoolUpdate()
+				
+				task.resume()
 			}
-			
-			task.resume()
 		}
 	}
 	
@@ -802,7 +816,6 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		}
 	}
 
-	
 	private func _getSellRate(_ currency: String) -> Void {
 		DispatchQueue.global().async {
 			// prepare auth data
@@ -1228,6 +1241,10 @@ protocol ModelRootDelegate {
 	func stopBalanceUpdate(error: String?)
 	func startHistoryUpdate()
 	func stopHistoryUpdate()
+	func startTransactionsUpdate()
+	func stopTransactionsUpdate()
+	func startMemoryPoolUpdate()
+	func stopMemoryPoolUpdate()
 	func startCurrentRatesUpdate()
 	func stopCurrentRatesUpdate()
 	func unspetData(_ data: Unspent)

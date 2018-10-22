@@ -354,6 +354,22 @@ class SendViewController : BaseViewController, ModelRootDelegate, UITextFieldDel
 		
 	}
 	
+	func startTransactionsUpdate() -> Void {
+		
+	}
+	
+	func stopTransactionsUpdate() -> Void {
+		
+	}
+	
+	func startMemoryPoolUpdate() -> Void {
+		
+	}
+	
+	func stopMemoryPoolUpdate() -> Void {
+		
+	}
+
 	func unspetData(_ data: Unspent) -> Void {
 		_unspent = data
 		if (self._otherInvoice != nil) {
