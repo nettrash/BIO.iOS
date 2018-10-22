@@ -615,7 +615,7 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 	
 	func startMemoryPoolUpdate() {
 		DispatchQueue.main.async {
-			self.app.model!.HistoryItems.Items = []
+			self.app.model!.MemoryPool.Items = []
 			self.historyItemsCount = self.app.model!.HistoryItems.Items.count
 			if self.historyItemsCount > 3 { self.historyItemsCount = 3 }
 			self.tblHistory.reloadData()
