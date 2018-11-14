@@ -924,6 +924,8 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 		}
 		
 		if textField == self.tfAmount_Sell {
+			self.app.model!.getSellRateWithAmount(app.model!.currency.rawValue, Double(txtAfterUpdate.replacingOccurrences(of: ",", with: ".", options: .literal, range: nil)) ?? 0)
+			
 			updateSellAmount(txtAfterUpdate)
 		}
 		

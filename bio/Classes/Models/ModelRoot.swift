@@ -141,6 +141,10 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 		_getSellRate(currency)
 	}
 	
+	func getSellRateWithAmount(_ currency: String, _ amount: Double) -> Void {
+		_getSellRateWithAmount(currency, amount)
+	}
+
 	func getBuyRate(_ currency: String) -> Void {
 		_getBuyRate(currency)
 	}
@@ -855,6 +859,55 @@ public class ModelRoot: NSObject, WCSessionDelegate {
 					//Обрабатываем результат
 					if responseJSON["SellRateResult"]?["Success"] as! Bool {
 						self.sellRate = responseJSON["SellRateResult"]!["Rate"] as! Double
+						self.delegate?.updateSellRate()
+					}
+				}
+			}
+			
+			task.resume()
+		}
+	}
+	
+	private func _getSellRateWithAmount(_ currency: String, _ amount: Double) -> Void {
+		DispatchQueue.global().async {
+			// prepare auth data
+			let ServiceName = "BIO"
+			let ServiceSecret = "DE679233-8A45-4845-AA4D-EFCA1350F0A0"
+			let md5src = "\(ServiceName)\(ServiceSecret)"
+			let md5digest = Crypto.md5(md5src)
+			let ServicePassword = md5digest.map { String(format: "%02hhx", $0) }.joined()
+			let base64Data = "\(ServiceName):\(ServicePassword)".data(using: String.Encoding.utf8)?.base64EncodedString(options: Data.Base64EncodingOptions.init(rawValue: 0))
+			
+			// prepare json data
+			var json: [String:Any] = ["currency": currency]
+			json["amount"] = amount
+			
+			let jsonData = try? JSONSerialization.data(withJSONObject: json)
+			
+			// create post request
+			let url = URL(string: "https://bioapi.sib.moe/wallet/bio.svc/sellRateWithAmount")!
+			var request = URLRequest(url: url)
+			request.httpMethod = "POST"
+			request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+			request.addValue("application/json", forHTTPHeaderField: "Accept")
+			request.addValue("Basic \(base64Data ?? "")", forHTTPHeaderField: "Authorization")
+			
+			// insert json data to the request
+			request.httpBody = jsonData
+			
+			let task = URLSession.shared.dataTask(with: request) { data, response, error in
+				guard let data = data, error == nil else {
+					print(error?.localizedDescription ?? "No data")
+					return
+				}
+				let responseString = String(data: data, encoding: String.Encoding.utf8)
+				print(responseString ?? "nil")
+				let responseJSON = try? JSONSerialization.jsonObject(with: data, options: [])
+				if let responseJSON = responseJSON as? [String: [String: Any]] {
+					print(responseJSON)
+					//Обрабатываем результат
+					if responseJSON["SellRateWithAmountResult"]?["Success"] as! Bool {
+						self.sellRate = responseJSON["SellRateWithAmountResult"]!["Rate"] as! Double
 						self.delegate?.updateSellRate()
 					}
 				}
