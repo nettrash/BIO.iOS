@@ -94,10 +94,6 @@ class BalanceViewController: BaseViewController, UITableViewDelegate, UITableVie
 				self.app.model!.checkBuyOp()
 			}
 		}
-		
-		DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-			self.app.checkAvailableUpdate()
-		})
 	}
 	
 	override func didReceiveMemoryWarning() {
