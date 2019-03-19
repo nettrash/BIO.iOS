@@ -490,6 +490,7 @@
 		E5340F332090C7CB007CA095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "Base.lproj/ActionInfo@3x.png"; sourceTree = "<group>"; };
 		E5340F352090C7CD007CA095 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/ActionInfo@3x.png"; sourceTree = "<group>"; };
 		E5340F362090C7CF007CA095 /* ru */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ru; path = "ru.lproj/ActionInfo@3x.png"; sourceTree = "<group>"; };
+		E53635042241057A002A7C2E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E55346DB2088AFD2007C80C5 /* symbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = symbol.png; sourceTree = "<group>"; };
 		E55346DC2088AFD3007C80C5 /* symbol@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol@3x.png"; sourceTree = "<group>"; };
 		E55346DD2088AFD5007C80C5 /* symbol@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "symbol@2x.png"; sourceTree = "<group>"; };
@@ -801,6 +802,7 @@
 		E5C23E19207368A400C40AE0 = {
 			isa = PBXGroup;
 			children = (
+				E53635042241057A002A7C2E /* README.md */,
 				E5C23E24207368A400C40AE0 /* bio */,
 				E5C23E3C207368A600C40AE0 /* bioTests */,
 				E5C23E47207368A600C40AE0 /* bioUITests */,
